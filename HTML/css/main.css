@@ -1,3 +1,11 @@
+/* LESS VARIABLES
+-------------------------------------------------- */
+/* GLOBAL STYLES
+-------------------------------------------------- */
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
 #wrapper {
   overflow: hidden;
   position: relative;
@@ -9,26 +17,27 @@
   position: relative;
   width: 100%;
 }
-#top {
+/* GLOBAL STYLES
+-------------------------------------------------- */
+header {
+  position: relative;
+  z-index: 20;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+header #top {
   background-color: #4A4A4A;
   color: white;
   margin: 0 auto;
   padding: 15px;
   position: relative;
 }
-#top address {
+header #top address {
   display: inline-block;
   margin: 0;
 }
-header {
-  position: fixed;
-  z-index: 20;
-  right: 0;
-  left: 0;
-  top: 0;
-}
-/* Navigation Styling */
-#navbar-wrapper {
+header #navbar-wrapper {
   background-color: #FFFFFF;
   margin-top: 50px;
   position: absolute;
@@ -36,27 +45,6 @@ header {
   right: 0;
   left: 0;
   z-index: 20;
-}
-.headroom {
-  -webkit-transition: -webkit-transform 200ms linear;
-          transition: transform 200ms linear;
-}
-.headroom--pinned {
-  -webkit-transform: translateY(0%);
-      -ms-transform: translateY(0%);
-          transform: translateY(0%);
-}
-.headroom--unpinned {
-  -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
-          transform: translateY(-100%);
-}
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-body {
-  padding-bottom: 40px;
-  color: #5a5a5a;
 }
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */

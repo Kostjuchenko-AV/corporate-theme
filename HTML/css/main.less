@@ -1,6 +1,17 @@
+/* LESS VARIABLES
+-------------------------------------------------- */
 @body-bg: #FFFFFF;
 @text-color: #4A4A4A;
 @brand-primary: #255A8A;
+
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
 
 #wrapper {
 	overflow: hidden;
@@ -14,61 +25,46 @@
 	width: 100%;
 }
 
-#top {
-	background-color: #4A4A4A;
-	color: white;
-	margin: 0 auto;
-	padding: 15px;
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+
+header {
 	position: relative;
+	z-index: 20;
+	right: 0;
+	left: 0;
+	top: 0;
 	
-	address {
-		display: inline-block;
-		margin: 0;
+	#top {
+		background-color: #4A4A4A;
+		color: white;
+		margin: 0 auto;
+		padding: 15px;
+		position: relative;
+		
+		address {
+			display: inline-block;
+			margin: 0;
+		}
+	}
+	
+	#navbar-wrapper {
+		background-color: #FFFFFF;
+		margin-top: 50px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 20;
 	}
 }
 
-header {
-	position: fixed;
-	z-index: 20;
-	right: 0;
-	left: 0;
-	top: 0;
-}
-
-
-/* Navigation Styling */
-
-#navbar-wrapper {
-	background-color: #FFFFFF;
-	margin-top: 50px;
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
-	z-index: 20;
-}
-
-
-.headroom {
-    transition: transform 200ms linear;
-}
-.headroom--pinned {
-    transform: translateY(0%);
-}
-.headroom--unpinned {
-    transform: translateY(-100%);
-}
 
 
 
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
 
-body {
-  padding-bottom: 40px;
-  color: #5a5a5a;
-}
+
 
 
 
