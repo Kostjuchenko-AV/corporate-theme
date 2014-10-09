@@ -1,3 +1,39 @@
+body {
+  padding-top: 70px;
+  color: white;
+}
+/* Navigation Styles */
+.navbar-default {
+  background-color: transparent;
+  border: none;
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover {
+  color: white;
+}
+.navbar-default .navbar-nav li a,
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a:focus {
+  color: white;
+}
+.navbar-default .navbar-nav .active a,
+.navbar-default .navbar-nav .active a:hover,
+.navbar-default .navbar-nav .active a:focus {
+  color: white;
+  background-color: transparent;
+}
+section {
+  padding: 100px 0 100px 0;
+  -webkit-transition: background-color 0.1s ease;
+  transition: background-color 0.1s ease;
+  color: #444444;
+  position: relative;
+  z-index: 1;
+}
+section.with-bg {
+  background-color: rgba(255, 255, 255, 0.95);
+  min-height: 800px;
+}
 #big-video-wrap {
   position: fixed;
   top: 0;
