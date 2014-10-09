@@ -4,22 +4,28 @@
   width: 100%;
 }
 #container {
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   position: relative;
   width: 100%;
 }
-header {
+#top {
   background-color: #4A4A4A;
-}
-header #top {
   color: white;
   margin: 0 auto;
   padding: 15px;
   position: relative;
 }
-header #top address {
+#top address {
   display: inline-block;
   margin: 0;
+}
+header {
+  position: fixed;
+  z-index: 20;
+  right: 0;
+  left: 0;
+  top: 0;
 }
 /* Navigation Styling */
 #navbar-wrapper {
@@ -30,6 +36,20 @@ header #top address {
   right: 0;
   left: 0;
   z-index: 20;
+}
+.headroom {
+  -webkit-transition: -webkit-transform 200ms linear;
+          transition: transform 200ms linear;
+}
+.headroom--pinned {
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+}
+.headroom--unpinned {
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 /* GLOBAL STYLES
 -------------------------------------------------- */

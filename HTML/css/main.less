@@ -14,21 +14,25 @@
 	width: 100%;
 }
 
-header {
+#top {
 	background-color: #4A4A4A;
-
-	#top {
-		color: white;
-		margin: 0 auto;
-		padding: 15px;
-		position: relative;
-		
-		address {
-			display: inline-block;
-			margin: 0;
-		}
-	}
+	color: white;
+	margin: 0 auto;
+	padding: 15px;
+	position: relative;
 	
+	address {
+		display: inline-block;
+		margin: 0;
+	}
+}
+
+header {
+	position: fixed;
+	z-index: 20;
+	right: 0;
+	left: 0;
+	top: 0;
 }
 
 
@@ -45,7 +49,15 @@ header {
 }
 
 
-
+.headroom {
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
 
 
 
