@@ -4,7 +4,8 @@
 -------------------------------------------------- */
 @body-bg: #FFFFFF;
 @gray: #4A4A4A;
-@gray-light: #F2F3F4;
+@gray-lighter: #F2F3F4;
+@gray-light: lighten(@gray, 50%);
 @gray-dark: #404041;
 @brand-primary: #255A8A;
 @brand-primary-light: lighten(@brand-primary,30%);
@@ -16,19 +17,21 @@
 @font-weight-base: 400;
 @line-height-base: 1.42;
 @link-color: @brand-primary;
+
 @section-padding: 36px 0;
+@tras-all-fast: all .1s ease-in-out 0s;
 
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
 
 body {
-  background-color: @body-bg;
-  color: @gray;
-  font-family: @font-family-base;
-  font-size: @font-size-base;
-  font-weight: @font-weight-base;
-  line-height: @line-height-base;
+	background-color: @body-bg;
+	color: @gray;
+	font-family: @font-family-base;
+	font-size: @font-size-base;
+	font-weight: @font-weight-base;
+	line-height: @line-height-base;
 }
 
 #wrapper {
@@ -39,22 +42,33 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: @font-family-base;
-  font-style: normal;
+	font-family: @font-family-base;
+	font-style: normal;
+}
+
+h3.title {
+	font-size: 20px;
+	font-weight: 600;
+	padding-bottom: 26px;
+	text-transform: uppercase;
+	
+	span {
+		font-weight: 400;
+	}
 }
 
 p {
-  margin: 0 10px 10px 0;
+	margin: 0 10px 10px 0;
 }
 
 a {
-  color: @link-color;
-  text-decoration: none;
+	color: @link-color;
+	text-decoration: none;
 }
 
 a:hover {
-  color: @link-color;
-  text-decoration: none;
+	color: @link-color;
+	text-decoration: none;
 }
 
 .btn {
@@ -95,7 +109,7 @@ header {
 			}
 			a {
 				color: white;
-				transition: all .1s ease-in-out 0s;
+				transition: @tras-all-fast;
 			}
 			
 			a:hover {
@@ -113,7 +127,7 @@ header {
 				color: white;
 				font-size: @font-size-large;
 				padding: 0 8px;
-				transition: all .1s ease-in-out 0s;
+				transition: @tras-all-fast;
 			}
 			
 			a:hover {
@@ -250,7 +264,7 @@ header {
 /* CTA STYLING
 -------------------------------------------------- */
 .cta {
-	background-color: @gray-light;
+	background-color: @gray-lighter;
 	padding: @section-padding;
 	
 	h3 {
@@ -271,62 +285,86 @@ header {
 -------------------------------------------------- */
 .marketing {
 	padding: @section-padding;
+	text-align: center;
 	
-	.col-md-4 {
-		text-align: center;
+	span {
+		display: inline-block;
+		min-height: 70px;
+		color: @brand-primary;
+		position: relative;
 		
-		span {
-			display: inline-block;
-			min-height: 70px;
-			color: @brand-primary;
-			position: relative;
+		.fa-html5 {
+			padding-top: 8px;
+		}
+		
+		.fa-mobile {
+			position: absolute;
 			
-			.fa-html5 {
-				padding-top: 8px;
+			&.icon-1 {
+				left: -20px;
+				top: 5px;
 			}
 			
-			.fa-mobile {
-				position: absolute;
-				
-				&.icon-1 {
-					left: -20px;
-					top: 5px;
-				}
-				
-				&.icon-2 {
-					left: -3px;
-					top: 15px;
-				}
-			}
-			
-			.fa-edit {
-				padding-top: 10px;
+			&.icon-2 {
+				left: -3px;
+				top: 15px;
 			}
 		}
 		
-		h3 {
-			font-size: 20px;
+		.fa-edit {
+			padding-top: 10px;
 		}
-		
-		p {
-			line-height: 24px;
-			margin-right: 10px;
-			margin-left: 10px;
-		}
-		
-		a {
-			color: @brand-primary;
-			font-weight: 600;
-			font-size: @font-size-base;
-		}
+	}
+	
+	h3 {
+		font-size: 20px;
+	}
+	
+	p {
+		line-height: 24px;
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	
+	a {
+		color: @brand-primary;
+		font-weight: 600;
+		font-size: @font-size-base;
 	}
 }	
 
 /* MINI PORTFOLIO STYLING
 -------------------------------------------------- */
 .mini-portfolio {
-	background-color: @gray-light;
+	background-color: @gray-lighter;
 	padding: @section-padding;
+	
+	h3 {
+		
+		a {
+			color: @gray-light;
+			transition: @tras-all-fast;
+		}
+		a:hover {
+				color: @gray;
+		}	
+	}
+	
+	h4 {
+		font-weight: bold;
+		font-size: @font-size-medium;
+		margin-bottom: 5px;
+	}
+	
+	img {
+		margin-bottom: 20px;
+	}
+	
+	.tag {
+		color: @gray-light;
+		display: block;
+		margin-bottom: 20px;
+	}	
 
 }
 
@@ -357,7 +395,28 @@ header {
 /* SERVICES STYLING
 -------------------------------------------------- */
 .services {
+	padding: @section-padding;
 	
+	.line-graph {
+		margin-top: 24px;
+		
+		i {
+			padding-right: 5px;
+		}
+		
+		.graph-item{
+			
+			.progress {
+				margin-top: 10px;
+				height: 5px;
+				border-radius: 0;
+			}
+			
+			.progress-bar {
+				background-color: @brand-primary;
+			}
+		}
+	}
 }
 
 /*  FEATURED STYLING

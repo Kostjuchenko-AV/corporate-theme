@@ -27,6 +27,15 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: normal;
 }
+h3.title {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 26px;
+  text-transform: uppercase;
+}
+h3.title span {
+  font-weight: 400;
+}
 p {
   margin: 0 10px 10px 0;
 }
@@ -216,42 +225,40 @@ header.shrink-header .navbar-wrapper .navbar-nav > li > a {
 -------------------------------------------------- */
 .marketing {
   padding: 36px 0;
-}
-.marketing .col-md-4 {
   text-align: center;
 }
-.marketing .col-md-4 span {
+.marketing span {
   display: inline-block;
   min-height: 70px;
   color: #255a8a;
   position: relative;
 }
-.marketing .col-md-4 span .fa-html5 {
+.marketing span .fa-html5 {
   padding-top: 8px;
 }
-.marketing .col-md-4 span .fa-mobile {
+.marketing span .fa-mobile {
   position: absolute;
 }
-.marketing .col-md-4 span .fa-mobile.icon-1 {
+.marketing span .fa-mobile.icon-1 {
   left: -20px;
   top: 5px;
 }
-.marketing .col-md-4 span .fa-mobile.icon-2 {
+.marketing span .fa-mobile.icon-2 {
   left: -3px;
   top: 15px;
 }
-.marketing .col-md-4 span .fa-edit {
+.marketing span .fa-edit {
   padding-top: 10px;
 }
-.marketing .col-md-4 h3 {
+.marketing h3 {
   font-size: 20px;
 }
-.marketing .col-md-4 p {
+.marketing p {
   line-height: 24px;
   margin-right: 10px;
   margin-left: 10px;
 }
-.marketing .col-md-4 a {
+.marketing a {
   color: #255a8a;
   font-weight: 600;
   font-size: 14px;
@@ -261,6 +268,27 @@ header.shrink-header .navbar-wrapper .navbar-nav > li > a {
 .mini-portfolio {
   background-color: #f2f3f4;
   padding: 36px 0;
+}
+.mini-portfolio h3 a {
+  color: #cacaca;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+          transition: all 0.1s ease-in-out 0s;
+}
+.mini-portfolio h3 a:hover {
+  color: #4a4a4a;
+}
+.mini-portfolio h4 {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.mini-portfolio img {
+  margin-bottom: 20px;
+}
+.mini-portfolio .tag {
+  color: #cacaca;
+  display: block;
+  margin-bottom: 20px;
 }
 /* TESTIMONIAL CAROUSEL STYLING
 -------------------------------------------------- */
@@ -283,6 +311,23 @@ header.shrink-header .navbar-wrapper .navbar-nav > li > a {
 }
 /* SERVICES STYLING
 -------------------------------------------------- */
+.services {
+  padding: 36px 0;
+}
+.services .line-graph {
+  margin-top: 24px;
+}
+.services .line-graph i {
+  padding-right: 5px;
+}
+.services .line-graph .graph-item .progress {
+  margin-top: 10px;
+  height: 5px;
+  border-radius: 0;
+}
+.services .line-graph .graph-item .progress-bar {
+  background-color: #255a8a;
+}
 /*  FEATURED STYLING
 -------------------------------------------------- */
 .featured {
