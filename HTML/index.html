@@ -31,11 +31,12 @@
 				<div id="top">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-8">
-								 <address><i class="fa fa-phone"></i> Call Us: (404) 919 4505</address>	
-								 <address class=""><i class="fa fa-envelope"></i> Email: hello@nathanieldeal.com</address>										</div>
-							<div class="col-md-4">
-								<div class="follow">
+							<div class="col-sm-12 clearfix">
+								<div class="contact pull-left">
+									<span><i class="fa fa-phone"></i><address> Call Us: (404) 919 4505</address></span>	
+									<span class="hidden-xs"><i class="fa fa-envelope"></i><address> <a href="mailto:hello@nathanieldeal.com">Email: hello@nathanieldeal.com</a> </address></span>			
+								</div>
+								<div class="follow pull-right hidden-xs">
 									<span>Follow Us:</span>
 									<a href="#"><i class="fa fa-facebook"></i></a>
 									<a href="#"><i class="fa fa-twitter"></i></a>
@@ -59,7 +60,11 @@
 									 <span class="icon-bar"></span>
 									 <span class="icon-bar"></span>
 								 </button> 
-								 <a class="navbar-brand" href="#">Amity</a>
+								 <!--Begin Logo -->
+								 <a class="navbar-brand" href="#">
+								 	<img src="img/logo.png" title="Amity" alt="Amity" />
+								 </a>
+								 <!--End Logo -->
 							</div>
 							
 							<div class="collapse navbar-collapse" id="navbar-collapse-1">
@@ -184,12 +189,12 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-10">
-							<h2>Lorem ipsum dolor sit amet, urna. </h2>
+							<h3>Lorem ipsum dolor sit amet, urna. </h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna. 
 	Phasellus nec erat odio. Vestibulum eleifend. </p>
 						</div>
 						<div class="col-md-2">
-							<a class="btn btn-default" href="#" role="button">Read More</a>
+							<a class="btn btn-primary" href="#" role="button">Read More</a>
 						</div>
 					</div>
 				</div>	
@@ -200,22 +205,22 @@
 			<div class="container marketing">
 				<div class="row">
 					<div class="col-md-4">
-						<img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-						<h2>Heading</h2>
-						<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-						<p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+						<span><i class="fa fa-html5 fa-4x"></i></span>
+						<h3>HTML5 & CSS3</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna. Phasellus nec erat odio.</p>
+						<a class="btn btn-default" href="#" role="button">Read More</a>
 					</div>
 					<div class="col-md-4">
-						<img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-						<h2>Heading</h2>
-						<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-						<p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+						<span><i class="fa fa-mobile fa-4x icon-1"></i><i class="fa fa-mobile fa-4x icon-2"></i></span>
+						<h3>Mobile First</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna. Phasellus nec erat odio.</p>
+						<a class="btn btn-default" href="#" role="button">Read More</a>
 					</div>
 					<div class="col-md-4">
-						<img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-						<h2>Heading</h2>
-						<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-						<p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+						<span><i class="fa fa-edit fa-4x"></i></span>
+						<h3>Customizable</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna. Phasellus nec erat odio.</p>
+					    <a class="btn btn-default" href="#" role="button">Read More</a>
 					</div>
 				</div>
 			</div>
@@ -225,18 +230,23 @@
 			<div class="mini-portfolio">
 				<div class="container">
 					<div class="row">
+						<div class="col-md-12">
+							<h3>Recent Work</h3>
+						</div>
+					</div>
+					<div class="row">
 						<div class="col-md-4">
-							<img alt="140x140" src="http://lorempixel.com/140/140/" />
+							<img class="img-responsive" alt="By The Pier" src="http://lorempixel.com/400/285/" />
 							<strong>By The Pier</strong>
 							<span><i class="fa fa-tag"> Travel, Lifestyle</i></span>
 						</div>
 						<div class="col-md-4">
-							<img alt="140x140" src="http://lorempixel.com/140/140/" />
+							<img class="img-responsive" alt="Beyond The Trees" src="http://lorempixel.com/400/285/" />
 							<strong>Beyond The Trees</strong>
 							<span><i class="fa fa-tag"> Beautiful, Lifestyle</i></span>
 						</div>
 						<div class="col-md-4">
-							<img alt="140x140" src="http://lorempixel.com/140/140/" />
+							<img class="img-responsive" alt="In The Foothills" src="http://lorempixel.com/400/285/" />
 							<strong>In The Foothills</strong>
 							<span><i class="fa fa-tag"> Travel, Nature</i></span>
 						</div>
@@ -416,16 +426,23 @@ potenti. Duis at faucibus ligula.
 			jQuery(function($) {
 				$(document).ready( function() {
 					//enabling stickUp on the '.navbar-wrapper' class
-					$('.navbar-wrapper').stickUp()
+					$('.navbar-wrapper').stickUp();
 					
-					// add padding to header on stickUp
 					$(window).scroll(function() {
-					    if ($(".navbar-wrapper").offset().top > 50) {
+					    // add padding to header on stickUp
+					    if ($(".navbar-wrapper").offset().top > 55) {
 					        $("header").addClass("sticky-padding");
 					    } else {
 					        $("header").removeClass("sticky-padding");
 					    }
+					    // add padding to header on stickUp
+					    if ($(".navbar-wrapper").offset().top > 560) {
+					        $("header").addClass("shrink-header");
+					    } else {
+					        $("header").removeClass("shrink-header");
+					    }
 					});
+					
 				});
 			});
 			

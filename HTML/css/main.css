@@ -1,10 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
 /* LESS VARIABLES
 -------------------------------------------------- */
 /* GLOBAL STYLES
 -------------------------------------------------- */
 body {
-  padding-bottom: 40px;
+  background-color: #ffffff;
   color: #4a4a4a;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42;
 }
 #wrapper {
   -webkit-backface-visibility: hidden;
@@ -13,14 +18,40 @@ body {
   position: relative;
   width: 100%;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: normal;
+}
+p {
+  margin: 0 10px 10px 0;
+}
+a {
+  color: #255a8a;
+  text-decoration: none;
+}
+a:hover {
+  color: #255a8a;
+  text-decoration: none;
+}
+.btn {
+  border-radius: 0;
+  border: none;
+  padding: 20px 48px;
+  font-size: 16px;
+}
+.btn.btn-primary {
+  background-color: #255a8a;
+}
 /* HEADER STYLES
 -------------------------------------------------- */
 header {
   position: relative;
   z-index: 1000;
-}
-header.sticky-padding {
-  padding-bottom: 108px;
 }
 header #top {
   background-color: #4a4a4a;
@@ -31,9 +62,37 @@ header #top {
   -webkit-transition: background 0.1s ease-in-out 0s;
           transition: background 0.1s ease-in-out 0s;
 }
-header #top address {
+header #top .contact {
+  padding-top: 2px;
+}
+header #top .contact address {
   display: inline-block;
   margin: 0;
+  font-size: 12px;
+  padding: 0 15px 0 5px;
+}
+header #top .contact a {
+  color: white;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+          transition: all 0.1s ease-in-out 0s;
+}
+header #top .contact a:hover {
+  color: #6fa7d9;
+}
+header #top .follow span {
+  font-size: 12px;
+  padding-right: 6px;
+  vertical-align: text-top;
+}
+header #top .follow a {
+  color: white;
+  font-size: 18px;
+  padding: 0 8px;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+          transition: all 0.1s ease-in-out 0s;
+}
+header #top .follow a:hover {
+  color: #6fa7d9;
 }
 header .navbar-wrapper {
   background-color: white;
@@ -46,6 +105,8 @@ header .navbar-wrapper {
   width: 100%;
   -webkit-transition: background 0.1s ease-in-out 0s;
           transition: background 0.1s ease-in-out 0s;
+  -webkit-transition: height 0.5s ease-in-out;
+          transition: height 0.5s ease-in-out;
 }
 header .navbar-wrapper > .container {
   padding-right: 0;
@@ -57,6 +118,65 @@ header .navbar-wrapper .navbar {
 }
 header .navbar-wrapper .navbar .container {
   width: auto;
+}
+header .navbar-wrapper .navbar-toggle .icon-bar {
+  color: #4a4a4a;
+}
+header .navbar-wrapper .navbar-brand {
+  margin-top: 32px;
+  padding: 0;
+}
+header .navbar-wrapper .navbar-brand img {
+  max-height: 44px;
+  -webkit-transition: max-height 0.5s ease-in-out;
+          transition: max-height 0.5s ease-in-out;
+}
+header .navbar-wrapper .navbar-nav > li > a {
+  text-transform: uppercase;
+  color: #4a4a4a;
+  font-size: 16px;
+  padding: 39px 15px;
+  line-height: 1.5;
+  -webkit-transition: padding 0.5s ease-in-out;
+          transition: padding 0.5s ease-in-out;
+}
+header .navbar-wrapper .navbar-nav li.active > a,
+header .navbar-wrapper .navbar-nav li > a:hover,
+header .navbar-wrapper .navbar-nav li > a:focus {
+  background-color: transparent;
+  border-bottom: 5px solid #255a8a;
+  color: #255a8a;
+}
+header .navbar-wrapper .navbar-nav li > a > .caret {
+  margin-top: -5px;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+          transition: transform 0.2s ease-in;
+}
+header .navbar-wrapper .navbar-nav li > a:hover > .caret {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  opacity: .9;
+  margin-top: -6px;
+}
+header.sticky-padding {
+  padding-bottom: 108px;
+}
+header.sticky-padding .navbar-wrapper {
+  position: fixed;
+  top: 0;
+}
+header.shrink-header .navbar-wrapper {
+  height: 70px;
+}
+header.shrink-header .navbar-wrapper .navbar-brand {
+  margin-top: 20px;
+}
+header.shrink-header .navbar-wrapper .navbar-brand img {
+  max-height: 34px;
+}
+header.shrink-header .navbar-wrapper .navbar-nav > li > a {
+  padding: 20px 15px;
 }
 /* MAIN CAROUSEL STYLING
 -------------------------------------------------- */
@@ -80,22 +200,67 @@ header .navbar-wrapper .navbar .container {
 /* CTA STYLING
 -------------------------------------------------- */
 .cta {
-  background-color: #f4f1ec;
+  background-color: #f2f3f4;
+  padding: 36px 0;
+}
+.cta h3 {
+  margin-top: 0;
+}
+.cta p {
+  font-size: 16px;
+}
+.cta .btn {
+  margin-top: 14px;
 }
 /* MARKETING STYLING
 -------------------------------------------------- */
+.marketing {
+  padding: 36px 0;
+}
 .marketing .col-md-4 {
-  margin-bottom: 20px;
   text-align: center;
 }
+.marketing .col-md-4 span {
+  display: inline-block;
+  min-height: 70px;
+  color: #255a8a;
+  position: relative;
+}
+.marketing .col-md-4 span .fa-html5 {
+  padding-top: 8px;
+}
+.marketing .col-md-4 span .fa-mobile {
+  position: absolute;
+}
+.marketing .col-md-4 span .fa-mobile.icon-1 {
+  left: -20px;
+  top: 5px;
+}
+.marketing .col-md-4 span .fa-mobile.icon-2 {
+  left: -3px;
+  top: 15px;
+}
+.marketing .col-md-4 span .fa-edit {
+  padding-top: 10px;
+}
+.marketing .col-md-4 h3 {
+  font-size: 20px;
+}
 .marketing .col-md-4 p {
+  line-height: 24px;
   margin-right: 10px;
   margin-left: 10px;
+}
+.marketing .col-md-4 a {
+  color: #255a8a;
+  font-weight: 600;
+  font-size: 14px;
 }
 /* MINI PORTFOLIO STYLING
 -------------------------------------------------- */
 .mini-portfolio {
-  background-color: #f4f1ec;
+  background-color: #f2f3f4;
+  padding: 36px 0;
 }
 /* TESTIMONIAL CAROUSEL STYLING
 -------------------------------------------------- */

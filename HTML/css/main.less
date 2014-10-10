@@ -1,18 +1,34 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+
 /* LESS VARIABLES
 -------------------------------------------------- */
 @body-bg: #FFFFFF;
 @gray: #4A4A4A;
-@gray-light: #F4F1EC;
+@gray-light: #F2F3F4;
 @gray-dark: #404041;
 @brand-primary: #255A8A;
+@brand-primary-light: lighten(@brand-primary,30%);
+@font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@font-size-base: 14px;
+@font-size-small: ceil((@font-size-base * 0.85));	// 12px
+@font-size-medium: ceil((@font-size-base * 1.125)); // 16px
+@font-size-large: ceil((@font-size-base * 1.25));   // 18px
+@font-weight-base: 400;
+@line-height-base: 1.42;
+@link-color: @brand-primary;
+@section-padding: 36px 0;
 
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
 
 body {
-  padding-bottom: 40px;
+  background-color: @body-bg;
   color: @gray;
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  font-weight: @font-weight-base;
+  line-height: @line-height-base;
 }
 
 #wrapper {
@@ -22,17 +38,43 @@ body {
 	width: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: @font-family-base;
+  font-style: normal;
+}
+
+p {
+  margin: 0 10px 10px 0;
+}
+
+a {
+  color: @link-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: @link-color;
+  text-decoration: none;
+}
+
+.btn {
+	border-radius: 0;
+	border: none;
+	padding: 20px 48px;
+	font-size: @font-size-medium;
+	
+	
+	&.btn-primary {
+		background-color: @brand-primary;
+	}
+}
+
 /* HEADER STYLES
 -------------------------------------------------- */
-
 
 header {
 	position: relative;
 	z-index: 1000;
-	
-	&.sticky-padding {
-		padding-bottom: 108px;
-	}
 	
 	#top {
 		background-color: @gray;
@@ -41,10 +83,42 @@ header {
 		padding: 15px 0;
 		position: relative;
 		transition: background .1s ease-in-out 0s;
+		
+		.contact {	
+			padding-top: 2px;
 			
-		address {
-			display: inline-block;
-			margin: 0;
+			address {
+				display: inline-block;
+				margin: 0;
+				font-size: @font-size-small;
+				padding: 0 15px 0 5px;
+			}
+			a {
+				color: white;
+				transition: all .1s ease-in-out 0s;
+			}
+			
+			a:hover {
+				color: @brand-primary-light;
+			}
+		}	
+		
+		.follow {
+			span {
+				font-size: @font-size-small;
+				padding-right: 6px;
+				vertical-align: text-top;
+			}
+			a {
+				color: white;
+				font-size: @font-size-large;
+				padding: 0 8px;
+				transition: all .1s ease-in-out 0s;
+			}
+			
+			a:hover {
+				color: @brand-primary-light;
+			}
 		}
 	}
 	
@@ -57,6 +131,8 @@ header {
 		transform: translate3d(0,0,0);
 		width: 100%;
 		transition: background .1s ease-in-out 0s;
+		transition: height .5s ease-in-out;
+		
 		
 		> .container {
 		  padding-right: 0;
@@ -71,8 +147,81 @@ header {
 		.navbar .container {
 		  width: auto;
 		}
+		
+		.navbar-toggle .icon-bar {
+			color: @gray;
+		}
+		
+		.navbar-brand {
+			margin-top: 32px;
+			padding: 0;
+			
+			img {
+				max-height: 44px;
+				transition: max-height .5s ease-in-out;
+			}
+		}
+		
+		.navbar-nav {
+			
+			> li > a {
+				text-transform: uppercase;
+				color: @gray;
+				font-size: @font-size-medium;
+				padding: 39px 15px;
+				line-height: 1.5;
+				transition: padding .5s ease-in-out;
+			}
+			
+			li.active > a, li > a:hover, li > a:focus {
+				background-color: transparent;
+				border-bottom: 5px solid @brand-primary;
+				color: @brand-primary;
+			}
+			
+			li > a > .caret {
+				margin-top: -5px;
+				transition: transform .2s ease-in;
+			}
+			
+			li > a:hover > .caret {
+				transform: rotate(-90deg);
+				opacity: .9;
+				margin-top: -6px;
+			}
+		}
 
 	}	
+	
+		
+	&.sticky-padding {
+		padding-bottom: 108px;
+		
+		.navbar-wrapper {
+			position: fixed;
+			top: 0;
+		}
+	}
+	
+	&.shrink-header {
+	
+		.navbar-wrapper {
+			height: 70px;
+			
+			.navbar-brand {
+				margin-top: 20px;
+				
+				img {
+					max-height: 34px;
+				}
+			}
+			
+			.navbar-nav > li > a {
+				padding: 20px 15px;
+			}	
+		}
+		
+	}
 }
 
 /* MAIN CAROUSEL STYLING
@@ -102,20 +251,73 @@ header {
 -------------------------------------------------- */
 .cta {
 	background-color: @gray-light;
+	padding: @section-padding;
+	
+	h3 {
+		margin-top: 0;
+	}
+	
+	p {
+		font-size: @font-size-medium;
+	}
+	
+	.btn {
+		margin-top: 14px;
+	}
 
 }
 
 /* MARKETING STYLING
 -------------------------------------------------- */
 .marketing {
-
+	padding: @section-padding;
+	
 	.col-md-4 {
-		margin-bottom: 20px;
 		text-align: center;
 		
+		span {
+			display: inline-block;
+			min-height: 70px;
+			color: @brand-primary;
+			position: relative;
+			
+			.fa-html5 {
+				padding-top: 8px;
+			}
+			
+			.fa-mobile {
+				position: absolute;
+				
+				&.icon-1 {
+					left: -20px;
+					top: 5px;
+				}
+				
+				&.icon-2 {
+					left: -3px;
+					top: 15px;
+				}
+			}
+			
+			.fa-edit {
+				padding-top: 10px;
+			}
+		}
+		
+		h3 {
+			font-size: 20px;
+		}
+		
 		p {
+			line-height: 24px;
 			margin-right: 10px;
 			margin-left: 10px;
+		}
+		
+		a {
+			color: @brand-primary;
+			font-weight: 600;
+			font-size: @font-size-base;
 		}
 	}
 }	
@@ -124,6 +326,7 @@ header {
 -------------------------------------------------- */
 .mini-portfolio {
 	background-color: @gray-light;
+	padding: @section-padding;
 
 }
 
