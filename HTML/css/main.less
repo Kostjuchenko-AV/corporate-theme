@@ -1,7 +1,9 @@
 /* LESS VARIABLES
 -------------------------------------------------- */
 @body-bg: #FFFFFF;
-@text-color: #4A4A4A;
+@gray: #4A4A4A;
+@gray-light: #F4F1EC;
+@gray-dark: #404041;
 @brand-primary: #255A8A;
 
 
@@ -10,142 +12,185 @@
 
 body {
   padding-bottom: 40px;
-  color: #5a5a5a;
+  color: @gray;
 }
 
 #wrapper {
+	backface-visibility: hidden;
 	overflow: hidden;
 	position: relative;
 	width: 100%;
 }
 
-#container {
-	backface-visibility: hidden;
-	position: relative;
-	width: 100%;
-}
-
-/* GLOBAL STYLES
+/* HEADER STYLES
 -------------------------------------------------- */
 
 
 header {
 	position: relative;
-	z-index: 20;
-	right: 0;
-	left: 0;
-	top: 0;
+	z-index: 1000;
+	
+	&.sticky-padding {
+		padding-bottom: 108px;
+	}
 	
 	#top {
-		background-color: #4A4A4A;
+		background-color: @gray;
 		color: white;
 		margin: 0 auto;
-		padding: 15px;
+		padding: 15px 0;
 		position: relative;
-		
+		transition: background .1s ease-in-out 0s;
+			
 		address {
 			display: inline-block;
 			margin: 0;
 		}
 	}
 	
-	#navbar-wrapper {
-		background-color: #FFFFFF;
-		margin-top: 50px;
+	.navbar-wrapper {
+		background-color: white;
+		color: @gray;
+		box-shadow: 0 1px 15px rgba(0,0,0,.1);
+		height: 108px;
+		position: relative;
+		transform: translate3d(0,0,0);
+		width: 100%;
+		transition: background .1s ease-in-out 0s;
+		
+		> .container {
+		  padding-right: 0;
+		  padding-left: 0;
+		}
+		
+		.navbar {
+		  padding-right: 15px;
+		  padding-left: 15px;
+		}
+		
+		.navbar .container {
+		  width: auto;
+		}
+
+	}	
+}
+
+/* MAIN CAROUSEL STYLING
+-------------------------------------------------- */
+#main-carousel {
+	height: 500px;
+
+	.carousel-caption {
+		z-index: 10;
+	}
+	
+	.item {
+		height: 500px;
+		background-color: @gray;
+	}
+	
+	.carousel-inner > .item > img {
 		position: absolute;
 		top: 0;
-		right: 0;
 		left: 0;
-		z-index: 20;
+		min-width: 100%;
+		height: 500px;
 	}
-}
+}	
 
-
-
-
-
-
-
-
-
-/* CUSTOMIZE THE NAVBAR
+/* CTA STYLING
 -------------------------------------------------- */
+.cta {
+	background-color: @gray-light;
 
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-
-
-/* Flip around the padding for proper display in narrow viewports */
-#navbar-wrapper > .container {
-  padding-right: 0;
-  padding-left: 0;
-}
-#navbar-wrapper .navbar {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-#navbar-wrapper .navbar .container {
-  width: auto;
 }
 
-
-/* CUSTOMIZE THE CAROUSEL
+/* MARKETING STYLING
 -------------------------------------------------- */
+.marketing {
 
-/* Carousel base class */
-.carousel {
-  height: 500px;
-  margin-bottom: 60px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
+	.col-md-4 {
+		margin-bottom: 20px;
+		text-align: center;
+		
+		p {
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+	}
+}	
 
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 500px;
-  background-color: #777;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 500px;
-}
-
-
-
-/* MARKETING CONTENT
+/* MINI PORTFOLIO STYLING
 -------------------------------------------------- */
+.mini-portfolio {
+	background-color: @gray-light;
 
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: normal;
-}
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
+/* TESTIMONIAL CAROUSEL STYLING
+-------------------------------------------------- */
+#testimonial-carousel {
+	height: 500px;
 
-/* Featurettes
-------------------------- */
+	.carousel-caption {
+		z-index: 10;
+	}
+	
+	.item {
+		height: 500px;
+		background-color: @gray;
+	}
+	
+	.carousel-inner > .item > img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-width: 100%;
+		height: 500px;
+	}
+}	
 
-.featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+
+/* SERVICES STYLING
+-------------------------------------------------- */
+.services {
+	
 }
 
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
+/*  FEATURED STYLING
+-------------------------------------------------- */
+.featured {
+	text-align: center;
+	
 }
+
+
+/*  FOOTER STYLING
+-------------------------------------------------- */
+.footer-top {
+	background-color: @gray-dark;	
+	color: white;
+}
+
+.footer-bottom {
+	background-color: @gray;	
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -161,14 +206,5 @@ header {
     font-size: 21px;
     line-height: 1.4;
   }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
 }
 
-@media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
-}

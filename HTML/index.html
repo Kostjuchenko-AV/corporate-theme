@@ -12,6 +12,7 @@
 		<!-- CSS -->
 		<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 		<link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="bower_components/animate.css/animate.min.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
 		
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -27,13 +28,12 @@
 			
 			<!--Begin Header-->
 			<header>	
-				<!--Begin Top Section -->
 				<div id="top">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-8">
 								 <address><i class="fa fa-phone"></i> Call Us: (404) 919 4505</address>	
-								 <address class=""><i class="fa fa-envelope"></i> Email: hello@nathanieldeal.com</address>						</div>
+								 <address class=""><i class="fa fa-envelope"></i> Email: hello@nathanieldeal.com</address>										</div>
 							<div class="col-md-4">
 								<div class="follow">
 									<span>Follow Us:</span>
@@ -47,10 +47,9 @@
 						</div>	
 					</div>	
 				</div>
-				<!--!End Top Section -->
-			
+				
 				<!--Begin Navigation-->
-				<div id="navbar-wrapper">
+				<div class="navbar-wrapper">
 			    	<div class="container">
 						<nav class="navbar" role="navigation">
 							<div class="navbar-header">
@@ -80,7 +79,7 @@
 									</li>
 									<li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-										 	Dropdown <strong class="caret"></strong>
+										 	Features <strong class="caret"></strong>
 										</a>
 										<ul class="dropdown-menu">
 											<li>
@@ -134,312 +133,274 @@
 				</div>		
 				<!--End Navigation-->
 			</header>	
-			<!--End Header-->
-			
-			
-			<!--Begin Main Container-->
-			
-			
-			
-			
-			
-			
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		      <!-- Indicators -->
-		      <ol class="carousel-indicators">
-		        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-		        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-		      </ol>
-		      <div class="carousel-inner">
-		        <div class="item active">
-		          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
-		          <div class="container">
-		            <div class="carousel-caption">
-		              <h1>Example headline.</h1>
-		              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-		              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-		            </div>
-		          </div>
-		        </div>
-		        <div class="item">
-		          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-		          <div class="container">
-		            <div class="carousel-caption">
-		              <h1>Another example headline.</h1>
-		              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-		              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-		            </div>
-		          </div>
-		        </div>
-		        <div class="item">
-		          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-		          <div class="container">
-		            <div class="carousel-caption">
-		              <h1>One more for good measure.</h1>
-		              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-		              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-		            </div>
-		          </div>
-		        </div>
-		      </div>
-		      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-		      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-		    </div>
-		    
-		    
-		    
-		    
-		    
-    
-    
-			<div id="container">
-				<!--Begin Section 1-->
-				<section class="section" id="section1" data-section="1">
+			<!--End Header-->	
 					
-				</section>
-				<!--End Section 1-->
+			<!--Begin Main Carousel-->
+			<div id="main-carousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#main-carousel" data-slide-to="1" class=""></li>
+					<li data-target="#main-carousel" data-slide-to="2" class=""></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1>Example headline.</h1>
+								<p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+								<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1>Another example headline.</h1>
+								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+								<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1>One more for good measure.</h1>
+								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+								<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+				<a class="right carousel-control" href="#main-carousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+			</div>
+			<!--End Main Carousel-->	
+			
+			<!--Begin CTA Section-->
+			<div class="cta">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10">
+							<h2>Lorem ipsum dolor sit amet, urna. </h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna. 
+	Phasellus nec erat odio. Vestibulum eleifend. </p>
+						</div>
+						<div class="col-md-2">
+							<a class="btn btn-default" href="#" role="button">Read More</a>
+						</div>
+					</div>
+				</div>	
+			</div>	
+			<!--End CTA Section-->
 				
-				
-				
-				
-				
-				
-				
+			<!--Begin Marketing Section-->
+			<div class="container marketing">
 				<div class="row">
-					<div class="col-md-12">
-						<div class="jumbotron">
-							<h1>
-								Hello, world!
-							</h1>
-							<p>
-								This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+					<div class="col-md-4">
+						<img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+						<h2>Heading</h2>
+						<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+						<p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+					</div>
+					<div class="col-md-4">
+						<img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+						<h2>Heading</h2>
+						<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+						<p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+					</div>
+					<div class="col-md-4">
+						<img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+						<h2>Heading</h2>
+						<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+						<p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+					</div>
+				</div>
+			</div>
+			<!--End Marketing Section-->	
+			
+			<!--Begin Mini Portfolio Section-->
+			<div class="mini-portfolio">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<img alt="140x140" src="http://lorempixel.com/140/140/" />
+							<strong>By The Pier</strong>
+							<span><i class="fa fa-tag"> Travel, Lifestyle</i></span>
+						</div>
+						<div class="col-md-4">
+							<img alt="140x140" src="http://lorempixel.com/140/140/" />
+							<strong>Beyond The Trees</strong>
+							<span><i class="fa fa-tag"> Beautiful, Lifestyle</i></span>
+						</div>
+						<div class="col-md-4">
+							<img alt="140x140" src="http://lorempixel.com/140/140/" />
+							<strong>In The Foothills</strong>
+							<span><i class="fa fa-tag"> Travel, Nature</i></span>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<!--End Mini Portfolio Section-->
+			
+			<!--Begin Testimonial Carousel-->
+			<div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#testimonial-carousel" data-slide-to="1" class=""></li>
+					<li data-target="#testimonial-carousel" data-slide-to="2" class=""></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1>Example headline.</h1>
+								<p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1>Another example headline.</h1>
+								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1>One more for good measure.</h1>
+								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="left carousel-control" href="#testimonial-carousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+				<a class="right carousel-control" href="#testimonial-carousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+			</div>
+			<!--End Testimonial Carousel-->	
+			
+			<!--Begin Services Section-->	
+				
+			<div class="services">
+				<div class="container">	
+
+					<div class="row">
+						<div class="col-md-12">
+							<h3>Our Services</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna. Phasellus nec erat odio. Vestibulum imperdiet vel velit et eleifend. Quisque elementum egestas neque id convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse 
+potenti. Duis at faucibus ligula. 
 							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
 							<p>
-								<a class="btn btn-primary btn-large" href="#">Learn more</a>
+								Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+							</p>
+						</div>
+						<div class="col-md-4">
+							<p>
+								Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+							</p>
+						</div>
+						<div class="col-md-4">
+							<p>
+								Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
 							</p>
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<h2>
-							Heading
-						</h2>
-						<p>
-							Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-						</p>
-						<p>
-							<a class="btn" href="#">View details »</a>
-						</p> <button type="button" class="btn btn-default">Default</button>
+			</div>	
+			<!--End Services Section-->	
+			
+			<!--Begin Featured Section-->
+			<div class="featured">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h2>Lorem ipsum dolor sit amet, urna. </h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna. 
+	Phasellus nec erat odio. Vestibulum eleifend. </p>
+						</div>
 					</div>
-					<div class="col-md-6">
-						<img alt="140x140" src="http://lorempixel.com/140/140/" />
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<h2>
-							Heading
-						</h2>
-						<p>
-							Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-						</p>
-						<p>
-							<a class="btn" href="#">View details »</a>
-						</p>
-					</div>
-					<div class="col-md-4">
-						<h2>
-							Heading
-						</h2>
-						<p>
-							Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-						</p>
-						<p>
-							<a class="btn" href="#">View details »</a>
-						</p>
-					</div>
-					<div class="col-md-4">
-						<h2>
-							Heading
-						</h2>
-						<p>
-							Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-						</p>
-						<p>
-							<a class="btn" href="#">View details »</a>
-						</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<img alt="140x140" src="http://lorempixel.com/140/140/" />
-					</div>
-					<div class="col-md-4">
-						<img alt="140x140" src="http://lorempixel.com/140/140/" />
-					</div>
-					<div class="col-md-4">
-						<img alt="140x140" src="http://lorempixel.com/140/140/" />
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<dl class="dl-horizontal">
-							<dt>
-								Description lists
-							</dt>
-							<dd>
-								A description list is perfect for defining terms.
-							</dd>
-							<dt>
-								Euismod
-							</dt>
-							<dd>
-								Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
-							</dd>
-							<dd>
-								Donec id elit non mi porta gravida at eget metus.
-							</dd>
-							<dt>
-								Malesuada porta
-							</dt>
-							<dd>
-								Etiam porta sem malesuada magna mollis euismod.
-							</dd>
-							<dt>
-								Felis euismod semper eget lacinia
-							</dt>
-							<dd>
-								Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-							</dd>
-						</dl>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<p>
-							Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
-						</p>
-					</div>
-					<div class="col-md-4">
-						<p>
-							Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
-						</p>
-					</div>
-					<div class="col-md-4">
-						<p>
-							Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
-						</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<dl class="dl-horizontal">
-							<dt>
-								Description lists
-							</dt>
-							<dd>
-								A description list is perfect for defining terms.
-							</dd>
-							<dt>
-								Euismod
-							</dt>
-							<dd>
-								Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
-							</dd>
-							<dd>
-								Donec id elit non mi porta gravida at eget metus.
-							</dd>
-							<dt>
-								Malesuada porta
-							</dt>
-							<dd>
-								Etiam porta sem malesuada magna mollis euismod.
-							</dd>
-							<dt>
-								Felis euismod semper eget lacinia
-							</dt>
-							<dd>
-								Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-							</dd>
-						</dl>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						 <address> <strong>Twitter, Inc.</strong><br /> 795 Folsom Ave, Suite 600<br /> San Francisco, CA 94107<br /> <abbr title="Phone">P:</abbr> (123) 456-7890</address>
-					</div>
-					<div class="col-md-4">
-						<ul>
-							<li>
-								Lorem ipsum dolor sit amet
-							</li>
-							<li>
-								Consectetur adipiscing elit
-							</li>
-							<li>
-								Integer molestie lorem at massa
-							</li>
-							<li>
-								Facilisis in pretium nisl aliquet
-							</li>
-							<li>
-								Nulla volutpat aliquam velit
-							</li>
-							<li>
-								Faucibus porta lacus fringilla vel
-							</li>
-							<li>
-								Aenean sit amet erat nunc
-							</li>
-							<li>
-								Eget porttitor lorem
-							</li>
-						</ul>
-					</div>
-					<div class="col-md-4">
-						<form class="form-horizontal" role="form">
-							<div class="form-group">
-								 <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-								<div class="col-sm-10">
-									<input type="email" class="form-control" id="inputEmail3" />
-								</div>
+				</div>	
+			</div>	
+			<!--End Featured Section-->
+			
+			<!--Begin Footer Section-->
+			<footer>
+				<div class="footer-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4">
+								 <h3>Contact Us</h3>
+								 <ul class="list-unstyled">
+								 	<li><i class="fa fa-map-marker"></i>Address: 3543 Peachtree Street, Suite 102, Atlanta GA 30030</li>
+								 	<li><i class="fa fa-phone"></i>Phone: (404) 919 4505</li>
+								 	<li><i class="fa fa-envelope"></i>Email: hello@nathanieldeal.com</li>
+								 	<li><i class="fa fa-clock-o"></i>Monday - Friday: 9:00 am - 6:00 pm <br/>
+								 		Saturday - Sunday: Closed
+								 	</li>
+								 </ul>		
 							</div>
-							<div class="form-group">
-								 <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-								<div class="col-sm-10">
-									<input type="password" class="form-control" id="inputPassword3" />
-								</div>
+							<div class="col-md-4">
+								<h3>Latest Tweets</h3>
+								<ul class="list-unstyled">
+									<li>
+										@NathanielDeal RT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna. Phasellus nec erat odio. 
+										<time>December 19,2014</time>
+									</li>
+									<li>
+										@NathanielDeal RT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna.
+										<time>December 19,2014</time>
+									</li>
+								</ul>
 							</div>
-							<div class="form-group">
-								<div class="col-sm-offset-2 col-sm-10">
-									<div class="checkbox">
-										 <label><input type="checkbox" /> Remember me</label>
+							<div class="col-md-4">
+								<form class="form-inline" role="form">
+									<div class="form-group">
+										 <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+										<div class="col-sm-10">
+											<input type="email" class="form-control" id="inputEmail3" />
+										</div>
 									</div>
-								</div>
+									<div class="form-group">
+										<div class="col-sm-offset-2 col-sm-10">
+											 <button type="submit" class="btn btn-default">Subscribe</button>
+										</div>
+									</div>
+								</form>
 							</div>
-							<div class="form-group">
-								<div class="col-sm-offset-2 col-sm-10">
-									 <button type="submit" class="btn btn-default">Sign in</button>
-								</div>
-							</div>
-						</form>
+						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-8">
-						 <address> <strong>Twitter, Inc.</strong><br /> 795 Folsom Ave, Suite 600<br /> San Francisco, CA 94107<br /> <abbr title="Phone">P:</abbr> (123) 456-7890</address>
+				<div class="footer-bottom">
+					<div class="container">	
+						<div class="row">
+							<div class="col-md-8">
+								 <p>&copy; Copyright 2014 Amity. All Rights Reserved. Designed by Nathaniel Deal</p>
+							</div>
+							<div class="col-md-4">
+								<div class="follow">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-linkedin"></i></a>
+									<a href="#"><i class="fa fa-yelp"></i></a>
+									<a href="#"><i class="fa fa-youtube"></i></a>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="col-md-4">
-					</div>
-				</div>
-			<!--End Main Container-->
-			</div>
+				</div>		
+			</footer>	
+
 		<!--End Wrapper-->
 		</div>
 	
@@ -447,6 +408,30 @@
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="bower_components/wowjs/dist/wow.min.js"></script>
+		<script src="bower_components/stickUp/stickUp.min.js"></script>
+		<script>
+			
+			//initiating jQuery
+			jQuery(function($) {
+				$(document).ready( function() {
+					//enabling stickUp on the '.navbar-wrapper' class
+					$('.navbar-wrapper').stickUp()
+					
+					// add padding to header on stickUp
+					$(window).scroll(function() {
+					    if ($(".navbar-wrapper").offset().top > 50) {
+					        $("header").addClass("sticky-padding");
+					    } else {
+					        $("header").removeClass("sticky-padding");
+					    }
+					});
+				});
+			});
+			
+		 	//Initialize WOW.js
+		 	new WOW().init();
+		</script>
 		
 	</body>
 </html>

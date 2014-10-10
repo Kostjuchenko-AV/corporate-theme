@@ -4,111 +4,134 @@
 -------------------------------------------------- */
 body {
   padding-bottom: 40px;
-  color: #5a5a5a;
+  color: #4a4a4a;
 }
 #wrapper {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   overflow: hidden;
   position: relative;
   width: 100%;
 }
-#container {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  position: relative;
-  width: 100%;
-}
-/* GLOBAL STYLES
+/* HEADER STYLES
 -------------------------------------------------- */
 header {
   position: relative;
-  z-index: 20;
-  right: 0;
-  left: 0;
-  top: 0;
+  z-index: 1000;
+}
+header.sticky-padding {
+  padding-bottom: 108px;
 }
 header #top {
-  background-color: #4A4A4A;
+  background-color: #4a4a4a;
   color: white;
   margin: 0 auto;
-  padding: 15px;
+  padding: 15px 0;
   position: relative;
+  -webkit-transition: background 0.1s ease-in-out 0s;
+          transition: background 0.1s ease-in-out 0s;
 }
 header #top address {
   display: inline-block;
   margin: 0;
 }
-header #navbar-wrapper {
-  background-color: #FFFFFF;
-  margin-top: 50px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
+header .navbar-wrapper {
+  background-color: white;
+  color: #4a4a4a;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+  height: 108px;
+  position: relative;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  width: 100%;
+  -webkit-transition: background 0.1s ease-in-out 0s;
+          transition: background 0.1s ease-in-out 0s;
 }
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-/* Flip around the padding for proper display in narrow viewports */
-#navbar-wrapper > .container {
+header .navbar-wrapper > .container {
   padding-right: 0;
   padding-left: 0;
 }
-#navbar-wrapper .navbar {
+header .navbar-wrapper .navbar {
   padding-right: 15px;
   padding-left: 15px;
 }
-#navbar-wrapper .navbar .container {
+header .navbar-wrapper .navbar .container {
   width: auto;
 }
-/* CUSTOMIZE THE CAROUSEL
+/* MAIN CAROUSEL STYLING
 -------------------------------------------------- */
-/* Carousel base class */
-.carousel {
+#main-carousel {
   height: 500px;
-  margin-bottom: 60px;
 }
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
+#main-carousel .carousel-caption {
   z-index: 10;
 }
-/* Declare heights because of positioning of img element */
-.carousel .item {
+#main-carousel .item {
   height: 500px;
-  background-color: #777;
+  background-color: #4a4a4a;
 }
-.carousel-inner > .item > img {
+#main-carousel .carousel-inner > .item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
   height: 500px;
 }
-/* MARKETING CONTENT
+/* CTA STYLING
 -------------------------------------------------- */
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
+.cta {
+  background-color: #f4f1ec;
+}
+/* MARKETING STYLING
+-------------------------------------------------- */
+.marketing .col-md-4 {
   margin-bottom: 20px;
   text-align: center;
 }
-.marketing h2 {
-  font-weight: normal;
-}
-.marketing .col-lg-4 p {
+.marketing .col-md-4 p {
   margin-right: 10px;
   margin-left: 10px;
 }
-/* Featurettes
-------------------------- */
-.featurette-divider {
-  margin: 80px 0;
-  /* Space out the Bootstrap <hr> more */
+/* MINI PORTFOLIO STYLING
+-------------------------------------------------- */
+.mini-portfolio {
+  background-color: #f4f1ec;
 }
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
+/* TESTIMONIAL CAROUSEL STYLING
+-------------------------------------------------- */
+#testimonial-carousel {
+  height: 500px;
+}
+#testimonial-carousel .carousel-caption {
+  z-index: 10;
+}
+#testimonial-carousel .item {
+  height: 500px;
+  background-color: #4a4a4a;
+}
+#testimonial-carousel .carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+/* SERVICES STYLING
+-------------------------------------------------- */
+/*  FEATURED STYLING
+-------------------------------------------------- */
+.featured {
+  text-align: center;
+}
+/*  FOOTER STYLING
+-------------------------------------------------- */
+.footer-top {
+  background-color: #404041;
+  color: white;
+}
+.footer-bottom {
+  background-color: #4a4a4a;
+  color: white;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -118,13 +141,5 @@ header #navbar-wrapper {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: 1.4;
-  }
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-@media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
   }
 }
