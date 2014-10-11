@@ -48,12 +48,20 @@ h1, h2, h3, h4, h5, h6 {
 
 h3.title {
 	font-size: 20px;
-	font-weight: 600;
 	padding-bottom: 26px;
 	text-transform: uppercase;
 	
 	span {
-		font-weight: 400;
+		font-weight: 300;
+	}
+}
+
+h4.title {
+	padding-bottom: 26px;
+	text-transform: uppercase;
+	
+	span {
+		font-weight: 300;
 	}
 }
 
@@ -77,9 +85,12 @@ a:hover {
 	padding: 20px 48px;
 	font-size: @font-size-medium;
 	
-	
 	&.btn-primary {
 		background-color: @brand-primary;
+	}
+	
+	b {
+		font-weight: 600;
 	}
 }
 
@@ -422,6 +433,9 @@ header {
 /*  FEATURED STYLING
 -------------------------------------------------- */
 .featured {
+	
+	height: 265px;
+	background-image: url(../img/city-overview.jpg);
 	text-align: center;
 	
 }
@@ -432,11 +446,137 @@ header {
 .footer-top {
 	background-color: @gray-dark;	
 	color: white;
+	padding: @section-padding;
+	
+	.contact-block {
+		
+		li {
+			margin-bottom: 15px;
+			line-height: 18px;
+			position: relative;
+			padding-left: 24px;
+			
+			i {
+				display: inline-block;
+				width: 24px;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			
+			span {
+				color: @gray-light;
+			}
+			
+			a {
+				color: white;
+				transition: @tras-all-fast;
+			}
+			
+			a:hover {
+				color: @brand-primary-light;
+			}
+		}	
+	}
+	
+	.twitter-block {
+		
+		li {
+			margin-bottom: 15px;
+			line-height: 18px;
+			position: relative;
+			padding-left: 34px;
+			padding-right: 10px;
+			
+			.fa-stack {
+				position: absolute;
+				top: -3px;
+				left: 0;
+			}
+			
+			.fa-circle {
+				color: @brand-primary;
+			}
+			
+			time {
+				color: @gray-light;
+				display: block;
+				font-size: 10px;
+				font-style: italic;
+				margin-top: 5px;
+			}
+		}
+	}
+	
+	.newsletter-block {
+		
+		p {
+			margin-bottom: 15px;
+			line-height: 18px;
+		}
+		
+		.control-label {
+			text-indent: -9999px;
+		}
+		
+		input {
+			display: inline-block;
+			border-radius: 0;
+			background-color: #454546;
+			box-shadow: none;
+			border: none;
+			height: 40px;
+			color: white;
+			width: 185px;
+		}
+		
+		button {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: @brand-primary;
+			font-size: @font-size-base;
+			color: white;
+			transition: @tras-all-fast;
+			
+			&:hover {
+				color: @brand-primary;
+				background-color: white;
+			}
+		}
+		
+		small {
+			color: @gray-light;
+			display: block;
+			font-size: 10px;
+			font-style: italic;
+			margin-top: 10px;
+		}
+	}
+	
 }
 
 .footer-bottom {
 	background-color: @gray;	
 	color: white;
+	padding: 26px;
+	
+	p {
+		font-size: @font-size-small;
+		margin: 10px 0 0;
+	}
+	
+	.follow {
+		a {
+			color: white;
+			font-size: 20px;
+			padding: 0 8px;
+			transition: @tras-all-fast;
+		}
+		
+		a:hover {
+			color: @brand-primary-light;
+		}
+	}
 }
 
 
