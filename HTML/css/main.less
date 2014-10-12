@@ -200,8 +200,8 @@ header {
 				text-transform: uppercase;
 				color: @gray;
 				font-size: @font-size-medium;
-				padding: 39px 15px;
-				line-height: 1.5;
+				padding: 40px 15px;
+				line-height: 1.45;
 				transition: padding .5s ease-in-out;
 			}
 			
@@ -222,18 +222,13 @@ header {
 				margin-top: -6px;
 			}
 		}
+		
+		&.stuck {		
+				position: fixed;
+				top: 0;
+		}
 
 	}	
-	
-		
-	&.sticky-padding {
-		padding-bottom: 108px;
-		
-		.navbar-wrapper {
-			position: fixed;
-			top: 0;
-		}
-	}
 	
 	&.shrink-header {
 	
@@ -249,7 +244,7 @@ header {
 			}
 			
 			.navbar-nav > li > a {
-				padding: 20px 15px;
+				padding: 21px 15px;
 			}	
 		}
 		

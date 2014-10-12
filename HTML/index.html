@@ -491,37 +491,18 @@ potenti. Duis at faucibus ligula.
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script src="bower_components/wowjs/dist/wow.min.js"></script>
-<!-- 		<script src="bower_components/stickUp/stickUp.min.js"></script> -->
+		<script src="bower_components/jquery-waypoints/waypoints.min.js"></script>
+		<script src="bower_components/jquery-waypoints/shortcuts/sticky-elements/waypoints-sticky.min.js"></script>
 		<script>
-			
-			// Replace this with wow.js or waypoints.js also replace stickup
-			
-			//initiating jQuery
-/*
-			jQuery(function($) {
-				$(document).ready( function() {
-					//enabling stickUp on the '.navbar-wrapper' class
-					$('.navbar-wrapper').stickUp();
-					
-					$(window).scroll(function() {
-					    // add padding to header on stickUp
-					    if ($(".navbar-wrapper").offset().top > 55) {
-					        $("header").addClass("sticky-padding");
-					    } else {
-					        $("header").removeClass("sticky-padding");
-					    }
-					    // add padding to header on stickUp
-					    if ($(".navbar-wrapper").offset().top > 560) {
-					        $("header").addClass("shrink-header");
-					    } else {
-					        $("header").removeClass("shrink-header");
-					    }
-					});
-					
-				});
-			});
-*/
-			
+		
+			// Stick Header Top Top
+			$('.navbar-wrapper').waypoint('sticky');
+	
+			// Shrink Header
+			$('.cta').waypoint(function(direction) {
+			  $('header').toggleClass('shrink-header', direction === 'down');
+			}, { offset: 108 });
+						
 		 	//Initialize WOW.js
 		 	new WOW().init();
 		</script>
