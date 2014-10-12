@@ -153,15 +153,17 @@
 					<div class="items active">
 						<img src="img/main-slider-1.jpg" alt="main-slider-1" />
 						<div class="container">
-							<div class="carousel-caption">
+						<div class="row">
+							<div class="carousel-caption col-sm-6">
 								<h2 class="title"><span>Mobile First, Responsive</span> Business Solution..</h1>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna. Phasellus nec erat odio. </p>
 								<p><a class="btn btn-lg btn-default" href="#" role="button"><b>Read</b> More</a></p>
 							</div>
-							<div class="carousel-image">
-								<img src="img/main-slider-1-ipad.png" alt="main-slider-1-ipad" />
-								<img src="img/main-slider-1-iphone.png" alt="main-slider-1-iphone" />
+							<div class="carousel-image col-sm-6">
+								<img class="img-1 img-responsive" src="img/main-slider-1-ipad.png" alt="main-slider-1-ipad" />
+								<img class="img-2 img-responsive" src="img/main-slider-1-iphone.png" alt="main-slider-1-iphone" />
 							</div>
+						</div>
 						</div>
 					</div>
 					<!--
@@ -489,10 +491,13 @@ potenti. Duis at faucibus ligula.
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script src="bower_components/wowjs/dist/wow.min.js"></script>
-		<script src="bower_components/stickUp/stickUp.min.js"></script>
+<!-- 		<script src="bower_components/stickUp/stickUp.min.js"></script> -->
 		<script>
 			
+			// Replace this with wow.js or waypoints.js also replace stickup
+			
 			//initiating jQuery
+/*
 			jQuery(function($) {
 				$(document).ready( function() {
 					//enabling stickUp on the '.navbar-wrapper' class
@@ -515,6 +520,7 @@ potenti. Duis at faucibus ligula.
 					
 				});
 			});
+*/
 			
 		 	//Initialize WOW.js
 		 	new WOW().init();

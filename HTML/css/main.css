@@ -210,9 +210,9 @@ header.shrink-header .navbar-wrapper .navbar-nav > li > a {
 #main-carousel .carousel-caption {
   text-align: left;
   padding-right: 40px;
-  left: 20px;
+  left: 0px;
   right: auto;
-  width: 50%;
+  bottom: 50px;
 }
 #main-carousel .carousel-caption h2 {
   line-height: 40px;
@@ -235,6 +235,18 @@ header.shrink-header .navbar-wrapper .navbar-nav > li > a {
   padding-bottom: 20px;
   z-index: 10;
 }
+#main-carousel .carousel-image .img-1 {
+  position: absolute;
+  right: 40px;
+  bottom: 65px;
+  z-index: 11;
+}
+#main-carousel .carousel-image .img-2 {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 12;
+}
 #main-carousel .item {
   height: 500px;
   background-color: #4a4a4a;
@@ -245,6 +257,9 @@ header.shrink-header .navbar-wrapper .navbar-nav > li > a {
   left: 0;
   min-width: 100%;
   height: 500px;
+}
+#main-carousel .carousel-control {
+  display: none;
 }
 /* CTA STYLING
 -------------------------------------------------- */
@@ -302,6 +317,9 @@ header.shrink-header .navbar-wrapper .navbar-nav > li > a {
   color: #255a8a;
   font-weight: 600;
   font-size: 14px;
+}
+.marketing a:hover {
+  background-color: #f2f3f4;
 }
 /* MINI PORTFOLIO STYLING
 -------------------------------------------------- */
@@ -413,6 +431,9 @@ header.shrink-header .navbar-wrapper .navbar-nav > li > a {
   padding-left: 34px;
   padding-right: 10px;
 }
+.footer-top .twitter-block li a {
+  color: #cacaca;
+}
 .footer-top .twitter-block li .fa-stack {
   position: absolute;
   top: -3px;
@@ -438,7 +459,7 @@ header.shrink-header .navbar-wrapper .navbar-nav > li > a {
 .footer-top .newsletter-block input {
   display: inline-block;
   border-radius: 0;
-  background-color: #454546;
+  background-color: #4a4a4a;
   box-shadow: none;
   border: none;
   height: 40px;
