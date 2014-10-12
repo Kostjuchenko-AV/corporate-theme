@@ -137,16 +137,16 @@ header .navbar-wrapper .navbar {
   padding-right: 15px;
   padding-left: 15px;
   border: none;
-  background-color: transparent;
+  background-color: white;
 }
 header .navbar-wrapper .navbar .container {
   width: auto;
 }
 header .navbar-wrapper .navbar-toggle {
-  background: #f4f6f6;
+  background: #f2f3f4;
   border: 1px solid #e3e9e9;
-  color: #586266;
-  box-shadow: inset 0 1px 0 #f8fafa;
+  color: #4a4a4a;
+  box-shadow: inset 0 1px 0 #f2f3f4;
   text-shadow: 0 1px 0 #fff;
   margin: 36px 16px 34px;
   -webkit-transition: margin 0.5s ease-in-out;
@@ -156,7 +156,7 @@ header .navbar-wrapper .navbar-toggle {
   padding: 8px 14px 10px;
 }
 header .navbar-wrapper .navbar-toggle:hover {
-  background: #a5b3b4;
+  background: #cacaca;
   border: 1px solid #9eadae;
   color: white;
   box-shadow: inset 0 1px 0 #aebbbc;
@@ -186,8 +186,10 @@ header .navbar-wrapper .navbar-nav > li > a {
 }
 header .navbar-wrapper .navbar-nav li.active > a,
 header .navbar-wrapper .navbar-nav li > a:hover,
-header .navbar-wrapper .navbar-nav li > a:focus {
-  background-color: transparent;
+header .navbar-wrapper .navbar-nav li > a:focus,
+header .navbar-wrapper .navbar-nav > .open > a,
+header .navbar-wrapper .navbar-nav > .active > a {
+  background-color: transparent !important;
   border-bottom: 5px solid #255a8a;
   color: #255a8a;
 }
@@ -299,6 +301,11 @@ header.shrink-header .navbar-wrapper .navbar-nav > li > a {
 }
 .cta .btn {
   margin-top: 14px;
+}
+@media (max-width: 767px) {
+  .cta {
+    text-align: center;
+  }
 }
 /* MARKETING STYLING
 -------------------------------------------------- */
@@ -413,9 +420,20 @@ header.shrink-header .navbar-wrapper .navbar-nav > li > a {
 /*  FEATURED STYLING
 -------------------------------------------------- */
 .featured {
-  height: 265px;
-  background-image: url(../img/city-overview.jpg);
+  color: white;
+  min-height: 265px;
+  background: -webkit-linear-gradient(rgba(37, 90, 138, 0.8), rgba(37, 90, 138, 0.8)), url(../img/city-overview.jpg);
+  background: linear-gradient(rgba(37, 90, 138, 0.8), rgba(37, 90, 138, 0.8)), url(../img/city-overview.jpg);
+  padding: 36px 0;
   text-align: center;
+}
+.featured h2 {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.featured p {
+  font-size: 16px;
+  line-height: 24px;
 }
 /*  FOOTER STYLING
 -------------------------------------------------- */
@@ -493,9 +511,7 @@ header.shrink-header .navbar-wrapper .navbar-nav > li > a {
 .footer-top .newsletter-block button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #255a8a;
   font-size: 14px;
-  color: white;
   -webkit-transition: all 0.1s ease-in-out 0s;
           transition: all 0.1s ease-in-out 0s;
 }
