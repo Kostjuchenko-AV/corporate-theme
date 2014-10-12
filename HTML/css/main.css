@@ -27,6 +27,9 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: normal;
 }
+h2.title span {
+  font-weight: 300;
+}
 h3.title {
   font-size: 20px;
   padding-bottom: 26px;
@@ -201,7 +204,35 @@ header.shrink-header .navbar-wrapper .navbar-nav > li > a {
 #main-carousel {
   height: 500px;
 }
+#main-carousel .container {
+  position: relative;
+}
 #main-carousel .carousel-caption {
+  text-align: left;
+  padding-right: 40px;
+  left: 20px;
+  right: auto;
+  width: 50%;
+}
+#main-carousel .carousel-caption h2 {
+  line-height: 40px;
+  margin-bottom: 36px;
+}
+#main-carousel .carousel-caption h2 span {
+  display: block;
+}
+#main-carousel .carousel-caption p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 36px;
+}
+#main-carousel .carousel-image {
+  position: absolute;
+  right: 15px;
+  left: auto;
+  bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   z-index: 10;
 }
 #main-carousel .item {
