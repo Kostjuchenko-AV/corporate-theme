@@ -267,7 +267,7 @@
 			<!--End Mini Portfolio Section-->
 			
 			<!--Begin Testimonial Carousel-->
-			<div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+			<div id="testimonial-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-stellar-background-ratio="1.25">
 				<ol class="carousel-indicators">
 					<li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
 					<li data-target="#testimonial-carousel" data-slide-to="1" class=""></li>
@@ -275,29 +275,53 @@
 				</ol>
 				<div class="carousel-inner">
 					<div class="item active">
-						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
 						<div class="container">
 							<div class="carousel-caption">
-								<h1>Example headline.</h1>
-								<p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+								<h2>Lorem ipsum dolor sit amet, consectetur<br />
+								adipiscing elit. Pellentesque quis laoreet urna.<br /> 
+								Phasellus nec erat odio. </h2>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>	
+								<div class="client">Alexander Frazier</div>
+								<div class="title">CEO & President, Company Inc.</div>
 							</div>
 						</div>
 					</div>
 					<div class="item">
-						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
 						<div class="container">
 							<div class="carousel-caption">
-								<h1>Another example headline.</h1>
-								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+								<h2>Lorem ipsum dolor sit amet, consectetur<br />
+								adipiscing elit. Pellentesque quis laoreet urna.<br /> 
+								Phasellus nec erat odio. </h2>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>	
+								<div class="client">Alexander Frazier</div>
+								<div class="title">CEO & President, Company Inc.</div>
 							</div>
 						</div>
 					</div>
 					<div class="item">
-						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
 						<div class="container">
 							<div class="carousel-caption">
-								<h1>One more for good measure.</h1>
-								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+								<h2>Lorem ipsum dolor sit amet, consectetur<br />
+								adipiscing elit. Pellentesque quis laoreet urna.<br /> 
+								Phasellus nec erat odio. </h2>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>	
+								<div class="client">Alexander Frazier</div>
+								<div class="title">CEO & President, Company Inc.</div>
 							</div>
 						</div>
 					</div>
@@ -394,7 +418,7 @@ potenti. Duis at faucibus ligula.
 			<!--End Services Section-->	
 			
 			<!--Begin Featured Section-->
-			<div class="featured" data-stellar-background-ratio="0.5">
+			<div class="featured" data-stellar-background-ratio="1.25">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
@@ -499,9 +523,6 @@ potenti. Duis at faucibus ligula.
 			$('.cta').waypoint(function(direction) {
 			  $('header').toggleClass('shrink-header', direction === 'down');
 			}, { offset: 108 });
-						
-		 	//Initialize WOW.js
-		 	new WOW().init();
 		 	
 		 	// Parallax Background Effect
 		 	$.stellar({
