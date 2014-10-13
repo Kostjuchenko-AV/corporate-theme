@@ -394,7 +394,7 @@ potenti. Duis at faucibus ligula.
 			<!--End Services Section-->	
 			
 			<!--Begin Featured Section-->
-			<div class="featured">
+			<div class="featured" data-stellar-background-ratio="0.5">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
@@ -487,9 +487,9 @@ potenti. Duis at faucibus ligula.
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-		<script src="bower_components/wowjs/dist/wow.min.js"></script>
 		<script src="bower_components/jquery-waypoints/waypoints.min.js"></script>
 		<script src="bower_components/jquery-waypoints/shortcuts/sticky-elements/waypoints-sticky.min.js"></script>
+		<script src="bower_components/stellar.js/jquery.stellar.min.js"></script>
 		<script>
 		
 			// Stick Header Top Top
@@ -502,6 +502,12 @@ potenti. Duis at faucibus ligula.
 						
 		 	//Initialize WOW.js
 		 	new WOW().init();
+		 	
+		 	// Parallax Background Effect
+		 	$.stellar({
+				horizontalScrolling: false,
+				verticalOffset: 40
+			});
 		</script>
 		
 	</body>
