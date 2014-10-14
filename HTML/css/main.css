@@ -273,6 +273,9 @@ header.shrink-header .navbar-wrapper .navbar-nav > li > a {
   bottom: 0px;
   z-index: 12;
 }
+#main-carousel .items > img {
+  min-width: 100%;
+}
 #main-carousel .item {
   height: 500px;
   background-color: #4a4a4a;
@@ -371,8 +374,31 @@ header.shrink-header .navbar-wrapper .navbar-nav > li > a {
   font-size: 16px;
   margin-bottom: 5px;
 }
-.mini-portfolio img {
+.mini-portfolio .img-overlay {
+  background-color: #255a8a;
+  display: block;
+  position: relative;
   margin-bottom: 20px;
+}
+.mini-portfolio .img-overlay i {
+  color: white;
+  display: none;
+  font-size: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  margin: auto;
+  width: 42px;
+  height: 44px;
+}
+.mini-portfolio .img-overlay:hover img {
+  opacity: .5;
+}
+.mini-portfolio .img-overlay:hover i {
+  display: block;
 }
 .mini-portfolio .tag {
   color: #cacaca;

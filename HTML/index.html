@@ -13,6 +13,7 @@
 		<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 		<link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 		<link href="bower_components/animate.css/animate.min.css" rel="stylesheet">
+		<link href="bower_components/jquery-prettyPhoto/css/prettyPhoto.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
 		
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -241,23 +242,32 @@
 						<div class="col-sm-12 clearfix">
 							<h3 class="pull-left title">Recent <span>Work</span></h3>
 							<span class="pull-right">
-								<h3 class="title"><a href="#"><i class="fa fa-plus"></h3></i></a>
+								<h3 class="title toggle-portfolio"><a href="#"><i class="fa fa-plus"></h3></i></a>
 							</span>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-4">
-							<img class="img-responsive" src="img/by-the-peir.jpg" alt="by-the-peir" />
+							<a href="img/by-the-peir.jpg" class="img-overlay"“ rel="prettyPhoto[folio_gal]">
+								<img class="img-responsive" src="img/by-the-peir.jpg" alt="By The Peir" />
+								<i class="fa fa-plus-circle"></i>
+							</a>	
 							<h4>By The Pier</h4>
 							<span class="tag"><i class="fa fa-tag"> Travel, Lifestyle</i></span>
 						</div>
 						<div class="col-sm-4">
-							<img class="img-responsive" src="img/beyond-the-trees.jpg" alt="beyond-the-trees" />
+							<a href="img/beyond-the-trees.jpg" class="img-overlay" rel="prettyPhoto[folio_gal]">
+								<img class="img-responsive" src="img/beyond-the-trees.jpg" alt="Beyond The Trees" />
+								<i class="fa fa-plus-circle"></i>
+							</a>	
 							<h4>Beyond The Trees</h4>
 							<span class="tag"><i class="fa fa-tag"> Beautiful, Lifestyle</i></span>
 						</div>
 						<div class="col-sm-4">
-							<img class="img-responsive" src="img/the-pines.jpg" alt="the-pines" />
+							<a href="img/the-pines.jpg" class="img-overlay" rel="prettyPhoto[folio_gal]">
+								<img class="img-responsive" src="img/the-pines.jpg" alt="The Pines" />
+								<i class="fa fa-plus-circle"></i>
+							</a>	
 							<h4>In The Foothills</h4>
 							<span class="tag"><i class="fa fa-tag"> Travel, Nature</i></span>
 						</div>
@@ -287,7 +297,24 @@
 									<i class="fa fa-star"></i>
 								</div>	
 								<div class="client">Alexander Frazier</div>
-								<div class="title">CEO & President, Company Inc.</div>
+								<div class="title">CEO & President, One Inc.</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="container">
+							<div class="carousel-caption">
+								<h2>Lorem ipsum dolor sit amet, consectetur<br />
+								adipiscing elit. Pellentesque quis laoreet urna. </h2>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>	
+								<div class="client">Franco Stephens</div>
+								<div class="title">Financial Adviser, Two Inc.</div>
 							</div>
 						</div>
 					</div>
@@ -303,25 +330,8 @@
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
 								</div>	
-								<div class="client">Alexander Frazier</div>
-								<div class="title">CEO & President, Company Inc.</div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="container">
-							<div class="carousel-caption">
-								<h2>Lorem ipsum dolor sit amet, consectetur<br />
-								adipiscing elit. Pellentesque quis laoreet urna.<br /> 
-								Phasellus nec erat odio. </h2>
-								<div class="rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>	
-								<div class="client">Alexander Frazier</div>
-								<div class="title">CEO & President, Company Inc.</div>
+								<div class="client">Sarah Partners</div>
+								<div class="title">Owner, Three Inc.</div>
 							</div>
 						</div>
 					</div>
@@ -514,7 +524,10 @@ potenti. Duis at faucibus ligula.
 		<script src="bower_components/jquery-waypoints/waypoints.min.js"></script>
 		<script src="bower_components/jquery-waypoints/shortcuts/sticky-elements/waypoints-sticky.min.js"></script>
 		<script src="bower_components/stellar.js/jquery.stellar.min.js"></script>
+		<script src="bower_components/jquery-prettyPhoto/js/jquery.prettyPhoto.js"></script>
 		<script>
+		
+			//Note: Disable all of these on mobile!
 		
 			// Stick Header Top Top
 			$('.navbar-wrapper').waypoint('sticky');
@@ -528,6 +541,24 @@ potenti. Duis at faucibus ligula.
 		 	$.stellar({
 				horizontalScrolling: false,
 				verticalOffset: 40
+			});
+			
+			// Initialize PrettyPhoto for gallery
+			$("a[rel^='prettyPhoto']").prettyPhoto({
+				theme: 'facebook',
+				slideshow:5000, 
+				autoplay_slideshow:false,
+				show_title: false,
+				theme: 'light_square',
+				social_tools: false,
+				overlay_gallery: false 
+			});
+			
+			// Expand Portfolio Button
+			
+			$(".toggle-portfolio").click(function(event) {
+				event.preventDefault();
+				$("a[rel^='prettyPhoto']:first").click();
 			});
 		</script>
 		

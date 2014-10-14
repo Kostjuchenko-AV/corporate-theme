@@ -343,6 +343,10 @@ header {
 		}
 	}
 	
+	.items > img {
+		min-width: 100%;
+	}
+	
 	.item {
 		height: 500px;
 		background-color: @gray;
@@ -464,8 +468,37 @@ header {
 		margin-bottom: 5px;
 	}
 	
-	img {
+	.img-overlay {
+		background-color: @brand-primary;
+		display: block;
+		position: relative;
 		margin-bottom: 20px;
+		
+		i {
+			color: white;
+			display: none;
+			font-size: 48px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 1;
+			margin: auto;
+			width: 42px;
+			height: 44px;
+		}
+		
+		&:hover {
+			img {
+				opacity: .5;
+			}
+			
+			i {
+				display: block;
+			}
+		}
+		
 	}
 	
 	.tag {
