@@ -122,7 +122,7 @@ header .navbar-wrapper {
   background-color: white;
   color: #4a4a4a;
   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
-  height: 108px;
+  height: 110px;
   position: relative;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
@@ -188,7 +188,7 @@ header .navbar-wrapper .navbar-nav > li > a {
   color: #4a4a4a;
   font-size: 16px;
   padding: 13px 18px;
-  line-height: 1.5;
+  line-height: 25px;
   /* text-transform: uppercase; */
   -webkit-transition: padding 0.5s ease-in-out;
           transition: padding 0.5s ease-in-out;
@@ -648,9 +648,6 @@ header .navbar-wrapper .navbar-brand img {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 768px) {
-  header .navbar-wrapper {
-    height: 108px;
-  }
   header .navbar-wrapper .navbar-default {
     background-color: transparent;
   }
@@ -660,12 +657,8 @@ header .navbar-wrapper .navbar-brand img {
   header .navbar-wrapper .navbar-nav > li > a {
     border-bottom: 5px solid white;
     font-weight: 400;
-    color: #4a4a4a;
-    font-size: 16px;
     padding: 40px 0;
     margin: 0 18px;
-    -webkit-transition: padding 0.5s ease-in-out;
-            transition: padding 0.5s ease-in-out;
   }
   header .navbar-wrapper .navbar-nav > li.active > a {
     border-bottom-color: #255a8a;
@@ -700,7 +693,7 @@ header .navbar-wrapper .navbar-brand img {
     top: 0;
   }
   header.shrink-header .navbar-wrapper {
-    height: 70px;
+    height: 72px;
   }
   header.shrink-header .navbar-wrapper .navbar-toggle {
     margin-top: 14px;
