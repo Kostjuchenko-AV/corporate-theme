@@ -25,6 +25,5 @@
   },
   "_source": "git://github.com/imakewebthings/jquery-waypoints.git",
   "_target": "~2.0.5",
-  "_originalSource": "jquery-waypoints",
-  "_direct": true
+  "_originalSource": "jquery-waypoints"
 }

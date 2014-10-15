@@ -271,6 +271,7 @@ header {
 				left: 0;
 				border: none;
 				padding: 0;
+				animation-duration: .5s;
 				
 				> li > a {
 					padding: 13px 18px;
@@ -374,6 +375,7 @@ header {
 	
 	.carousel-control { 
 		display: none;
+		width: 5%;
 	}
 		
 }	
@@ -906,7 +908,14 @@ header {
 			}
 			
 		}
-	}			
+	}		
+	
+	#main-carousel {
+		
+		&:hover .carousel-control { 
+			display: block;
+		}
+	}	
 	
 	#testimonial-carousel {
 			
@@ -946,7 +955,19 @@ header {
 			line-height: 48px;
 		}
 	}	
+	
 }
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-md-min) {
+	
+	#main-carousel {
+			
+		.carousel-image {
+			bottom: 100px;
+		}	
+	}	
+}
+
 
 @media (min-width: @screen-md-min) and (max-width: @screen-lg-min) {
 	
@@ -958,14 +979,5 @@ header {
 	}	
 }
 
-@media (min-width: @screen-lg-min) {
 
-	#main-carousel {
-		
-		&:hover .carousel-control { 
-			display: block;
-		}
-	}
-	
-}
 

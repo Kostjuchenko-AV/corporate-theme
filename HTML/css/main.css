@@ -219,6 +219,8 @@ header .navbar-wrapper .navbar-nav .dropdown-menu {
   left: 0;
   border: none;
   padding: 0;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
 }
 header .navbar-wrapper .navbar-nav .dropdown-menu > li > a {
   padding: 13px 18px;
@@ -306,6 +308,7 @@ header .navbar-wrapper .navbar-brand img {
 }
 #main-carousel .carousel-control {
   display: none;
+  width: 5%;
 }
 /* CTA STYLING
 -------------------------------------------------- */
@@ -715,6 +718,9 @@ header .navbar-wrapper .navbar-brand img {
   header.shrink-header .navbar-wrapper .navbar-nav > li > a {
     padding: 21px 0;
   }
+  #main-carousel:hover .carousel-control {
+    display: block;
+  }
   #testimonial-carousel .item h2 {
     font-size: 30px !important;
     line-height: 36px;
@@ -737,13 +743,13 @@ header .navbar-wrapper .navbar-brand img {
     line-height: 48px;
   }
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-carousel .carousel-image {
+    bottom: 100px;
+  }
+}
 @media (min-width: 992px) and (max-width: 1200px) {
   #main-carousel .carousel-image {
     bottom: 60px;
-  }
-}
-@media (min-width: 1200px) {
-  #main-carousel:hover .carousel-control {
-    display: block;
   }
 }
