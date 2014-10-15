@@ -169,7 +169,7 @@
 					</div>
 					
 					<div class="item">
-						<img src="img/main-slider-1.jpg" alt="main-slider-1" />
+						<img src="img/main-slider-3.jpg" alt="main-slider-3" />
 						<div class="container">
 							<div class="row">
 								<div class="carousel-caption col-sm-6">
@@ -531,22 +531,11 @@ potenti. Duis at faucibus ligula.
 			$('.cta').waypoint(function(direction) {
 			  $('header').toggleClass('shrink-header', direction === 'down');
 			}, { offset: 108 });
-			
-			// Fade In Nav Dropdown on Hover
-			/*
-$('.navbar-default .navbar-nav > li.dropdown').hover(function() {
-				$('ul.dropdown-menu', this).stop(true, true).fadeIn('fast');
-				$(this).addClass('open');
-			}, function() {
-				$('ul.dropdown-menu', this).stop(true, true).fadeOut('fast');
-				$(this).removeClass('open');
-			});
-*/
 				
 			// Initialize Main Carousel
 			$('.carousel').carousel({
 				interval: 15000
-			})
+			});
 		 	
 		 	// Parallax Background Effect
 		 	$.stellar({

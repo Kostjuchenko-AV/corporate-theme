@@ -295,9 +295,6 @@ header .navbar-wrapper .navbar-brand img {
   -webkit-animation-delay: .5s;
           animation-delay: .5s;
 }
-#main-carousel .item > img {
-  min-width: 100%;
-}
 #main-carousel .item {
   height: 500px;
   background-color: #4a4a4a;
