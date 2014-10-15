@@ -164,7 +164,7 @@ header {
 		background-color: white;
 		color: @gray;
 		box-shadow: 0 1px 15px rgba(0,0,0,.1);
-		height: 70px;
+		height: 108px;
 		position: relative;
 		transform: translate3d(0,0,0);
 		width: 100%;
@@ -177,8 +177,8 @@ header {
 		}
 		
 		.navbar {
-		  padding-right: 15px;
-		  padding-left: 15px;
+		  padding-right: 0;
+		  padding-left: 0;
 		  border: none;
 		  background-color: white;
 		}
@@ -193,7 +193,7 @@ header {
 			color: @gray;
 			box-shadow: inset 0 1px 0 @gray-lighter;
 			text-shadow: 0 1px 0 #fff;
-			margin: 36px 16px 34px;
+			margin: 36px 26px 34px;
 			transition: margin .5s ease-in-out;
 			transition: background .1s ease-in-out 0s;
 			padding: 8px 14px 10px;
@@ -222,21 +222,25 @@ header {
 			
 			> li {
 				border-bottom: 1px solid @gray-light;
+				
+				&:last-child {
+					border-bottom: none;
+				}
 			}
 					
 			> li > a {
-				text-transform: uppercase;
 				font-weight: 600;
-				background-color: white;
+				background-color: transparent;
 				color: @gray;
 				font-size: @font-size-medium;
 				padding: 13px 18px;
 				line-height: 1.5;
+				/* text-transform: uppercase; */
 				transition: padding .5s ease-in-out;
 			}
 			
 			> li.active > a, > li:hover > a {
-				background-color: white !important;
+				background-color: transparent !important;
 				color: @brand-primary;
 			}
 			
@@ -264,7 +268,6 @@ header {
 				> li > a {
 					padding: 13px 18px;
 					border-top: 1px solid @gray-light;
-					text-transform: uppercase;
 					
 					&:before{
 						content: "- ";
@@ -274,10 +277,12 @@ header {
 		}
 		
 		.navbar-brand {
-			margin-top: 32px;
+			margin-top: 36px;
 			padding: 0;
+			transition: margin .5s ease-in-out;
 			
 			img {
+				margin-left: 15px;
 				max-height: 44px;
 				transition: max-height .5s ease-in-out;
 			}
@@ -814,7 +819,8 @@ header {
 						font-weight: 400;
 						color: @gray;
 						font-size: @font-size-medium;
-						padding: 40px 15px;
+						padding: 40px 0;
+						margin: 0 18px;
 						transition: padding .5s ease-in-out;				
 					}			
 					
@@ -827,12 +833,13 @@ header {
 					}
 					
 					.dropdown-menu {
-						left: 0;
+						left: 18px;
 						border: none;
 						border-radius: 0;
 						border-top: 5px solid #255a8a;
 						margin-top: -5px;
 						padding: 0;
+						min-width: 180px;
 						
 						> li > a {
 							padding: 13px 18px;
@@ -878,7 +885,7 @@ header {
 					}
 					
 					.navbar-nav > li > a {
-						padding: 21px 15px;
+						padding: 21px 0;
 					}	
 				}
 				
