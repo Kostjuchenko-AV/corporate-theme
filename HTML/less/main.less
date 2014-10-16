@@ -72,6 +72,7 @@ h2.title {
 }
 
 h3.title {
+	color: @gray-dark;
 	margin-bottom: 36px;
 	/* text-transform: uppercase; */
 	
@@ -80,12 +81,16 @@ h3.title {
 	}
 }
 
-h4.title {
-	margin-bottom: 26px;
-	/* text-transform: uppercase; */
+h4 {
+	margin-top: 20px;
 	
-	span {
-		font-weight: 300;
+	&.title {
+		margin-bottom: 26px;
+		/* text-transform: uppercase; */
+		
+		span {
+			font-weight: 300;
+		}
 	}
 }
 
@@ -103,6 +108,13 @@ a:hover {
 	color: @link-color;
 	text-decoration: none;
 }
+
+ul {
+
+	li {
+		line-height: 24px;
+	}
+}	
 
 .btn {
 	border-radius: 0;
@@ -344,7 +356,15 @@ header {
 	}
 	
 	h2 {
-		margin-top: 15px;
+		border-bottom: 5px solid @gray-light;
+		color: @gray-dark;
+		display: inline-block;
+		/* font-size: 36px; */
+		font-weight: 300;
+		margin: 0 0 -25px;
+		min-height: 36px;
+		line-height: 46px;
+		padding: 0 0 16px;
 	}
 }
 
@@ -707,149 +727,168 @@ header {
 	
 }
 
+/*  FEATURED STYLING
+-------------------------------------------------- */
+
+.fontawesome-icon-list {
+	margin-top: 26px;
+	
+	[class*="col-md-"] {
+		height: 25px;
+	}
+}
+
 
 /*  FOOTER STYLING
 -------------------------------------------------- */
-.footer-top {
-	background-color: @gray-dark;	
-	color: white;
-	padding: @section-padding;
-	
-	.contact-block {
+footer {
+	margin-top: 26px;
+
+	.footer-top {
+		background-color: @gray-dark;	
+		color: white;
+		padding: @section-padding;
 		
-		li {
-			margin-bottom: 15px;
-			line-height: 18px;
-			position: relative;
-			padding-left: 24px;
+		h4 {
+			color: white;
+		}
+		
+		.contact-block {
 			
-			i {
+			li {
+				margin-bottom: 15px;
+				line-height: 18px;
+				position: relative;
+				padding-left: 24px;
+				
+				i {
+					display: inline-block;
+					width: 24px;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+				
+				span {
+					color: @gray-light;
+				}
+				
+				a {
+					color: white;
+					transition: @tras-all-fast;
+				}
+				
+				a:hover {
+					color: @brand-primary-light;
+				}
+			}	
+		}
+		
+		.twitter-block {
+			margin-top: 36px;
+			
+			li {
+				margin-bottom: 15px;
+				line-height: 18px;
+				position: relative;
+				padding-left: 34px;
+				padding-right: 10px;
+				
+				a {
+					color: @gray-light;
+				}
+				
+				.fa-stack {
+					position: absolute;
+					top: -3px;
+					left: 0;
+				}
+				
+				.fa-circle {
+					color: @brand-primary;
+				}
+				
+				time {
+					color: @gray-light;
+					display: block;
+					font-size: 10px;
+					font-style: italic;
+					margin-top: 5px;
+				}
+			}
+		}
+		
+		.newsletter-block {
+			margin-top: 36px;
+			
+			p {
+				margin-bottom: 15px;
+				line-height: 18px;
+			}
+			
+			.control-label {
+				text-indent: -9999px;
+			}
+			
+			input {
 				display: inline-block;
-				width: 24px;
-				position: absolute;
-				top: 0;
-				left: 0;
+				border-radius: 0;
+				background-color: @gray;
+				box-shadow: none;
+				border: none;
+				height: 40px;
+				color: white;
+				width: 175px;
 			}
 			
-			span {
-				color: @gray-light;
+			button {
+				display: inline-block;
+				padding: 10px 20px;
+				font-size: @font-size-base;
+				transition: @tras-all-fast;
+				
+				&:hover {
+					color: @brand-primary;
+					background-color: white;
+				}
 			}
+			
+			small {
+				color: @gray-light;
+				display: block;
+				font-size: 10px;
+				font-style: italic;
+				margin-top: 10px;
+			}
+		}
+		
+	}
+	
+	.footer-bottom {
+		background-color: @gray;	
+		color: white;
+		padding: 26px;
+		text-align: center;
+		
+		p {
+			font-size: @font-size-small;
+			margin: 10px 0 0;
+		}
+		
+		.follow {
+			margin-top: 20px;
+			width: 100%;
 			
 			a {
 				color: white;
+				font-size: 20px;
+				padding: 0 8px;
 				transition: @tras-all-fast;
 			}
 			
 			a:hover {
 				color: @brand-primary-light;
 			}
-		}	
-	}
-	
-	.twitter-block {
-		margin-top: 36px;
-		
-		li {
-			margin-bottom: 15px;
-			line-height: 18px;
-			position: relative;
-			padding-left: 34px;
-			padding-right: 10px;
-			
-			a {
-				color: @gray-light;
-			}
-			
-			.fa-stack {
-				position: absolute;
-				top: -3px;
-				left: 0;
-			}
-			
-			.fa-circle {
-				color: @brand-primary;
-			}
-			
-			time {
-				color: @gray-light;
-				display: block;
-				font-size: 10px;
-				font-style: italic;
-				margin-top: 5px;
-			}
-		}
-	}
-	
-	.newsletter-block {
-		margin-top: 36px;
-		
-		p {
-			margin-bottom: 15px;
-			line-height: 18px;
-		}
-		
-		.control-label {
-			text-indent: -9999px;
-		}
-		
-		input {
-			display: inline-block;
-			border-radius: 0;
-			background-color: @gray;
-			box-shadow: none;
-			border: none;
-			height: 40px;
-			color: white;
-			width: 175px;
-		}
-		
-		button {
-			display: inline-block;
-			padding: 10px 20px;
-			font-size: @font-size-base;
-			transition: @tras-all-fast;
-			
-			&:hover {
-				color: @brand-primary;
-				background-color: white;
-			}
-		}
-		
-		small {
-			color: @gray-light;
-			display: block;
-			font-size: 10px;
-			font-style: italic;
-			margin-top: 10px;
-		}
-	}
-	
-}
-
-.footer-bottom {
-	background-color: @gray;	
-	color: white;
-	padding: 26px;
-	text-align: center;
-	
-	p {
-		font-size: @font-size-small;
-		margin: 10px 0 0;
-	}
-	
-	.follow {
-		margin-top: 20px;
-		width: 100%;
-		
-		a {
-			color: white;
-			font-size: 20px;
-			padding: 0 8px;
-			transition: @tras-all-fast;
-		}
-		
-		a:hover {
-			color: @brand-primary-light;
 		}
 	}
 }

@@ -40,11 +40,15 @@ h2.title span {
   font-weight: 300;
 }
 h3.title {
+  color: #404041;
   margin-bottom: 36px;
   /* text-transform: uppercase; */
 }
 h3.title span {
   font-weight: 300;
+}
+h4 {
+  margin-top: 20px;
 }
 h4.title {
   margin-bottom: 26px;
@@ -64,6 +68,9 @@ a {
 a:hover {
   color: #255a8a;
   text-decoration: none;
+}
+ul li {
+  line-height: 24px;
 }
 .btn {
   border-radius: 0;
@@ -279,7 +286,15 @@ header .navbar-wrapper .navbar-brand img {
   padding: 0;
 }
 .title-bar h2 {
-  margin-top: 15px;
+  border-bottom: 5px solid #cacaca;
+  color: #404041;
+  display: inline-block;
+  /* font-size: 36px; */
+  font-weight: 300;
+  margin: 0 0 -25px;
+  min-height: 36px;
+  line-height: 46px;
+  padding: 0 0 16px;
 }
 /* MAIN CAROUSEL STYLING
 -------------------------------------------------- */
@@ -561,76 +576,90 @@ header .navbar-wrapper .navbar-brand img {
 .featured p {
   font-size: 16px;
 }
+/*  FEATURED STYLING
+-------------------------------------------------- */
+.fontawesome-icon-list {
+  margin-top: 26px;
+}
+.fontawesome-icon-list [class*="col-md-"] {
+  height: 25px;
+}
 /*  FOOTER STYLING
 -------------------------------------------------- */
-.footer-top {
+footer {
+  margin-top: 26px;
+}
+footer .footer-top {
   background-color: #404041;
   color: white;
   padding: 36px 0;
 }
-.footer-top .contact-block li {
+footer .footer-top h4 {
+  color: white;
+}
+footer .footer-top .contact-block li {
   margin-bottom: 15px;
   line-height: 18px;
   position: relative;
   padding-left: 24px;
 }
-.footer-top .contact-block li i {
+footer .footer-top .contact-block li i {
   display: inline-block;
   width: 24px;
   position: absolute;
   top: 0;
   left: 0;
 }
-.footer-top .contact-block li span {
+footer .footer-top .contact-block li span {
   color: #cacaca;
 }
-.footer-top .contact-block li a {
+footer .footer-top .contact-block li a {
   color: white;
   -webkit-transition: all 0.1s ease-in-out 0s;
           transition: all 0.1s ease-in-out 0s;
 }
-.footer-top .contact-block li a:hover {
+footer .footer-top .contact-block li a:hover {
   color: #6fa7d9;
 }
-.footer-top .twitter-block {
+footer .footer-top .twitter-block {
   margin-top: 36px;
 }
-.footer-top .twitter-block li {
+footer .footer-top .twitter-block li {
   margin-bottom: 15px;
   line-height: 18px;
   position: relative;
   padding-left: 34px;
   padding-right: 10px;
 }
-.footer-top .twitter-block li a {
+footer .footer-top .twitter-block li a {
   color: #cacaca;
 }
-.footer-top .twitter-block li .fa-stack {
+footer .footer-top .twitter-block li .fa-stack {
   position: absolute;
   top: -3px;
   left: 0;
 }
-.footer-top .twitter-block li .fa-circle {
+footer .footer-top .twitter-block li .fa-circle {
   color: #255a8a;
 }
-.footer-top .twitter-block li time {
+footer .footer-top .twitter-block li time {
   color: #cacaca;
   display: block;
   font-size: 10px;
   font-style: italic;
   margin-top: 5px;
 }
-.footer-top .newsletter-block {
+footer .footer-top .newsletter-block {
   margin-top: 36px;
 }
-.footer-top .newsletter-block p {
+footer .footer-top .newsletter-block p {
   margin-bottom: 15px;
   line-height: 18px;
 }
-.footer-top .newsletter-block .control-label {
+footer .footer-top .newsletter-block .control-label {
   text-indent: -9999px;
 }
-.footer-top .newsletter-block input {
+footer .footer-top .newsletter-block input {
   display: inline-block;
   border-radius: 0;
   background-color: #4a4a4a;
@@ -640,46 +669,46 @@ header .navbar-wrapper .navbar-brand img {
   color: white;
   width: 175px;
 }
-.footer-top .newsletter-block button {
+footer .footer-top .newsletter-block button {
   display: inline-block;
   padding: 10px 20px;
   font-size: 14px;
   -webkit-transition: all 0.1s ease-in-out 0s;
           transition: all 0.1s ease-in-out 0s;
 }
-.footer-top .newsletter-block button:hover {
+footer .footer-top .newsletter-block button:hover {
   color: #255a8a;
   background-color: white;
 }
-.footer-top .newsletter-block small {
+footer .footer-top .newsletter-block small {
   color: #cacaca;
   display: block;
   font-size: 10px;
   font-style: italic;
   margin-top: 10px;
 }
-.footer-bottom {
+footer .footer-bottom {
   background-color: #4a4a4a;
   color: white;
   padding: 26px;
   text-align: center;
 }
-.footer-bottom p {
+footer .footer-bottom p {
   font-size: 12px;
   margin: 10px 0 0;
 }
-.footer-bottom .follow {
+footer .footer-bottom .follow {
   margin-top: 20px;
   width: 100%;
 }
-.footer-bottom .follow a {
+footer .footer-bottom .follow a {
   color: white;
   font-size: 20px;
   padding: 0 8px;
   -webkit-transition: all 0.1s ease-in-out 0s;
           transition: all 0.1s ease-in-out 0s;
 }
-.footer-bottom .follow a:hover {
+footer .footer-bottom .follow a:hover {
   color: #6fa7d9;
 }
 /* RESPONSIVE CSS

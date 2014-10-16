@@ -52,13 +52,13 @@
 
 						<p class="lead">Maecenas pharetra dui vitae posuere tempor. Curabitur malesuada, turpis nec auctor ullamcorper, metus tortor. </p>
 
-						<p>Mauris <a rel="tooltip" data-placement="top" href="#" data-original-title="Tooltip!">tooltip</a> aliquet <a href="#">link</a> ultricies ante, non <strong>bold</strong> faucibus ante gravida sed. Sed ultrices <em>rendered as italicized text</em> pellentesque purus, vulputate volutpat ipsum hendrerit sed neque..</p>
+						<p>Maecenas pharetra dui <a href="#">link</a> ultricies ante, non <strong>bold</strong> faucibus ante gravida sed. Sed ultrices <em>rendered as italicized text</em> pellentesque purus, vulputate volutpat ipsum hendrerit sed neque..</p>
 
 						<p>
 						  <small>This line of text is meant to be treated as fine print.</small>
 						</p>
 
-						<p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+						<p class="text-muted">Maecenas pharetra dui vitae posuere tempor. Curabitur malesuada.</p>
 						<p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 						<p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
 						<p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
@@ -102,7 +102,7 @@
 				<div class="row">
 					<div class="col-md-6">
 
-						<h4>Unordered</h4>
+						<h4>Unordered List</h4>
 
 						<ul>
 							<li>Lorem ipsum dolor sit amet</li>
@@ -123,7 +123,7 @@
 							<li>Eget porttitor lorem</li>
 						</ul>
 
-						<h4>Unstyled</h4>
+						<h4>Unstyled List</h4>
 
 						<ul class="list-unstyled">
 							<li>Lorem ipsum dolor sit amet</li>
@@ -135,10 +135,10 @@
 							<li>Eget porttitor lorem</li>
 						</ul>
 
-						<h4>Description</h4>
+						<h4>Description list</h4>
 
 						<dl>
-							<dt>Description lists</dt>
+							<dt>Lorem ipsum dolor</dt>
 							<dd>A description list is perfect for defining terms.</dd>
 							<dt>Euismod</dt>
 							<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
@@ -150,7 +150,7 @@
 					</div>
 					<div class="col-md-6">
 
-						<h4>Ordered</h4>
+						<h4>Ordered List</h4>
 
 						<ol>
 							<li>Lorem ipsum dolor sit amet</li>
@@ -167,19 +167,19 @@
 							<li>Aenean sit amet erat nunc</li>
 						</ol>
 
-						<h4>Icons</h4>
+						<h4>List With Icons</h4>
 
 						<ul class="list icons list-unstyled">
 							<li><i class="fa fa-check"></i> Fusce sit amet orci quis arcu vestibulum vestibulum sed ut felis. Phasellus in risus quis lectus iaculis vulputate id quis nisl.</li>
-							<li><i class="fa fa-cloud-download"></i> Phasellus in risus quis lectus iaculis vulputate id quis nisl.</li>
-							<li><i class="fa fa-envelope-alt"></i> Fusce sit amet orci quis arcu vestibulum vestibulum sed ut felis. </li>
-							<li><i class="fa fa-film"></i> Phasellus in risus quis lectus iaculis vulputate id quis nisl.</li>
-							<li><a href="feature-icons.html">...more icons</a></li>
+							<li><i class="fa fa-angle-double-right"></i> Phasellus in risus quis lectus iaculis vulputate id quis nisl.</li>
+							<li><i class="fa fa-arrow-right"></i> Fusce sit amet orci quis arcu vestibulum vestibulum sed ut felis. </li>
+							<li><i class="fa fa-caret-right "></i> Phasellus in risus quis lectus iaculis vulputate id quis nisl.</li>
+							<li class="text-right"><a href="icons.php">View all icons</a></li>
 						</ul>
 
-						<h4>Inline</h4>
+						<h4>Inline List</h4>
 
-						<ul class="inline">
+						<ul class="list-inline">
 							<li>Lorem ipsum</li>
 							<li>Phasellus iaculis</li>
 							<li>Nulla volutpat</li>
@@ -198,8 +198,73 @@
 
 				<div class="row">
 					<div class="col-md-12">
+					
+						<h4>Basic Table</h4>
 
-						<h4>Striped</h4>
+						<table class="table">
+							<thead>
+								<tr>
+									<th>
+										#
+									</th>
+									<th>
+										First Name
+									</th>
+									<th>
+										Last Name
+									</th>
+									<th>
+										Username
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										1
+									</td>
+									<td>
+										Mark
+									</td>
+									<td>
+										Otto
+									</td>
+									<td>
+										@mdo
+									</td>
+								</tr>
+								<tr>
+									<td>
+										2
+									</td>
+									<td>
+										Jacob
+									</td>
+									<td>
+										Thornton
+									</td>
+									<td>
+										@fat
+									</td>
+								</tr>
+								<tr>
+									<td>
+										3
+									</td>
+									<td>
+										Larry
+									</td>
+									<td>
+										the Bird
+									</td>
+									<td>
+										@twitter
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<h4>Striped Rows</h4>
 
 						<table class="table table-striped">
 							<thead>
@@ -264,7 +329,7 @@
 							</tbody>
 						</table>
 
-						<h4>Bordered</h4>
+						<h4>Bordered Table</h4>
 
 						<table class="table table-bordered">
 							<thead>
@@ -333,7 +398,7 @@
 				</div>
 
 			</div>
-			<!--End Marketing Section-->	
+			<!--End Typography Section-->	
 			
 		<?php include('includes/footer.php'); ?>
 			

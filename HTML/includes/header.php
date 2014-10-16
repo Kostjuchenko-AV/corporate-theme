@@ -87,7 +87,7 @@
 												<a href="#">Header Dark</a>
 												<a href="#">Footer Light</a>
 												<a href="#">Animations</a>
-												<a href="#">Icons</a>
+												<a href="icons.php">Icons</a>
 												<a href="#">Grid System</a>
 												<a href="typography.php">Typography</a>
 												<a href="#">Pricing Table</a>
