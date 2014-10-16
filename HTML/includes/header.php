@@ -60,7 +60,7 @@
 									 <i class="fa fa-bars"></i>
 								 </button> 
 								 <!--Begin Logo -->
-								 <a class="navbar-brand" href="#">
+								 <a class="navbar-brand" href="/">
 								 	<img src="img/logo.png" title="Amity" alt="Amity" />
 								 </a>
 								 <!--End Logo -->
@@ -75,6 +75,22 @@
 										<ul class="dropdown-menu animated fadeIn">
 											<li>
 												<a href="#">Dropdown Link</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										 	Features <strong class="caret"></strong>
+										</a>
+										<ul class="dropdown-menu animated fadeIn">
+											<li>
+												<a href="#">Header Dark</a>
+												<a href="#">Footer Light</a>
+												<a href="#">Animations</a>
+												<a href="#">Icons</a>
+												<a href="#">Grid System</a>
+												<a href="typography.php">Typography</a>
+												<a href="#">Pricing Table</a>
 											</li>
 										</ul>
 									</li>
@@ -96,20 +112,6 @@
 												<a href="#">Dropdown Link</a>
 											</li>
 										</ul>	
-									</li>
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-										 	Features <strong class="caret"></strong>
-										</a>
-										<ul class="dropdown-menu animated fadeIn">
-											<li>
-												<a href="#">Header Options</a>
-												<a href="#">Footer Options</a>
-												<a href="#">Animations</a>
-												<a href="#">Icons</a>
-												<a href="#">Typography</a>
-											</li>
-										</ul>
 									</li>
 									<li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown">

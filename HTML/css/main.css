@@ -26,6 +26,12 @@ h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: normal;
+  margin-bottom: 20px;
+}
+h3,
+h4,
+h5 {
+  color: #255a8a;
 }
 h1.title span {
   font-weight: 300;
@@ -34,22 +40,22 @@ h2.title span {
   font-weight: 300;
 }
 h3.title {
-  font-size: 20px;
-  padding-bottom: 26px;
-  text-transform: uppercase;
+  margin-bottom: 36px;
+  /* text-transform: uppercase; */
 }
 h3.title span {
   font-weight: 300;
 }
 h4.title {
-  padding-bottom: 26px;
-  text-transform: uppercase;
+  margin-bottom: 26px;
+  /* text-transform: uppercase; */
 }
 h4.title span {
   font-weight: 300;
 }
 p {
   margin: 0 10px 10px 0;
+  line-height: 24px;
 }
 a {
   color: #255a8a;
@@ -70,6 +76,23 @@ a:hover {
 }
 .btn b {
   font-weight: 600;
+}
+.drop-cap:first-letter {
+  float: left;
+  font-size: 70px;
+  line-height: 60px;
+  padding: 4px 8px 4px 4px;
+  margin-right: 6px;
+  margin-top: -3px;
+  display: inline-block;
+  color: #255a8a;
+}
+.drop-cap.alt:first-letter {
+  color: #fff;
+  background: #255a8a;
+  margin-top: 8px;
+  padding: 0 8px 3px 4px;
+  border-radius: 0;
 }
 /* HEADER STYLES
 -------------------------------------------------- */
@@ -241,6 +264,23 @@ header .navbar-wrapper .navbar-brand img {
   -webkit-transition: max-height 0.5s ease-in-out;
           transition: max-height 0.5s ease-in-out;
 }
+/* TITLE BAR STYLING
+-------------------------------------------------- */
+.title-bar {
+  background-color: #f2f3f4;
+  margin-bottom: 36px;
+  min-height: 50px;
+  padding: 20px 0;
+  position: relative;
+}
+.title-bar .breadcrumb {
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+.title-bar h2 {
+  margin-top: 15px;
+}
 /* MAIN CAROUSEL STYLING
 -------------------------------------------------- */
 #main-carousel {
@@ -265,7 +305,6 @@ header .navbar-wrapper .navbar-brand img {
 }
 #main-carousel .carousel-caption p {
   font-size: 16px;
-  line-height: 24px;
   margin-bottom: 36px;
 }
 #main-carousel .carousel-image {
@@ -360,7 +399,6 @@ header .navbar-wrapper .navbar-brand img {
   font-size: 20px;
 }
 .marketing p {
-  line-height: 24px;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -451,9 +489,9 @@ header .navbar-wrapper .navbar-brand img {
   margin-bottom: 30px;
 }
 #testimonial-carousel .carousel-inner .item .client {
-  font-size: 18px;
-  line-height: 24px;
-  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 28px;
+  /* text-transform: uppercase; */
   margin-bottom: 10px;
 }
 #testimonial-carousel .carousel-inner .item .title {
@@ -522,7 +560,6 @@ header .navbar-wrapper .navbar-brand img {
 }
 .featured p {
   font-size: 16px;
-  line-height: 24px;
 }
 /*  FOOTER STYLING
 -------------------------------------------------- */

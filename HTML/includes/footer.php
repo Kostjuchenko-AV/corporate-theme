@@ -89,9 +89,9 @@
 			$('.navbar-wrapper').waypoint('sticky');
 	
 			// Shrink Header
-			$('.cta').waypoint(function(direction) {
-			  $('header').toggleClass('shrink-header', direction === 'down');
-			}, { offset: 108 });
+			$('header').waypoint(function(direction) {
+			  $(this).toggleClass('shrink-header', direction === 'down');
+			}, { offset: -55 });
 				
 			// Initialize Main Carousel
 			$('.carousel').carousel({

@@ -293,5 +293,5 @@ potenti. Duis at faucibus ligula.
 			</div>	
 			<!--End Featured Section-->
 			
-			<?php include('includes/footer.php'); ?>
+		<?php include('includes/footer.php'); ?>
 			
