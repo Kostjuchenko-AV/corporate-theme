@@ -88,7 +88,7 @@
 												<a href="#">Footer Light</a>
 												<a href="#">Animations</a>
 												<a href="icons.php">Icons</a>
-												<a href="#">Grid System</a>
+												<a href="grid-system.php">Grid System</a>
 												<a href="typography.php">Typography</a>
 												<a href="#">Pricing Table</a>
 											</li>

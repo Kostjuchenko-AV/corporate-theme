@@ -584,6 +584,14 @@ header .navbar-wrapper .navbar-brand img {
 .fontawesome-icon-list [class*="col-md-"] {
   height: 25px;
 }
+.bootstrap-grid .grid-block {
+  background-color: #EEE;
+  line-height: 40px;
+  min-height: 40px;
+  text-align: center;
+  border: 1px solid #FFF;
+  display: block;
+}
 /*  FOOTER STYLING
 -------------------------------------------------- */
 footer {

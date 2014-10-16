@@ -1194,26 +1194,24 @@
 								<section id="spinner">
 								<h2 class="page-header">Spinner Icons</h2>
 								<div class="alert alert-success">
-									<ul class="fa-ul">
 										<i class="fa fa-info-circle fa-lg"></i>
-										These icons work great with the <code>fa-spin</code> class. Check out the <a class="alert-link" href="../examples/#spinning">spinning icons example</a>.
-									</ul>
+										These icons work great with the <code>fa-spin</code> class.
 								</div>
 								<div class="row fontawesome-icon-list">
 									<div class="col-md-3 col-sm-4">
-										<i class="fa fa-circle-o-notch"></i> fa-circle-o-notch
+										<i class="fa fa-circle-o-notch fa-spin"></i> fa-circle-o-notch
 									</div>
 									<div class="col-md-3 col-sm-4">
-										<i class="fa fa-cog"></i> fa-cog
+										<i class="fa fa-cog fa-spin"></i> fa-cog
 									</div>
 									<div class="col-md-3 col-sm-4">
-										<i class="fa fa-gear"></i> fa-gear <span class="text-muted">(alias)</span>
+										<i class="fa fa-gear fa-spin"></i> fa-gear <span class="text-muted">(alias)</span>
 									</div>
 									<div class="col-md-3 col-sm-4">
-										<i class="fa fa-refresh"></i> fa-refresh
+										<i class="fa fa-refresh fa-spin"></i> fa-refresh
 									</div>
 									<div class="col-md-3 col-sm-4">
-										<i class="fa fa-spinner"></i> fa-spinner
+										<i class="fa fa-spinner fa-spin"></i> fa-spinner
 									</div>
 								</div>
 								</section>
@@ -1757,9 +1755,6 @@
 										<li>All brand icons are trademarks of their respective owners.</li>
 										<li>The use of these trademarks does not indicate endorsement of the trademark holder by Font Awesome, nor vice versa.</li>
 									</ul>
-								</div>
-								<div class="alert alert-warning">
-									<i class="fa fa-warning"></i> Warning! Apparently, Adblock Plus can remove Font Awesome brand icons with their "Remove Social Media Buttons" setting. We will not use hacks to force them to display. Please <a class="alert-link" href="https://adblockplus.org/en/bugs">report an issue with Adblock Plus</a> if you believe this to be an error. To work around this, you'll need to modify the social icon class names.
 								</div>
 								<div class="row fontawesome-icon-list">
 									<div class="col-md-3 col-sm-4">
