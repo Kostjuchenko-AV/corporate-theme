@@ -131,6 +131,12 @@
 				});
 			}, { offset: 400 });
 			
+			// Animation Page
+			
+			$(".animated.repeat").click("on", function() {
+				$(this).addClass("clicked");
+			});
+			
 		</script>
 		
 	</body>

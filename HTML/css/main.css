@@ -592,6 +592,19 @@ header .navbar-wrapper .navbar-brand img {
   border: 1px solid #FFF;
   display: block;
 }
+.animated.repeat {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+.animated.repeat:hover,
+.animated.repeat .clicked {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
 /*  FOOTER STYLING
 -------------------------------------------------- */
 footer {

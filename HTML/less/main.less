@@ -751,6 +751,18 @@ header {
 }	
 
 
+
+.animated.repeat {
+	animation-play-state: paused;
+	animation-iteration-count: 1;
+	animation-delay: .2s;
+	
+	&:hover, .clicked {
+		animation-play-state: running;
+	}
+}	
+
+
 /*  FOOTER STYLING
 -------------------------------------------------- */
 footer {
