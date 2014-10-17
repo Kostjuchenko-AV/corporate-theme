@@ -18,6 +18,7 @@ body {
   position: relative;
   width: 100%;
 }
+/* Headers */
 h1,
 h2,
 h3,
@@ -47,16 +48,15 @@ h3.title {
 h3.title span {
   font-weight: 300;
 }
-h4 {
-  margin-top: 20px;
-}
 h4.title {
+  margin-top: 20px;
   margin-bottom: 26px;
   /* text-transform: uppercase; */
 }
 h4.title span {
   font-weight: 300;
 }
+/* Typography */
 p {
   margin: 0 10px 10px 0;
   line-height: 24px;
@@ -68,30 +68,6 @@ a {
 a:hover {
   color: #255a8a;
   text-decoration: none;
-}
-img.pull-left.padded {
-  margin: 0 20px 15px 0;
-}
-img.pull-right.padded {
-  margin: 0 0 15px 20px;
-}
-ul li {
-  line-height: 24px;
-}
-.btn {
-  border-radius: 0;
-  border: none;
-  padding: 10px 24px;
-  font-size: 16px;
-}
-.btn.btn-primary {
-  background-color: #255a8a;
-}
-.btn.btn-lg {
-  padding: 20px 48px;
-}
-.btn b {
-  font-weight: 600;
 }
 .drop-cap:first-letter {
   float: left;
@@ -109,6 +85,73 @@ ul li {
   margin-top: 8px;
   padding: 0 8px 3px 4px;
   border-radius: 0;
+}
+/* Images */
+img.pull-left.padded {
+  margin: 0 20px 15px 0;
+}
+img.pull-right.padded {
+  margin: 0 0 15px 20px;
+}
+/* Videos */
+.responsive-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+.responsive-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Lists */
+ul li {
+  line-height: 24px;
+}
+ul.nav-list > li {
+  margin: 0;
+  padding: 0;
+}
+ul.nav-list > li a {
+  border-bottom: 1px solid #f2f3f4;
+  color: #4a4a4a;
+  padding: 8px 15px;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+ul.nav-list > li a i {
+  margin-right: 5px;
+}
+/* Buttons */
+.btn {
+  border-radius: 0;
+  border: none;
+  padding: 10px 24px;
+  font-size: 16px;
+}
+.btn.btn-primary {
+  background-color: #255a8a;
+}
+.btn.btn-lg {
+  padding: 20px 48px;
+}
+.btn b {
+  font-weight: 600;
+}
+/* Aside */
+aside h3,
+aside h4,
+aside h5 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cacaca;
+}
+aside hr {
+  visibility: hidden;
 }
 /* HEADER STYLES
 -------------------------------------------------- */
@@ -449,6 +492,7 @@ header .navbar-wrapper .navbar-brand img {
   color: #4a4a4a;
 }
 .mini-portfolio h4 {
+  color: #4a4a4a;
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 5px;
@@ -585,39 +629,11 @@ header .navbar-wrapper .navbar-brand img {
 .featured p {
   font-size: 16px;
 }
-/*  FEATURE PAGES STYLING
+.featured + footer {
+  margin-top: 0;
+}
+/*  PRICING TABLE STYLING
 -------------------------------------------------- */
-/*Icons Page */
-.fontawesome-icon-list {
-  margin-top: 26px;
-}
-.fontawesome-icon-list [class*="col-md-"] {
-  height: 25px;
-}
-/*Grid Layout Page */
-.bootstrap-grid .grid-block {
-  background-color: #EEE;
-  line-height: 40px;
-  min-height: 40px;
-  text-align: center;
-  border: 1px solid #FFF;
-  display: block;
-}
-/*Animations Page */
-.animated.repeat {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
-}
-.animated.repeat:hover,
-.animated.repeat .clicked {
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-}
-/*Pricing Table Page */
 .pricing-table {
   color: #8a8a8a;
   margin: 10px 0;
@@ -715,18 +731,37 @@ header .navbar-wrapper .navbar-brand img {
   position: absolute;
   right: 0;
 }
-/* Responsive */
-@media (max-width: 767px) {
-  /* Pricing Tables */
-  .pricing-table {
-    margin-left: 0px;
-  }
-  .pricing-table .plan {
-    margin-right: 0;
-  }
-  html.boxed .pricing-table {
-    margin-left: 0;
-  }
+/*  FEATURE PAGES STYLING
+-------------------------------------------------- */
+/* Icons Page */
+.fontawesome-icon-list {
+  margin-top: 26px;
+}
+.fontawesome-icon-list [class*="col-md-"] {
+  height: 25px;
+}
+/* Grid Layout Page */
+.bootstrap-grid .grid-block {
+  background-color: #EEE;
+  line-height: 40px;
+  min-height: 40px;
+  text-align: center;
+  border: 1px solid #FFF;
+  display: block;
+}
+/* Animations Page */
+.animated.repeat {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+.animated.repeat:hover,
+.animated.repeat .clicked {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 /*  FOOTER STYLING
 -------------------------------------------------- */
@@ -740,6 +775,9 @@ footer .footer-top {
 }
 footer .footer-top h4 {
   color: white;
+}
+footer .footer-top h4.title {
+  margin-top: 26px;
 }
 footer .footer-top .contact-block li {
   margin-bottom: 15px;
@@ -765,9 +803,6 @@ footer .footer-top .contact-block li a {
 footer .footer-top .contact-block li a:hover {
   color: #6fa7d9;
 }
-footer .footer-top .twitter-block {
-  margin-top: 36px;
-}
 footer .footer-top .twitter-block li {
   margin-bottom: 15px;
   line-height: 18px;
@@ -792,9 +827,6 @@ footer .footer-top .twitter-block li time {
   font-size: 10px;
   font-style: italic;
   margin-top: 5px;
-}
-footer .footer-top .newsletter-block {
-  margin-top: 36px;
 }
 footer .footer-top .newsletter-block p {
   margin-bottom: 15px;
@@ -839,7 +871,7 @@ footer .footer-bottom {
 }
 footer .footer-bottom p {
   font-size: 12px;
-  margin: 10px 0 0;
+  margin: 5px 0 0;
 }
 footer .footer-bottom .follow {
   margin-top: 20px;
@@ -925,14 +957,10 @@ footer .footer-bottom .follow a:hover {
     font-size: 30px !important;
     line-height: 36px;
   }
-  .footer-top .twitter-block,
-  .footer-top .newsletter-block {
-    margin-top: 0;
-  }
-  .footer-bottom {
+  footer .footer-bottom {
     text-align: left;
   }
-  .footer-bottom .follow {
+  footer .footer-bottom .follow {
     margin: 0;
     width: auto;
   }
@@ -951,5 +979,13 @@ footer .footer-bottom .follow a:hover {
 @media (min-width: 992px) and (max-width: 1200px) {
   #main-carousel .carousel-image {
     bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .pricing-table {
+    margin-left: 0;
+  }
+  .pricing-table plan {
+    margin-right: 0;
   }
 }
