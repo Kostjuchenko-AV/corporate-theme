@@ -75,11 +75,14 @@ ul li {
 .btn {
   border-radius: 0;
   border: none;
-  padding: 20px 48px;
+  padding: 10px 24px;
   font-size: 16px;
 }
 .btn.btn-primary {
   background-color: #255a8a;
+}
+.btn.btn-lg {
+  padding: 20px 48px;
 }
 .btn b {
   font-weight: 600;
@@ -604,6 +607,116 @@ header .navbar-wrapper .navbar-brand img {
 .animated.repeat .clicked {
   -webkit-animation-play-state: running;
           animation-play-state: running;
+}
+.pricing-table {
+  color: #8a8a8a;
+  margin: 10px 0;
+  padding: 0 15px;
+  text-align: center;
+}
+.pricing-table [class*="col-md-"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+.pricing-table .plan {
+  border: 1px solid #e3e3e3;
+  margin-bottom: 36px;
+  margin-right: 0;
+  padding: 20px;
+  position: relative;
+}
+.pricing-table ul {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+.pricing-table ul li {
+  border-top: 1px solid #f2f3f4;
+  padding: 10px 0;
+}
+.pricing-table h3 {
+  background-color: #f2f3f4;
+  color: #4a4a4a;
+  font-size: 20px;
+  font-weight: normal;
+  margin: -20px -20px 50px -20px;
+  padding: 20px;
+}
+.pricing-table h3 span {
+  background: white;
+  border: 5px solid white;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px #cacaca inset, 0 3px 0 #8a8a8a inset;
+  color: #4a4a4a;
+  display: block;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 90px;
+  margin: 20px auto -65px;
+  height: 100px;
+  width: 100px;
+}
+.pricing-table .btn {
+  margin-top: 10px;
+}
+.pricing-table .highlight {
+  padding: 30px 20px;
+  top: -10px;
+  z-index: 2;
+  box-shadow: 20px 0 10px -10px rgba(0, 0, 0, 0.15), -20px 0 10px -10px rgba(0, 0, 0, 0.15);
+}
+.pricing-table .highlight h3 {
+  padding-top: 30px;
+  margin-top: -30px;
+}
+.pricing-table .feature-ribbon-wrapper {
+  height: 86px;
+  width: 86px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.pricing-table .feature-ribbon {
+  background-color: #255a8a;
+  color: white;
+  left: -5px;
+  padding: 7px 0;
+  position: relative;
+  text-align: center;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 15px;
+  width: 120px;
+}
+.pricing-table .feature-ribbon .feature-ribbon:before {
+  left: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  bottom: -3px;
+  content: "";
+  position: absolute;
+}
+.pricing-table .feature-ribbon .feature-ribbon:after {
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  bottom: -3px;
+  content: "";
+  position: absolute;
+  right: 0;
+}
+/* Responsive */
+@media (max-width: 767px) {
+  /* Pricing Tables */
+  .pricing-table {
+    margin-left: 0px;
+  }
+  .pricing-table .plan {
+    margin-right: 0;
+  }
+  html.boxed .pricing-table {
+    margin-left: 0;
+  }
 }
 /*  FOOTER STYLING
 -------------------------------------------------- */

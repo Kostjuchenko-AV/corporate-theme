@@ -86,11 +86,11 @@
 											<li>
 												<a href="#">Header Dark</a>
 												<a href="#">Footer Light</a>
-												<a href="animations.php">Animations</a>
+												<a href="animation.php">Animations</a>
 												<a href="icons.php">Icons</a>
 												<a href="grid-system.php">Grid System</a>
 												<a href="typography.php">Typography</a>
-												<a href="#">Pricing Table</a>
+												<a href="pricing-tables.php">Pricing Tables</a>
 											</li>
 										</ul>
 									</li>

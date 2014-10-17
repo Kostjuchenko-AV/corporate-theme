@@ -6,6 +6,7 @@
 @gray: #4A4A4A;
 @gray-lighter: #F2F3F4;
 @gray-light: lighten(@gray, 50%);
+@gray-medium: lighten(@gray, 25%);
 @gray-dark: #404041;
 @brand-primary: #255A8A;
 @brand-primary-light: lighten(@brand-primary,30%);
@@ -119,11 +120,15 @@ ul {
 .btn {
 	border-radius: 0;
 	border: none;
-	padding: 20px 48px;
+	padding: 10px 24px;
 	font-size: @font-size-medium;
 	
 	&.btn-primary {
 		background-color: @brand-primary;
+	}
+	
+	&.btn-lg {
+		padding: 20px 48px;
 	}
 	
 	b {
@@ -750,8 +755,6 @@ header {
 	}
 }	
 
-
-
 .animated.repeat {
 	animation-play-state: paused;
 	animation-iteration-count: 1;
@@ -761,6 +764,138 @@ header {
 		animation-play-state: running;
 	}
 }	
+
+.pricing-table {
+	color: @gray-medium;
+	margin: 10px 0;
+	padding: 0 15px;
+	text-align: center;
+	
+	[class*="col-md-"] {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.plan {
+		border: 1px solid lighten(@gray-medium, 35%);
+		margin-bottom: 36px;
+		margin-right: 0;
+		padding: 20px;
+		position: relative;
+	}
+	
+	ul {
+		margin: 20px 0 0 0;
+		padding: 0;
+		
+		li {
+			border-top: 1px solid @gray-lighter;
+			padding: 10px 0;
+		}
+	}	
+	
+	h3 {
+		background-color: @gray-lighter;
+		color: @gray;
+		font-size: 20px;
+		font-weight: normal;
+		margin: -20px -20px 50px -20px;
+		padding: 20px;
+		
+		span {
+			background: white;
+			border: 5px solid white;
+			border-radius: 50%;
+			box-shadow: 0 5px 20px @gray-light inset, 0 3px 0 @gray-medium inset;
+			color: @gray;
+			display: block;
+			font-weight: 600;
+			font-size: 26px;
+			line-height: 90px;
+			margin: 20px auto -65px;
+			height: 100px;
+			width: 100px;
+		}
+	}
+	
+	.btn {
+		margin-top: 10px;
+	}
+	
+	.highlight {
+		padding: 30px 20px;
+		top: -10px;
+		z-index: 2;
+		box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+		
+		h3 {
+			padding-top: 30px;
+			margin-top: -30px;
+		}
+	}	
+	
+	.feature-ribbon-wrapper {
+		height: 86px;
+		width: 86px;
+		overflow: hidden;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}	
+	
+	.feature-ribbon {
+		background-color: @brand-primary;
+		color: white;
+		left: -5px;
+		padding: 7px 0;
+		position: relative;
+		text-align: center;
+		transform: rotate(45deg);
+		top: 15px;
+		width: 120px;
+	
+		.feature-ribbon:before {
+			left: 0;
+			border-left: 3px solid transparent;
+			border-right: 3px solid transparent;
+			bottom: -3px;
+			content: "";
+			position: absolute;
+		}
+		
+		.feature-ribbon:after {
+			border-left: 3px solid transparent;
+			border-right: 3px solid transparent;
+			bottom: -3px;
+			content: "";
+			position: absolute;
+			right: 0;
+		}
+		
+	}
+	
+}
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 767px) {
+  /* Pricing Tables */
+	.pricing-table {
+		margin-left: 0px;
+	}
+
+	.pricing-table .plan {
+		margin-right: 0;
+	}
+
+	html.boxed .pricing-table {
+		margin-left: 0;
+	}
+}
 
 
 /*  FOOTER STYLING
