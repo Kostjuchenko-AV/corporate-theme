@@ -20,7 +20,7 @@
 			</section>			
 			<!--End Title Bar-->
 			
-			<!--Begin Grid Section-->
+			<!--Begin Animations Section-->
 			
 			<div class="container">
 				<div class="row">
@@ -30,7 +30,6 @@
 						</p>
 						<p>To use animations, simply add the class <code>animated</code> to an element, along with any of the animation class names. That's it! You've got a CSS animated element!
 						</p>
-						<!-- <h2 class="page-header">Default grid system</h2> -->
 					</div>
 				</div>
 			</div>	
@@ -112,7 +111,7 @@
 				</div>
 				
 			</div>		
-			<!--End Grid Section-->	
+			<!--End Animations Section-->	
 			
 		<?php include('includes/footer.php'); ?>
 			

@@ -69,6 +69,12 @@ a:hover {
   color: #255a8a;
   text-decoration: none;
 }
+img.pull-left.padded {
+  margin: 0 20px 15px 0;
+}
+img.pull-right.padded {
+  margin: 0 0 15px 20px;
+}
 ul li {
   line-height: 24px;
 }
@@ -579,14 +585,16 @@ header .navbar-wrapper .navbar-brand img {
 .featured p {
   font-size: 16px;
 }
-/*  FEATURED STYLING
+/*  FEATURE PAGES STYLING
 -------------------------------------------------- */
+/*Icons Page */
 .fontawesome-icon-list {
   margin-top: 26px;
 }
 .fontawesome-icon-list [class*="col-md-"] {
   height: 25px;
 }
+/*Grid Layout Page */
 .bootstrap-grid .grid-block {
   background-color: #EEE;
   line-height: 40px;
@@ -595,6 +603,7 @@ header .navbar-wrapper .navbar-brand img {
   border: 1px solid #FFF;
   display: block;
 }
+/*Animations Page */
 .animated.repeat {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
@@ -608,6 +617,7 @@ header .navbar-wrapper .navbar-brand img {
   -webkit-animation-play-state: running;
           animation-play-state: running;
 }
+/*Pricing Table Page */
 .pricing-table {
   color: #8a8a8a;
   margin: 10px 0;

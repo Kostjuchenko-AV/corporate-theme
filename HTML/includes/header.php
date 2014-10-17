@@ -74,7 +74,8 @@
 										</a>
 										<ul class="dropdown-menu animated fadeIn">
 											<li>
-												<a href="#">Dropdown Link</a>
+												<a href="index.php">Home Light</a>
+												<a href="#">Home Dark</a>
 											</li>
 										</ul>
 									</li>
@@ -83,15 +84,13 @@
 										 	Features <strong class="caret"></strong>
 										</a>
 										<ul class="dropdown-menu animated fadeIn">
-											<li>
-												<a href="#">Header Dark</a>
-												<a href="#">Footer Light</a>
-												<a href="animation.php">Animations</a>
-												<a href="icons.php">Icons</a>
-												<a href="grid-system.php">Grid System</a>
-												<a href="typography.php">Typography</a>
-												<a href="pricing-tables.php">Pricing Tables</a>
-											</li>
+											<li><a href="#">Header Dark</a></li>
+											<li><a href="#">Footer Light</a></li>
+											<li><a href="animations.php">Animations</a></li>
+											<li><a href="icons.php">Icons</a></li>
+											<li><a href="grid-system.php">Grid System</a></li>
+											<li><a href="typography.php">Typography</a></li>
+											<li><a href="pricing-tables.php">Pricing Tables</a></li>
 										</ul>
 									</li>
 									<li class="dropdown">
@@ -99,18 +98,10 @@
 											Pages <strong class="caret"></strong>
 										</a>
 										<ul class="dropdown-menu animated fadeIn">
-											<li>
-												<a href="#">Dropdown Link</a>
-											</li>
-											<li>
-												<a href="#">Dropdown Link</a>
-											</li>
-											<li>
-												<a href="#">Dropdown Link</a>
-											</li>
-											<li>
-												<a href="#">Dropdown Link</a>
-											</li>
+											<li><a href="page-full-width.php">Full Width</a></li>
+											<li><a href="page-left-sidebar.php">Left Sidebar</a></li>
+											<li><a href="page-right-sidebar.php">Right Sidebar</a></li>
+											<li><a href="#">Dropdown Link</a></li>
 										</ul>	
 									</li>
 									<li class="dropdown">
@@ -118,9 +109,7 @@
 											Portfolio <strong class="caret"></strong>
 										</a>
 										<ul class="dropdown-menu animated fadeIn">
-											<li>
-												<a href="#">Dropdown Link</a>
-											</li>
+											<li><a href="#">Dropdown Link</a></li>
 										</ul>	
 									</li>
 									<li>

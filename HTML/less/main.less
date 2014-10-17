@@ -110,6 +110,15 @@ a:hover {
 	text-decoration: none;
 }
 
+img {
+	&.pull-left.padded {
+		margin: 0 20px 15px 0;
+	}	
+	&.pull-right.padded {
+		margin: 0 0 15px 20px;
+	}
+}
+
 ul {
 
 	li {
@@ -732,9 +741,10 @@ header {
 	
 }
 
-/*  FEATURED STYLING
+/*  FEATURE PAGES STYLING
 -------------------------------------------------- */
 
+/*Icons Page */
 .fontawesome-icon-list {
 	margin-top: 26px;
 	
@@ -743,6 +753,7 @@ header {
 	}
 }
 
+/*Grid Layout Page */
 .bootstrap-grid {
 	
 	.grid-block {
@@ -755,6 +766,7 @@ header {
 	}
 }	
 
+/*Animations Page */
 .animated.repeat {
 	animation-play-state: paused;
 	animation-iteration-count: 1;
@@ -765,6 +777,7 @@ header {
 	}
 }	
 
+/*Pricing Table Page */
 .pricing-table {
 	color: @gray-medium;
 	margin: 10px 0;

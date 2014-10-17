@@ -13,14 +13,14 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<h2>Pricing Table</h2>
+							<h2>Pricing Tables</h2>
 						</div>
 					</div>
 				</div>
 			</section>			
 			<!--End Title Bar-->
 			
-			<!--Begin Grid Section-->
+			<!--Begin Pricing Table Section-->
 			
 			<div class="container">
 				<div class="row">
@@ -78,7 +78,7 @@
 
 				</div>				
 			</div>		
-			<!--End Grid Section-->	
+			<!--End Pricing Table Section-->	
 			
 		<?php include('includes/footer.php'); ?>
 			
