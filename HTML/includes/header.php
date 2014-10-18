@@ -98,10 +98,14 @@
 											Pages <strong class="caret"></strong>
 										</a>
 										<ul class="dropdown-menu animated fadeIn">
-											<li><a href="page-full-width.php">Full Width</a></li>
-											<li><a href="page-left-sidebar.php">Left Sidebar</a></li>
-											<li><a href="page-right-sidebar.php">Right Sidebar</a></li>
-											<li><a href="#">Dropdown Link</a></li>
+											<li><a href="page-about.php">About Page</a></li>
+											<li><a href="page-login.php">Login/Register Page</a></li>
+											<li><a href="page-faq.php">FAQ Page</a></li>
+											<li><a href="page-gallery.php">Gallery Page</a></li>
+											<li><a href="page-full-width.php">Full Width Page</a></li>
+											<li><a href="page-left-sidebar.php">Left Sidebar Page</a></li>
+											<li><a href="page-right-sidebar.php">Right Sidebar Page</a></li>											
+											<li><a href="page-404.php">404 Error Page</a></li>
 										</ul>	
 									</li>
 									<li class="dropdown">

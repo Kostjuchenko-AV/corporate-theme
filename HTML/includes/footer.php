@@ -104,6 +104,18 @@
 				verticalOffset: 40
 			});
 			
+			// Toggle Animation
+			$('.toggle label').on('click', function(e){
+			    var answer = $(this).next('.answer');
+			    
+			    if(!$(answer).is(":visible")) {
+			      $(this).parent().addClass('active');
+			    } else {
+			      $(this).parent().removeClass('active');
+			    }
+			    $(answer).slideToggle(300);
+			  });
+								
 			// Initialize PrettyPhoto for gallery
 			$("a[rel^='prettyPhoto']").prettyPhoto({
 				theme: 'facebook',
@@ -116,14 +128,12 @@
 			});
 			
 			// Expand Portfolio Button
-			
 			$('.toggle-portfolio').click(function(event) {
 				event.preventDefault();
 				$("a[rel^='prettyPhoto']:first").click();
 			});
 			
 			// Animate Progress Bars
-			
 			$('.services').waypoint(function() {
 				$('.graph-item .animated-bar').each(function(){
 					var setWidth = $(this).attr('aria-valuenow');
@@ -132,7 +142,6 @@
 			}, { offset: 400 });
 			
 			// Animation Page
-			
 			$(".animated.repeat").click("on", function() {
 				$(this).addClass("clicked");
 			});
