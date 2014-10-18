@@ -48,7 +48,7 @@
 			<!--End Main Carousel-->	
 			
 			<!--Begin CTA Section-->
-			<div class="cta">
+			<div class="cta well">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-10">
@@ -88,8 +88,8 @@
 			</div>
 			<!--End Marketing Section-->	
 			
-			<!--Begin Mini Portfolio Section-->
-			<div class="mini-portfolio">
+			<!--Begin Gallery Section-->
+			<div class="gallery well">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12 clearfix">
