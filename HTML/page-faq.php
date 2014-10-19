@@ -23,7 +23,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h2>Frequently Asked <strong>Questions</strong></h2>
+						<h2><strong>Frequently</strong> Asked Questions</h2>
 						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla non pulvinar. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut eu risus enim, ut pulvinar lectus. Sed hendrerit nibh metus.
 						</p>
 					</div>

@@ -19,6 +19,7 @@
 @line-height-base: 1.42;
 @link-color: @brand-primary;
 
+@border-radius: 4px;
 @section-padding: 36px 0;
 @tras-all-fast: all .1s ease-in-out 0s;
 @grid-float-breakpoint: 768px;
@@ -123,11 +124,11 @@ a:hover {
 	}	
 
 	&.alt:first-letter {
+		border-radius: @border-radius;
 		color: #fff;
 		background: @brand-primary;
 		margin-top: 8px;
 		padding: 0 8px 3px 4px;
-		border-radius: 0;
 	}	
 }
 
@@ -200,7 +201,7 @@ ul {
 
 /* Buttons */
 .btn {
-	border-radius: 0;
+	border-radius: @border-radius;
 	border: none;
 	padding: 10px 24px;
 	font-size: @font-size-medium;
@@ -242,6 +243,7 @@ aside {
 	> label {
 		background: @gray-lighter;
 		border-left: 3px solid @gray-medium;
+		border-radius: @border-radius;
 		color: @gray;
 		display: block;
 		font-size: @font-size-medium;
@@ -351,6 +353,7 @@ aside {
 .form-box {
 	background-color: white;
 	border: 1px solid @gray-light;
+	border-radius: @border-radius;
 	border-top: 5px solid @brand-primary;
 	margin: 20px auto;
 	min-height: 100px;
@@ -368,7 +371,6 @@ aside {
 	}
 	
 	.input {
-		border-radius: 0;
 		height: 46px;
 		padding: 10px 16px;
 		font-size: @font-size-large;
@@ -402,6 +404,7 @@ aside {
 /* Scroll To Top */
 .scroll-to-top {
 	background: @gray;
+	border-radius: @border-radius;
 	color: #FFF;
 	display: block;
 	height: 9px;
@@ -821,9 +824,14 @@ header {
 	
 	.img-overlay {
 		background-color: @brand-primary;
+		border-radius: @border-radius;
 		display: block;
 		position: relative;
 		margin-bottom: 20px;
+		
+		img {
+			border-radius: @border-radius;
+		}
 		
 		i {
 			color: white;
@@ -961,8 +969,7 @@ header {
 		
 		.progress {
 			margin-top: 10px;
-			height: 5px;
-			border-radius: 0;
+			/* height: 5px; */
 		}
 		
 		.progress-bar {
@@ -1025,6 +1032,7 @@ header {
 	
 	.plan {
 		border: 1px solid lighten(@gray-medium, 35%);
+		border-radius: @border-radius;
 		margin-bottom: 36px;
 		margin-right: 0;
 		padding: 20px;
@@ -1276,7 +1284,6 @@ footer {
 			
 			input {
 				display: inline-block;
-				border-radius: 0;
 				background-color: @gray;
 				box-shadow: none;
 				border: none;
@@ -1371,7 +1378,6 @@ footer {
 				.dropdown-menu {
 					left: 18px;
 					border: none;
-					border-radius: 0;
 					border-top: 5px solid #255a8a;
 					margin-top: -5px;
 					padding: 0;
@@ -1384,6 +1390,10 @@ footer {
 						
 						&:before{
 							display: none;
+						}
+						
+						&:last-child {
+							border-bottom: 0;
 						}
 					}
 					

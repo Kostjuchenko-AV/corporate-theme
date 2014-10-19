@@ -68,30 +68,8 @@
 							
 							<div class="collapse navbar-collapse" id="navbar-collapse-1">
 								<ul class="nav navbar-nav navbar-right">
-									<li class="dropdown active">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-											Home <strong class="caret"></strong>
-										</a>
-										<ul class="dropdown-menu animated fadeIn">
-											<li>
-												<a href="index.php">Home Light</a>
-												<a href="#">Home Dark</a>
-											</li>
-										</ul>
-									</li>
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-										 	Features <strong class="caret"></strong>
-										</a>
-										<ul class="dropdown-menu animated fadeIn">
-											<li><a href="#">Header Dark</a></li>
-											<li><a href="#">Footer Light</a></li>
-											<li><a href="animations.php">Animations</a></li>
-											<li><a href="icons.php">Icons</a></li>
-											<li><a href="grid-system.php">Grid System</a></li>
-											<li><a href="typography.php">Typography</a></li>
-											<li><a href="pricing-tables.php">Pricing Tables</a></li>
-										</ul>
+									<li class="active">
+										<a href="/">Home</a>
 									</li>
 									<li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -110,14 +88,33 @@
 									</li>
 									<li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										 	Features <strong class="caret"></strong>
+										</a>
+										<ul class="dropdown-menu animated fadeIn">
+											<li><a href="#">Header Dark</a></li>
+											<li><a href="#">Footer Light</a></li>
+											<li><a href="typography.php">Typography</a></li>
+											<li><a href="pricing-tables.php">Pricing Tables</a></li>
+											<li><a href="animations.php">Animations</a></li>
+											<li><a href="icons.php">Icons</a></li>
+											<li><a href="grid-system.php">Grid System</a></li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 											Portfolio <strong class="caret"></strong>
 										</a>
 										<ul class="dropdown-menu animated fadeIn">
 											<li><a href="#">Dropdown Link</a></li>
 										</ul>	
 									</li>
-									<li>
-										<a href="#">Blog</a>	
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+											Blog <strong class="caret"></strong>
+										</a>	
+										<ul class="dropdown-menu animated fadeIn">
+											<li><a href="#">Dropdown Link</a></li>
+										</ul>	
 									</li>
 									<li>
 										<a href="#">Contact</a>	

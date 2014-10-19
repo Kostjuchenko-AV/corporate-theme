@@ -25,7 +25,7 @@
 				<div class="gallery">
 					<div class="row">
 						<div class="col-md-12">
-							<h2 class="page-header">4 Column Example</h2>
+							<h2 class="page-header">4 Column</h2>
 						</div>
 					</div>
 					<div class="row gallery">
@@ -57,7 +57,7 @@
 					
 					<div class="row">
 						<div class="col-md-12">
-							<h2 class="page-header">3 Column Example</h2>
+							<h2 class="page-header">3 Column</h2>
 						</div>
 					</div>					
 					<div class="row">
@@ -83,7 +83,7 @@
 					
 					<div class="row">
 						<div class="col-md-12">
-							<h2 class="page-header">2 Column Example</h2>
+							<h2 class="page-header">2 Column</h2>
 						</div>
 					</div>					
 					<div class="row">
