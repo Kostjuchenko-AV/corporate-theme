@@ -25,10 +25,10 @@
 				<div class="gallery">
 					<div class="row">
 						<div class="col-md-12">
-							<h2 class="page-header">4 Column</h2>
+							<h2 class="page-header"><strong>Four</strong> Columns</h2>
 						</div>
 					</div>
-					<div class="row gallery">
+					<div class="row">
 						<div class="col-sm-3">
 							<a href="img/gallery/by-the-peir.jpg" class="img-overlay"“ rel="prettyPhoto[folio_gal]">
 								<img class="img-responsive" src="img/gallery/by-the-peir.jpg" alt="By The Peir" />
@@ -57,7 +57,7 @@
 					
 					<div class="row">
 						<div class="col-md-12">
-							<h2 class="page-header">3 Column</h2>
+							<h2 class="page-header"><strong>Three</strong> Columns</h2>
 						</div>
 					</div>					
 					<div class="row">
@@ -83,7 +83,7 @@
 					
 					<div class="row">
 						<div class="col-md-12">
-							<h2 class="page-header">2 Column</h2>
+							<h2 class="page-header"><strong>Two</strong> Columns</h2>
 						</div>
 					</div>					
 					<div class="row">
@@ -103,7 +103,7 @@
 					
 				</div>	
 			</div>	
-			<!--End Mini Portfolio Section-->
+			<!--End Gallery Section-->
 			
 		<?php include('includes/footer.php'); ?>
 			

@@ -299,6 +299,10 @@ aside hr {
   position: absolute;
   margin-left: -20px;
 }
+/* Nav Pills */
+.nav-pills > li.active > a {
+  background-color: #255a8a;
+}
 /* Scroll To Top */
 .scroll-to-top {
   background: #4a4a4a;
@@ -774,7 +778,7 @@ header .navbar-wrapper .navbar-brand img {
 }
 .line-graph .graph-item .progress {
   margin-top: 10px;
-  /* height: 5px; */
+  height: 5px;
 }
 .line-graph .graph-item .progress-bar {
   background-color: #255a8a;
@@ -905,6 +909,23 @@ header .navbar-wrapper .navbar-brand img {
   content: "";
   position: absolute;
   right: 0;
+}
+/*  PORTFOLIO STYLING
+-------------------------------------------------- */
+.portfolio .isotope-item {
+  z-index: 2;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+.portfolio .isotope-item .portfolio-item {
+  -webkit-transition: all 0.1s ease-in-out 0s;
+          transition: all 0.1s ease-in-out 0s;
+}
+.portfolio .isotope-item .portfolio-item > a {
+  position: relative;
+  display: block;
+  margin-bottom: 0;
+  overflow: hidden;
 }
 /*  FEATURE PAGES STYLING
 -------------------------------------------------- */
@@ -1149,6 +1170,9 @@ footer .footer-bottom .follow a:hover {
     font-size: 30px !important;
     line-height: 36px;
   }
+  .portfolio.four-columns .isotope-item {
+    max-width: 24%;
+  }
   footer .footer-bottom {
     text-align: left;
   }
@@ -1166,6 +1190,9 @@ footer .footer-bottom .follow a:hover {
 @media (min-width: 768px) and (max-width: 992px) {
   #main-carousel .carousel-image {
     bottom: 100px;
+  }
+  .portfolio.four-columns .isotope-item {
+    max-width: 48%;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {

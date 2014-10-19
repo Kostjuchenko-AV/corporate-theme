@@ -34,8 +34,8 @@
 						<div class="row">
 							<div class="col-sm-12 clearfix">
 								<div class="contact pull-left">
-									<span><i class="fa fa-phone"></i><address> Call Us: (404) 919 4505</address></span>	
-									<span class="hidden-xs"><i class="fa fa-envelope"></i><address> <a href="mailto:hello@nathanieldeal.com">Email: hello@nathanieldeal.com</a> </address></span>			
+									<span><i class="fa fa-phone"></i><address> Call Us: (800) 466 4515</address></span>	
+									<span class="hidden-xs"><i class="fa fa-envelope"></i><address> <a href="mailto:hello@company.com">Email: hello@company.com</a> </address></span>			
 								</div>
 								<div class="follow pull-right hidden-xs">
 									<span>Follow Us:</span>
@@ -91,13 +91,11 @@
 										 	Features <strong class="caret"></strong>
 										</a>
 										<ul class="dropdown-menu animated fadeIn">
-											<li><a href="#">Header Dark</a></li>
-											<li><a href="#">Footer Light</a></li>
-											<li><a href="typography.php">Typography</a></li>
-											<li><a href="pricing-tables.php">Pricing Tables</a></li>
-											<li><a href="animations.php">Animations</a></li>
-											<li><a href="icons.php">Icons</a></li>
-											<li><a href="grid-system.php">Grid System</a></li>
+											<li><a href="feature-typography.php">Typography</a></li>
+											<li><a href="feature-pricing-tables.php">Pricing Tables</a></li>
+											<li><a href="feature-animations.php">Animations</a></li>
+											<li><a href="feature-icons.php">Icons</a></li>
+											<li><a href="feature-grid-system.php">Grid System</a></li>
 										</ul>
 									</li>
 									<li class="dropdown">
@@ -105,7 +103,13 @@
 											Portfolio <strong class="caret"></strong>
 										</a>
 										<ul class="dropdown-menu animated fadeIn">
-											<li><a href="#">Dropdown Link</a></li>
+											<li><a href="portfolio-four-columns.php">Four Columns</a></li>
+											<li><a href="portfolio-three-columns.php">Three Columns</a></li>
+											<li><a href="portfolio-two-columns.php">Two Columns</a></li>
+											<li><a href="portfolio-single.php">Single Project</a></li>
+
+
+
 										</ul>	
 									</li>
 									<li class="dropdown">

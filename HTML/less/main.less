@@ -398,7 +398,11 @@ aside {
 			margin-left: -20px;
 		}
 	}
-	
+}
+
+/* Nav Pills */
+.nav-pills > li.active > a {
+	background-color: @brand-primary;
 }
 
 /* Scroll To Top */
@@ -969,7 +973,7 @@ header {
 		
 		.progress {
 			margin-top: 10px;
-			/* height: 5px; */
+			height: 5px;
 		}
 		
 		.progress-bar {
@@ -1131,6 +1135,29 @@ header {
 	
 }
 
+/*  PORTFOLIO STYLING
+-------------------------------------------------- */
+
+.portfolio {
+	
+	.isotope-item {
+		z-index: 2;
+		margin-bottom: 10px;
+		max-width: 100%;
+		
+		.portfolio-item{
+			transition: @tras-all-fast;
+		}
+		
+		.portfolio-item > a {
+			position: relative;
+			display: block;
+			margin-bottom: 0;
+			overflow: hidden;
+		}
+	}
+	
+}
 
 /*  FEATURE PAGES STYLING
 -------------------------------------------------- */
@@ -1460,6 +1487,14 @@ footer {
 		}
 	}
 	
+	.portfolio {
+	
+		&.four-columns .isotope-item {
+			max-width: 24%;
+		}
+	
+	}	
+	
 	footer {		
 	
 		.footer-bottom {
@@ -1493,6 +1528,14 @@ footer {
 		.carousel-image {
 			bottom: 100px;
 		}	
+	}	
+	
+	.portfolio {
+	
+		&.four-columns .isotope-item {
+			max-width: 48%;
+		}
+	
 	}	
 }
 

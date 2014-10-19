@@ -9,8 +9,8 @@
 								 	<li>
 								 		<i class="fa fa-map-marker"></i><span>Address:</span> 1170 Peachtree St NE #1200 Atlanta, GA 30039
 								 	</li>
-								 	<li><i class="fa fa-phone"></i><span>Phone:</span> (404) 919 4505</li>
-								 	<li><i class="fa fa-envelope"></i><span>Email:</span> <a href="mailto:hello@nathanieldeal.com">hello@nathanieldeal.com</a></li>
+								 	<li><i class="fa fa-phone"></i><span>Phone:</span> (800) 466 4515</li>
+								 	<li><i class="fa fa-envelope"></i><span>Email:</span> <a href="mailto:hello@company.com">hello@company.com</a></li>
 								 	<li><i class="fa fa-clock-o"></i><span>Monday - Friday:</span> 9:00 am - 6:00 pm <br/>
 								 		<span>Saturday - Sunday:</span> Closed
 								 	</li>
@@ -24,7 +24,7 @@
 											<i class="fa fa-circle fa-stack-2x"></i>
 											<i class="fa fa-twitter fa-stack-1x"></i>
 										</span>
-										@NathanielDeal RT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna. Phasellus nec erat odio. 
+										@CompanyName RT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna. Phasellus nec erat odio. 
 										<time>December 19,2014</time>
 									</li>
 									<li>
@@ -32,7 +32,7 @@
 											<i class="fa fa-circle fa-stack-2x"></i>
 											<i class="fa fa-twitter fa-stack-1x"></i>
 										</span>
-										@NathanielDeal RT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna.
+										@CompanyName RT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna.
 										<time>December 19,2014</time>
 									</li>
 								</ul>
@@ -86,6 +86,7 @@
 		<script src="bower_components/jquery-waypoints/shortcuts/sticky-elements/waypoints-sticky.min.js"></script>
 		<script src="bower_components/stellar.js/jquery.stellar.min.js"></script>
 		<script src="bower_components/jquery-prettyPhoto/js/jquery.prettyPhoto.js"></script>
+		<script src="bower_components/isotope/dist/isotope.pkgd.min.js"></script>
 		<script>
 				
 			// Stick Header Top Top
@@ -145,7 +146,7 @@
 			}, { offset: 400 });
 			
 			// Animation Page
-			$(".animated.repeat").click("on", function() {
+			$(".animated.repeat").on('click', function() {
 				$(this).addClass("clicked");
 			});
 			
@@ -154,12 +155,82 @@
 				$('.scroll-to-top').toggleClass('visible');
 			}, { offset: 500 });
 			
-			$('.scroll-to-top').on("click", function () {
+			$('.scroll-to-top').on('click', function () {
 		        $("html, body").animate({
 		            scrollTop: 0
 		        }, 500);
 		        return false;
 		    });
+		    
+		    // Portfolio Filter
+		    $(window).load(function(){
+				$('#isotope-container').isotope({
+					itemSelector : '.isotope-item',
+					layoutMode : 'fitRows'
+				});
+				
+				var $container = $('#isotope-container');
+				$container.isotope({
+				});
+				
+				$('#portfolio-filter a').on('click', function(){
+					var selector = $(this).attr('data-filter');
+					$container.isotope({ filter: selector });
+					
+					// Toggle Active Filter
+				    $('ul.nav-pills li.active').removeClass('active');
+					$(this).parent('li').addClass('active');
+
+					return false;
+				});
+			});
+			
+			/*
+			
+			$('#nav-search').on('click', function() {
+				$(this).toggleClass('show hidden');
+				$(this).removeClass('animated flipInX');
+				$("#nav-search-close").toggleClass('show hidden');
+				$("#nav-search-form").toggleClass('show hidden animated flipInX');
+				return false;
+			});
+			
+			$('#nav-search-close').on('click', function() {
+				$(this).toggleClass('show hidden');
+				$("#nav-search").toggleClass('show hidden animated flipInX');
+				$("#nav-search-form").toggleClass('show hidden animated flipInX');
+				return false;
+			});
+			
+			$('.style-toggle-btn').on('click', function() {
+				$(".style-toggle").toggleClass("style-toggle-show");
+				$(this).toggleClass("fa-gears fa-angle-double-right");
+				return false;
+			});
+
+			$('#opt-navbar-dark').on('change', function() {
+				$(".mini-navbar").addClass("mini-navbar-dark");
+				$(".mini-navbar").removeClass("mini-navbar-white");
+				$(".navbar").addClass("navbar-dark");
+				$(".navbar").removeClass("navbar-white");
+				return false;
+			});
+			
+			$('.style-toggle-body .colors > .green').on('click', function() {
+				$("body").addClass("body-green");
+				$("body").removeClass("body-blue");
+				$("body").removeClass("body-orange");
+				$("body").removeClass("body-red");
+				return false;
+			});
+			
+			$('#opt-footer-white').on('change', function() {
+				$("footer").addClass("footer-white");
+				$("footer").removeClass("footer-dark");
+				return false;
+			});
+			*/
+
 			
 		</script>
 		
