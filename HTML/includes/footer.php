@@ -74,6 +74,9 @@
 
 		<!--End Wrapper-->
 		</div>
+		
+		<!--Scroll To Top -->
+		<a class="scroll-to-top hidden-xs" href="#"><i class="fa fa-chevron-up"></i></a>
 	
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -90,7 +93,7 @@
 	
 			// Shrink Header
 			$('header').waypoint(function(direction) {
-			  $(this).toggleClass('shrink-header', direction === 'down');
+				$(this).toggleClass('shrink-header', direction === 'down');
 			}, { offset: -55 });
 				
 			// Initialize Main Carousel
@@ -134,7 +137,7 @@
 			});
 			
 			// Animate Progress Bars
-			$('.services').waypoint(function() {
+			$('.line-graph').waypoint(function() {
 				$('.graph-item .animated-bar').each(function(){
 					var setWidth = $(this).attr('aria-valuenow');
 					$(this).width(setWidth + '%');
@@ -145,6 +148,18 @@
 			$(".animated.repeat").click("on", function() {
 				$(this).addClass("clicked");
 			});
+			
+			// Scroll To Top
+			$('footer').waypoint(function() {
+				$('.scroll-to-top').toggleClass('visible');
+			}, { offset: 500 });
+			
+			$('.scroll-to-top').on("click", function () {
+		        $("html, body").animate({
+		            scrollTop: 0
+		        }, 500);
+		        return false;
+		    });
 			
 		</script>
 		

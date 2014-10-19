@@ -30,26 +30,26 @@
 					</div>
 					<div class="row gallery">
 						<div class="col-sm-3">
-							<a href="img/by-the-peir.jpg" class="img-overlay"“ rel="prettyPhoto[folio_gal]">
-								<img class="img-responsive" src="img/by-the-peir.jpg" alt="By The Peir" />
+							<a href="img/gallery/by-the-peir.jpg" class="img-overlay"“ rel="prettyPhoto[folio_gal]">
+								<img class="img-responsive" src="img/gallery/by-the-peir.jpg" alt="By The Peir" />
 								<i class="fa fa-plus-circle"></i>
 							</a>	
 						</div>
 						<div class="col-sm-3">
-							<a href="img/beyond-the-trees.jpg" class="img-overlay" rel="prettyPhoto[folio_gal]">
-								<img class="img-responsive" src="img/beyond-the-trees.jpg" alt="Beyond The Trees" />
+							<a href="img/gallery/beyond-the-trees.jpg" class="img-overlay" rel="prettyPhoto[folio_gal]">
+								<img class="img-responsive" src="img/gallery/beyond-the-trees.jpg" alt="Beyond The Trees" />
 								<i class="fa fa-plus-circle"></i>
 							</a>	
 						</div>
 						<div class="col-sm-3">
-							<a href="img/the-pines.jpg" class="img-overlay" rel="prettyPhoto[folio_gal]">
-								<img class="img-responsive" src="img/the-pines.jpg" alt="The Pines" />
+							<a href="img/gallery/the-pines.jpg" class="img-overlay" rel="prettyPhoto[folio_gal]">
+								<img class="img-responsive" src="img/gallery/the-pines.jpg" alt="The Pines" />
 								<i class="fa fa-plus-circle"></i>
 							</a>	
 						</div>
 						<div class="col-sm-3">
-							<a href="img/by-the-peir.jpg" class="img-overlay"“ rel="prettyPhoto[folio_gal]">
-								<img class="img-responsive" src="img/by-the-peir.jpg" alt="By The Peir" />
+							<a href="img/gallery/hidden-trail.jpg" class="img-overlay"“ rel="prettyPhoto[folio_gal]">
+								<img class="img-responsive" src="img/gallery/hidden-trail.jpg" alt="Hidden Trail" />
 								<i class="fa fa-plus-circle"></i>
 							</a>	
 						</div>
@@ -62,20 +62,20 @@
 					</div>					
 					<div class="row">
 						<div class="col-sm-4">
-							<a href="img/by-the-peir.jpg" class="img-overlay"“ rel="prettyPhoto[folio_gal]">
-								<img class="img-responsive" src="img/by-the-peir.jpg" alt="By The Peir" />
+							<a href="img/gallery/sun-on-trees.jpg" class="img-overlay"“ rel="prettyPhoto[folio_gal]">
+								<img class="img-responsive" src="img/gallery/sun-on-trees.jpg" alt="Sun On Trees" />
 								<i class="fa fa-plus-circle"></i>
 							</a>	
 						</div>
 						<div class="col-sm-4">
-							<a href="img/beyond-the-trees.jpg" class="img-overlay" rel="prettyPhoto[folio_gal]">
-								<img class="img-responsive" src="img/beyond-the-trees.jpg" alt="Beyond The Trees" />
+							<a href="img/gallery/highway-drive.jpg" class="img-overlay" rel="prettyPhoto[folio_gal]">
+								<img class="img-responsive" src="img/gallery/highway-drive.jpg" alt="Highway Drive" />
 								<i class="fa fa-plus-circle"></i>
 							</a>	
 						</div>
 						<div class="col-sm-4">
-							<a href="img/the-pines.jpg" class="img-overlay" rel="prettyPhoto[folio_gal]">
-								<img class="img-responsive" src="img/the-pines.jpg" alt="The Pines" />
+							<a href="img/gallery/tracks-in-woods.jpg" class="img-overlay" rel="prettyPhoto[folio_gal]">
+								<img class="img-responsive" src="img/gallery/tracks-in-woods.jpg" alt="Tracks In Woods" />
 								<i class="fa fa-plus-circle"></i>
 							</a>	
 						</div>
@@ -88,14 +88,14 @@
 					</div>					
 					<div class="row">
 						<div class="col-sm-6">
-							<a href="img/by-the-peir.jpg" class="img-overlay"“ rel="prettyPhoto[folio_gal]">
-								<img class="img-responsive" src="img/by-the-peir.jpg" alt="By The Peir" />
+							<a href="img/gallery/on-cliffs.jpg" class="img-overlay"“ rel="prettyPhoto[folio_gal]">
+								<img class="img-responsive" src="img/gallery/on-cliffs.jpg" alt="On Cliffs" />
 								<i class="fa fa-plus-circle"></i>
 							</a>	
 						</div>
 						<div class="col-sm-6">
-							<a href="img/beyond-the-trees.jpg" class="img-overlay" rel="prettyPhoto[folio_gal]">
-								<img class="img-responsive" src="img/beyond-the-trees.jpg" alt="Beyond The Trees" />
+							<a href="img/gallery/on-the-beach.jpg" class="img-overlay" rel="prettyPhoto[folio_gal]">
+								<img class="img-responsive" src="img/gallery/on-the-beach.jpg" alt="On The Beach" />
 								<i class="fa fa-plus-circle"></i>
 							</a>	
 						</div>

@@ -117,6 +117,9 @@ img.pull-right.padded {
   box-shadow: none;
   margin-bottom: 0;
 }
+.well + footer {
+  margin-top: 0;
+}
 /* Lists */
 ul li {
   line-height: 24px;
@@ -294,6 +297,27 @@ aside hr {
 .form-box .remember-me input[type="checkbox"] {
   position: absolute;
   margin-left: -20px;
+}
+/* Scroll To Top */
+.scroll-to-top {
+  background: #4a4a4a;
+  color: #FFF;
+  display: block;
+  height: 9px;
+  opacity: 0;
+  padding: 13px 10px 35px;
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+  text-align: center;
+  text-decoration: none;
+  min-width: 49px;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+  z-index: 1040;
+}
+.scroll-to-top.visible {
+  opacity: 0.75;
 }
 /* HEADER STYLES
 -------------------------------------------------- */
@@ -489,6 +513,11 @@ header .navbar-wrapper .navbar-brand img {
   min-height: 36px;
   line-height: 46px;
   padding: 0 0 16px;
+}
+.title-bar + .carousel,
+.title-bar + .well,
+.title-bar + .featured.with-bg {
+  margin-top: -36px;
 }
 /* MAIN CAROUSEL STYLING
 -------------------------------------------------- */
@@ -723,46 +752,51 @@ header .navbar-wrapper .navbar-brand img {
 #testimonial-carousel .carousel-control {
   z-index: 2;
 }
+#testimonial-carousel + footer {
+  margin-top: 0;
+}
 /* SERVICES STYLING
 -------------------------------------------------- */
 .services {
   padding: 36px 0;
 }
-.services .line-graph {
+.line-graph {
   margin-top: 24px;
 }
-.services .line-graph i {
+.line-graph i {
   padding-right: 5px;
 }
-.services .line-graph .graph-item .progress {
+.line-graph .graph-item .progress {
   margin-top: 10px;
   height: 5px;
   border-radius: 0;
 }
-.services .line-graph .graph-item .progress-bar {
+.line-graph .graph-item .progress-bar {
   background-color: #255a8a;
 }
-.services .line-graph .graph-item .animated-bar {
+.line-graph .graph-item .animated-bar {
   -webkit-transition: width 0.8s ease-in-out;
           transition: width 0.8s ease-in-out;
 }
 /*  FEATURED STYLING
 -------------------------------------------------- */
 .featured {
+  text-align: center;
+}
+.featured.with-bg {
   color: white;
-  min-height: 265px;
   background: -webkit-linear-gradient(rgba(37, 90, 138, 0.8), rgba(37, 90, 138, 0.8)), url(../img/city-overview.jpg) 50% 0 repeat-y fixed;
   background: linear-gradient(rgba(37, 90, 138, 0.8), rgba(37, 90, 138, 0.8)), url(../img/city-overview.jpg) 50% 0 repeat-y fixed;
   background-size: cover;
+  min-height: 265px;
   padding: 36px 0;
-  text-align: center;
 }
 .featured h2 {
   font-weight: 300;
   margin-bottom: 30px;
 }
-.featured p {
-  font-size: 16px;
+.featured p.lead {
+  font-size: 18px;
 }
 .featured + footer {
   margin-top: 0;

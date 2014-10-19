@@ -9,7 +9,7 @@
 				</ol>
 				<div class="carousel-inner">
 					<div class="item active">
-						<img src="img/main-slider-1.jpg" alt="main-slider-1" />
+						<img src="img/slides/main-slider-1.jpg" alt="main-slider-1" />
 						<div class="container">
 							<div class="row">
 								<div class="carousel-caption col-sm-6">
@@ -18,15 +18,15 @@
 									<p><a class="btn btn-lg btn-default animated bounceInRight" href="#" role="button"><b>Read</b> More</a></p>
 								</div>
 								<div class="carousel-image col-sm-6">
-									<img class="img-1 img-responsive animated bounceInUp hidden-xs" src="img/main-slider-1-ipad.png" alt="main-slider-1-ipad" />
-									<img class="img-2 img-responsive animated bounceInUp hidden-xs" src="img/main-slider-1-iphone.png" alt="main-slider-1-iphone" />
+									<img class="img-1 img-responsive animated bounceInUp hidden-xs" src="img/slides/main-slider-1-ipad.png" alt="main-slider-1-ipad" />
+									<img class="img-2 img-responsive animated bounceInUp hidden-xs" src="img/slides/main-slider-1-iphone.png" alt="main-slider-1-iphone" />
 								</div>
 							</div>
 						</div>
 					</div>
 					
 					<div class="item">
-						<img src="img/main-slider-3.jpg" alt="main-slider-3" />
+						<img src="img/slides/main-slider-3.jpg" alt="main-slider-3" />
 						<div class="container">
 							<div class="row">
 								<div class="carousel-caption col-sm-6">
@@ -35,8 +35,8 @@
 									<p><a class="btn btn-lg btn-default animated bounceInRight" href="#" role="button"><b>Read</b> More</a></p>
 								</div>
 								<div class="carousel-image col-sm-6">
-									<img class="img-1 img-responsive animated bounceInUp hidden-xs" src="img/main-slider-1-ipad.png" alt="main-slider-1-ipad" />
-									<img class="img-2 img-responsive animated bounceInUp hidden-xs" src="img/main-slider-1-iphone.png" alt="main-slider-1-iphone" />
+									<img class="img-1 img-responsive animated bounceInUp hidden-xs" src="img/slides/main-slider-1-ipad.png" alt="main-slider-1-ipad" />
+									<img class="img-2 img-responsive animated bounceInUp hidden-xs" src="img/slides/main-slider-1-iphone.png" alt="main-slider-1-iphone" />
 								</div>
 							</div>
 						</div>
@@ -101,24 +101,24 @@
 					</div>
 					<div class="row">
 						<div class="col-sm-4">
-							<a href="img/by-the-peir.jpg" class="img-overlay"“ rel="prettyPhoto[folio_gal]">
-								<img class="img-responsive" src="img/by-the-peir.jpg" alt="By The Peir" />
+							<a href="img/gallery/by-the-peir.jpg" class="img-overlay"“ rel="prettyPhoto[folio_gal]">
+								<img class="img-responsive" src="img/gallery/by-the-peir.jpg" alt="By The Peir" />
 								<i class="fa fa-plus-circle"></i>
 							</a>	
 							<h4>By The Pier</h4>
 							<span class="tag"><i class="fa fa-tag"> Travel, Lifestyle</i></span>
 						</div>
 						<div class="col-sm-4">
-							<a href="img/beyond-the-trees.jpg" class="img-overlay" rel="prettyPhoto[folio_gal]">
-								<img class="img-responsive" src="img/beyond-the-trees.jpg" alt="Beyond The Trees" />
+							<a href="img/gallery/beyond-the-trees.jpg" class="img-overlay" rel="prettyPhoto[folio_gal]">
+								<img class="img-responsive" src="img/gallery/beyond-the-trees.jpg" alt="Beyond The Trees" />
 								<i class="fa fa-plus-circle"></i>
 							</a>	
 							<h4>Beyond The Trees</h4>
 							<span class="tag"><i class="fa fa-tag"> Beautiful, Lifestyle</i></span>
 						</div>
 						<div class="col-sm-4">
-							<a href="img/the-pines.jpg" class="img-overlay" rel="prettyPhoto[folio_gal]">
-								<img class="img-responsive" src="img/the-pines.jpg" alt="The Pines" />
+							<a href="img/gallery/the-pines.jpg" class="img-overlay" rel="prettyPhoto[folio_gal]">
+								<img class="img-responsive" src="img/gallery/the-pines.jpg" alt="The Pines" />
 								<i class="fa fa-plus-circle"></i>
 							</a>	
 							<h4>In The Foothills</h4>
@@ -195,10 +195,8 @@
 			<!--End Testimonial Carousel-->	
 			
 			<!--Begin Services Section-->	
-				
 			<div class="services">
 				<div class="container">	
-
 					<div class="row">
 						<div class="col-sm-12">
 							<h3 class="title">Our <span>Services</span></h3>
@@ -281,12 +279,12 @@ potenti. Duis at faucibus ligula.
 			<!--End Services Section-->	
 			
 			<!--Begin Featured Section-->
-			<div class="featured" data-stellar-background-ratio="1.25">
+			<div class="featured with-bg" data-stellar-background-ratio="1.25">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
 							<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna. <br /> Phasellus nec erat odio. Vestibulum imperdiet vel velit et eleifend. Quisque elementum eges-<br /> tas neque id convallis.</p>
+							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna. <br /> Phasellus nec erat odio. Vestibulum imperdiet vel velit et eleifend. Quisque elementum eges-<br /> tas neque id convallis.</p>
 						</div>
 					</div>
 				</div>	
