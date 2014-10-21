@@ -341,7 +341,7 @@ aside hr {
   opacity: 0;
   width: 40px;
 }
-.carousel .carousel-control i:hover {
+.carousel:hover .carousel-control i {
   opacity: 1;
 }
 /* Scroll To Top */
@@ -990,19 +990,19 @@ header .navbar-wrapper .navbar-brand img {
 .portfolio-single .details i {
   color: #255a8a;
 }
-.portfolio-single .details .meta {
+.portfolio-single .meta {
   color: #cacaca;
   font-size: 12px;
   margin-top: -10px;
   margin-bottom: 15px;
 }
-.portfolio-single .details .meta i,
-.portfolio-single .details .meta a {
+.portfolio-single .meta i,
+.portfolio-single .meta a {
   color: #cacaca;
   -webkit-transition: all 0.1s ease-in-out 0s;
           transition: all 0.1s ease-in-out 0s;
 }
-.portfolio-single .details .meta a:hover {
+.portfolio-single .meta a:hover {
   color: #255a8a;
 }
 .portfolio-single .related h4 {

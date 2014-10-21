@@ -23,32 +23,34 @@
 			<!--Begin Portfolio Single Full Section-->
 			<div class="container portfolio-single">
 				<div class="row">
-					<div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
-					
-						<ol class="carousel-indicators">
-							<li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
-							<li data-target="#portfolio-carousel" data-slide-to="1" class=""></li>
-							<li data-target="#portfolio-carousel" data-slide-to="2" class=""></li>
-						</ol>
-						<div class="carousel-inner">
-							<div class="item active">
-								<img class="img-responsive" src="img/slides/main-slider-1.jpg" alt="By The Peir">
+					<div class="col-md-12">
+						<div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
+						
+							<ol class="carousel-indicators">
+								<li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#portfolio-carousel" data-slide-to="1" class=""></li>
+								<li data-target="#portfolio-carousel" data-slide-to="2" class=""></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="item active">
+									<img class="img-responsive" src="img/portfolio/portfolio-1-wide.jpg" alt="Off The Clivv">
+								</div>
+								<div class="item">
+									<img class="img-responsive" src="img/portfolio/portfolio-2-wide.jpg" alt="The Pines" />
+								</div>
+								<div class="item">
+									<img class="img-responsive" src="img/portfolio/portfolio-3-wide.jpg" alt="By The Peir" />
+								</div>
 							</div>
-							<div class="item">
-								<img class="img-responsive" src="img/slides/main-slider-2.jpg" alt="The Beach" />
-							</div>
-							<div class="item">
-								<img class="img-responsive" src="img/slides/main-slider-3.jpg" alt="The Pines" />
-							</div>
+								
+							<a class="left carousel-control" href="#portfolio-carousel" data-slide="prev">
+								<i class="fa fa-angle-left"></i>
+							</a>
+							<a class="right carousel-control" href="#portfolio-carousel" data-slide="next">
+								<i class="fa fa-angle-right"></i>
+							</a>
 						</div>
-							
-						<a class="left carousel-control" href="#portfolio-carousel" data-slide="prev">
-							<i class="fa fa-angle-left"></i>
-						</a>
-						<a class="right carousel-control" href="#portfolio-carousel" data-slide="next">
-							<i class="fa fa-angle-right"></i>
-						</a>
-					</div>
+					</div>	
 				</div>
 				
 				<div class="row">	
@@ -56,24 +58,24 @@
 												
 						<h4 class="title">Project <span>Name</span></h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-					</div>	
+						
+						<ul class="list-inline meta">
+							<li>
+								<a href="#"><i class="fa fa-heart"></i>10</a>
+							</li>
+							<li>
+								<i class="fa fa-calendar"></i> 23 December 2014
+							</li>
+							<li>
+								<i class="fa fa-tags"></i> <a href="#">Travel</a>, <a href="#">Lifestyle</a>
+							</li>
+						</ul>
+					</div>
 					
 					<div class="col-md-5">	
 
 						<div class="details">
-						
-							<ul class="list-inline meta">
-								<li>
-									<a href="#"><i class="fa fa-heart"></i>10</a>
-								</li>
-								<li>
-									<i class="fa fa-calendar"></i> 23 December 2014
-								</li>
-								<li>
-									<i class="fa fa-tags"></i> <a href="#">Travel</a>, <a href="#">Lifestyle</a>
-								</li>
-							</ul>
-							
+													
 							<p><strong>Services:</strong></p>
 	
 							<ul class="list list-skills icons list-unstyled list-inline">

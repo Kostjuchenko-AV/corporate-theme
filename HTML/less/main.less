@@ -448,10 +448,11 @@ aside {
 			opacity: 0;
 			width: 40px;
 			
-			&:hover {
-				opacity: 1;
-			}
 		}
+	}
+	
+	&:hover .carousel-control i {
+		opacity: 1;
 	}
 }
 
@@ -1228,21 +1229,21 @@ header {
 		i {
 			color: @brand-primary;
 		}
+	}
+	
+	.meta {
+		color: @gray-light;
+		font-size: @font-size-small;
+		margin-top: -10px;
+		margin-bottom: 15px;
 		
-		.meta {
+		i, a {
 			color: @gray-light;
-			font-size: @font-size-small;
-			margin-top: -10px;
-			margin-bottom: 15px;
-			
-			i, a {
-				color: @gray-light;
-				transition: @tras-all-fast;
-			}
-			
-			a:hover {
-				color: @brand-primary;
-			}
+			transition: @tras-all-fast;
+		}
+		
+		a:hover {
+			color: @brand-primary;
 		}
 	}
 
