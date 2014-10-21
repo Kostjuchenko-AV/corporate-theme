@@ -9,6 +9,5 @@
   },
   "_source": "git://github.com/scaron/prettyphoto.git",
   "_target": "*",
-  "_originalSource": "jquery-prettyPhoto",
-  "_direct": true
+  "_originalSource": "jquery-prettyPhoto"
 }

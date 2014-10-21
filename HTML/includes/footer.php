@@ -87,6 +87,7 @@
 		<script src="bower_components/stellar.js/jquery.stellar.min.js"></script>
 		<script src="bower_components/jquery-prettyPhoto/js/jquery.prettyPhoto.js"></script>
 		<script src="bower_components/isotope/dist/isotope.pkgd.min.js"></script>
+		<script src="bower_components/masonry/masonry.js"></script>
 		<script>
 				
 			// Stick Header Top Top
@@ -162,28 +163,9 @@
 		        return false;
 		    });
 		    
-		    // Portfolio Filter
-		    $(window).load(function(){
-				$('#isotope-container').isotope({
-					itemSelector : '.isotope-item',
-					layoutMode : 'fitRows'
-				});
-				
-				var $container = $('#isotope-container');
-				$container.isotope({
-				});
-				
-				$('#portfolio-filter a').on('click', function(){
-					var selector = $(this).attr('data-filter');
-					$container.isotope({ filter: selector });
-					
-					// Toggle Active Filter
-				    $('ul.nav-pills li.active').removeClass('active');
-					$(this).parent('li').addClass('active');
+		    			
+		
 
-					return false;
-				});
-			});
 			
 			/*
 			
