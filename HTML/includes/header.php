@@ -107,9 +107,7 @@
 											<li><a href="portfolio-three-columns.php">Three Columns</a></li>
 											<li><a href="portfolio-two-columns.php">Two Columns</a></li>
 											<li><a href="portfolio-single.php">Single Project</a></li>
-
-
-
+											<li><a href="portfolio-single-full.php">Single Project Full</a></li>
 										</ul>	
 									</li>
 									<li class="dropdown">

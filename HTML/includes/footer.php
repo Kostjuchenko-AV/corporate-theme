@@ -56,7 +56,7 @@
 					<div class="container">	
 						<div class="row">
 							<div class="col-sm-8">
-								 <p>&copy; Copyright 2014 Amity. All Rights Reserved. Designed by Nathaniel Deal</p>
+								 <p>&copy; Copyright 2014 Amity. All Rights Reserved. Designed by <a href="http://nathanieldeal.com">Nathaniel Deal</a></p>
 							</div>
 							<div class="col-sm-4">
 								<div class="follow pull-right">

@@ -1,6 +1,19 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
 /* LESS VARIABLES
 -------------------------------------------------- */
+/* LESS MIXINS */
+.portfolio-item h4 {
+  color: #4a4a4a;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.portfolio-item .tag {
+  color: #cacaca;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
 /* GLOBAL STYLES
 -------------------------------------------------- */
 body {
@@ -87,6 +100,9 @@ a:hover {
   padding: 0 8px 3px 4px;
 }
 /* Images */
+img {
+  border-radius: 4px;
+}
 img.pull-left.padded {
   margin: 0 20px 15px 0;
 }
@@ -298,6 +314,35 @@ aside hr {
 .form-box .remember-me input[type="checkbox"] {
   position: absolute;
   margin-left: -20px;
+}
+.carousel .carousel-control {
+  display: block;
+  background-image: none;
+  height: 80px;
+  margin-top: -50px;
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  z-index: 4;
+}
+.carousel .carousel-control i {
+  border-radius: 4px;
+  background: rgba(33, 37, 43, 0.4);
+  cursor: pointer;
+  color: rgba(250, 250, 250, 0.8);
+  display: block;
+  height: 80px;
+  line-height: 80px;
+  font-size: 28px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+          transition: all 0.1s ease-in-out 0s;
+  opacity: 0;
+  width: 40px;
+}
+.carousel .carousel-control i:hover {
+  opacity: 1;
 }
 /* Scroll To Top */
 .scroll-to-top {
@@ -582,10 +627,6 @@ header .navbar-wrapper .navbar-brand img {
   min-width: 100%;
   height: 500px;
 }
-#main-carousel .carousel-control {
-  display: none;
-  width: 5%;
-}
 /* CTA STYLING
 -------------------------------------------------- */
 .cta h3 {
@@ -670,9 +711,6 @@ header .navbar-wrapper .navbar-brand img {
   position: relative;
   margin-bottom: 20px;
 }
-.gallery .img-overlay img {
-  border-radius: 4px;
-}
 .gallery .img-overlay i {
   color: white;
   display: none;
@@ -754,9 +792,6 @@ header .navbar-wrapper .navbar-brand img {
 #testimonial-carousel .carousel-inner .next.left,
 #testimonial-carousel .carousel-inner .prev.right {
   opacity: 1;
-}
-#testimonial-carousel .carousel-control {
-  z-index: 2;
 }
 #testimonial-carousel + footer {
   margin-top: 0;
@@ -932,9 +967,6 @@ header .navbar-wrapper .navbar-brand img {
 .portfolio .mix {
   display: none;
 }
-.portfolio .mix img {
-  border-radius: 4px;
-}
 .portfolio .mix h4 {
   color: #4a4a4a;
   font-weight: bold;
@@ -942,6 +974,44 @@ header .navbar-wrapper .navbar-brand img {
   margin-bottom: 5px;
 }
 .portfolio .mix .tag {
+  color: #cacaca;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.portfolio-single img {
+  margin-bottom: 20px;
+}
+.portfolio-single h4 {
+  color: #4a4a4a;
+  font-size: 22px;
+  margin-top: 0;
+}
+.portfolio-single .details i {
+  color: #255a8a;
+}
+.portfolio-single .details .meta {
+  color: #cacaca;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+.portfolio-single .details .meta i,
+.portfolio-single .details .meta a {
+  color: #cacaca;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+          transition: all 0.1s ease-in-out 0s;
+}
+.portfolio-single .details .meta a:hover {
+  color: #255a8a;
+}
+.portfolio-single .related h4 {
+  color: #4a4a4a;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.portfolio-single .related .tag {
   color: #cacaca;
   display: block;
   font-size: 14px;
@@ -1104,19 +1174,21 @@ footer .footer-bottom p {
   font-size: 12px;
   margin: 5px 0 0;
 }
+footer .footer-bottom a {
+  color: white;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+          transition: all 0.1s ease-in-out 0s;
+}
+footer .footer-bottom a:hover {
+  color: #6fa7d9;
+}
 footer .footer-bottom .follow {
   margin-top: 20px;
   width: 100%;
 }
 footer .footer-bottom .follow a {
-  color: white;
   font-size: 20px;
   padding: 0 8px;
-  -webkit-transition: all 0.1s ease-in-out 0s;
-          transition: all 0.1s ease-in-out 0s;
-}
-footer .footer-bottom .follow a:hover {
-  color: #6fa7d9;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -1182,9 +1254,6 @@ footer .footer-bottom .follow a:hover {
   }
   header.shrink-header .navbar-wrapper .navbar-nav > li > a {
     padding: 21px 0;
-  }
-  #main-carousel:hover .carousel-control {
-    display: block;
   }
   #testimonial-carousel .item h2 {
     font-size: 30px !important;

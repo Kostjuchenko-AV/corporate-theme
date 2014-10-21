@@ -13,7 +13,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<h2 class="title">Four Columns</h2>
+							<h2 class="title">Two Column Layout</h2>
 						</div>
 					</div>
 				</div>
