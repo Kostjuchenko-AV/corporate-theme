@@ -400,11 +400,6 @@ aside {
 	}
 }
 
-/* Nav Pills */
-.nav-pills > li.active > a {
-	background-color: @brand-primary;
-}
-
 /* Scroll To Top */
 .scroll-to-top {
 	background: @gray;
@@ -1139,26 +1134,55 @@ header {
 -------------------------------------------------- */
 
 .portfolio {
-	
-	.isotope-item {
-		z-index: 2;
-		margin-bottom: 10px;
-		max-width: 100%;
-		
-		.portfolio-item{
-			transition: @tras-all-fast;
-		}
-		
-		.portfolio-item > a {
-			position: relative;
-			display: block;
-			margin-bottom: 0;
-			overflow: hidden;
+
+	.controls {
+		.btn:active, .btn.active {
+			background-color: @brand-primary;
+			color: white;
 		}
 	}
+		
+	#portfolio-container {
+		padding: 2% 2% 0;
+		text-align: justify;
+		font-size: 0.1px;
+		-webkit-backface-visibility: hidden;
+		
+		&:after{
+			content: '';
+			display: inline-block;
+			width: 100%;
+		}
+	}	
+						
+	.mix, .gap{
+		display: inline-block;
+		width: 49%;
+	}
 	
-}
+	.mix{
+		display: none;
+		
+		img {
+			border-radius: @border-radius;
+		}
+		
+		h4 {
+			color: @gray;
+			font-weight: bold;
+			font-size: @font-size-medium;
+			margin-bottom: 5px;
+		}
+		
+		.tag {
+			color: @gray-light;
+			display: block;
+			font-size: @font-size-base;
+			margin-bottom: 20px;
+		}
+	}		
 
+}
 /*  FEATURE PAGES STYLING
 -------------------------------------------------- */
 
@@ -1488,12 +1512,19 @@ footer {
 	}
 	
 	.portfolio {
+		
+		&.four-columns {
+		   .mix, .gap{
+		    	width: 23.5%;
+			}
+		}	
 	
-		&.four-columns .isotope-item {
-			max-width: 24%;
+		&.three-columns {
+			.mix, .gap {
+		    	width: 32%;
+			}
 		}
-	
-	}	
+	}
 	
 	footer {		
 	
@@ -1528,15 +1559,7 @@ footer {
 		.carousel-image {
 			bottom: 100px;
 		}	
-	}	
-	
-	.portfolio {
-	
-		&.four-columns .isotope-item {
-			max-width: 48%;
-		}
-	
-	}	
+	}		
 }
 
 

@@ -21,7 +21,7 @@
 			<!--End Title Bar-->
 			
 			<!--Begin Portfolio Section-->
-			<div class="container portfolio four-columns">
+			<div class="container portfolio three-columns">
 				<div class="row">
 				
 					<div class="col-sm-12">

@@ -299,10 +299,6 @@ aside hr {
   position: absolute;
   margin-left: -20px;
 }
-/* Nav Pills */
-.nav-pills > li.active > a {
-  background-color: #255a8a;
-}
 /* Scroll To Top */
 .scroll-to-top {
   background: #4a4a4a;
@@ -912,20 +908,44 @@ header .navbar-wrapper .navbar-brand img {
 }
 /*  PORTFOLIO STYLING
 -------------------------------------------------- */
-.portfolio .isotope-item {
-  z-index: 2;
-  margin-bottom: 10px;
-  max-width: 100%;
+.portfolio .controls .btn:active,
+.portfolio .controls .btn.active {
+  background-color: #255a8a;
+  color: white;
 }
-.portfolio .isotope-item .portfolio-item {
-  -webkit-transition: all 0.1s ease-in-out 0s;
-          transition: all 0.1s ease-in-out 0s;
+.portfolio #portfolio-container {
+  padding: 2% 2% 0;
+  text-align: justify;
+  font-size: 0.1px;
+  -webkit-backface-visibility: hidden;
 }
-.portfolio .isotope-item .portfolio-item > a {
-  position: relative;
+.portfolio #portfolio-container:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+.portfolio .mix,
+.portfolio .gap {
+  display: inline-block;
+  width: 49%;
+}
+.portfolio .mix {
+  display: none;
+}
+.portfolio .mix img {
+  border-radius: 4px;
+}
+.portfolio .mix h4 {
+  color: #4a4a4a;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.portfolio .mix .tag {
+  color: #cacaca;
   display: block;
-  margin-bottom: 0;
-  overflow: hidden;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 /*  FEATURE PAGES STYLING
 -------------------------------------------------- */
@@ -1170,8 +1190,13 @@ footer .footer-bottom .follow a:hover {
     font-size: 30px !important;
     line-height: 36px;
   }
-  .portfolio.four-columns .isotope-item {
-    max-width: 24%;
+  .portfolio.four-columns .mix,
+  .portfolio.four-columns .gap {
+    width: 23.5%;
+  }
+  .portfolio.three-columns .mix,
+  .portfolio.three-columns .gap {
+    width: 32%;
   }
   footer .footer-bottom {
     text-align: left;
@@ -1190,9 +1215,6 @@ footer .footer-bottom .follow a:hover {
 @media (min-width: 768px) and (max-width: 992px) {
   #main-carousel .carousel-image {
     bottom: 100px;
-  }
-  .portfolio.four-columns .isotope-item {
-    max-width: 48%;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {

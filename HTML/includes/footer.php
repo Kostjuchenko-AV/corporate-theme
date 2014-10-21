@@ -86,8 +86,7 @@
 		<script src="bower_components/jquery-waypoints/shortcuts/sticky-elements/waypoints-sticky.min.js"></script>
 		<script src="bower_components/stellar.js/jquery.stellar.min.js"></script>
 		<script src="bower_components/jquery-prettyPhoto/js/jquery.prettyPhoto.js"></script>
-		<script src="bower_components/isotope/dist/isotope.pkgd.min.js"></script>
-		<script src="bower_components/masonry/masonry.js"></script>
+		<script src="bower_components/mixitup2/build/jquery.mixitup.min.js"></script>
 		<script>
 				
 			// Stick Header Top Top
@@ -163,8 +162,12 @@
 		        return false;
 		    });
 		    
-		    			
-		
+		    // Intialize Mix It Up			
+			$('#portfolio-container').mixItUp();
+			$('.portfolio .controls a').on('click', function(e){
+				e.preventDefault();
+			});
+
 
 			
 			/*
