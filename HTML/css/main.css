@@ -1080,6 +1080,12 @@ header .navbar-wrapper .navbar-brand img {
 .blog .post-content p {
   margin-bottom: 20px;
 }
+.blog .comment-box {
+  margin-bottom: 20px;
+}
+.blog .comment-box label {
+  font-weight: 400;
+}
 .blog aside .twitter li {
   margin-bottom: 15px;
   line-height: 18px;

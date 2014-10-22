@@ -57,11 +57,53 @@
 										<p>Cras pellentesque diam a porttitor fringilla. In faucibus a ligula sit amet sollicitudin. Sed tristique nisl vel elit sodales congue. Proin sit amet lacus luctus, ornare massa eget, bibendum odio. Proin auctor eleifend tellus molestie efficitur. Curabitur porta eu metus at consectetur. Aliquam tristique, tellus nec imperdiet hendrerit, est tortor sollicitudin mi, non rutrum nulla neque eget lorem. Aliquam in varius nulla, eu ultricies erat. Pellentesque interdum laoreet lacus, ut gravida mi semper ut.</p>
 
 										<p>Ut eget metus id arcu lacinia ullamcorper. Donec nec ligula non nibh aliquam fermentum a ac felis. Nam viverra elit ut lacus tempus, in maximus justo interdum. Nunc iaculis tristique felis vitae feugiat. Aenean magna felis, pharetra eget lorem a, congue aliquet erat. Aenean in dui eget ligula euismod convallis tincidunt viverra ligula. In id eros sit amet quam ultrices porttitor. Aenean eget suscipit urna, vel tempus lacus. Nam scelerisque accumsan nisi, et suscipit sem euismod et. Donec dignissim dictum pellentesque. Integer ut justo vitae lectus egestas faucibus. In sed metus ligula. Aliquam cursus velit a tincidunt egestas.</p>
-									</div>	
+										<hr class="lg">	
+										
+										<div class="share-post">
+											<h3><i class="fa fa-share"></i> Share this post</h3>
+											<span class='st_facebook_large' displayText='Facebook'></span>
+											<span class='st_twitter_large' displayText='Tweet'></span>
+											<span class='st_linkedin_large' displayText='LinkedIn'></span>
+											<span class='st_pinterest_large' displayText='Pinterest'></span>
+											<span class='st_email_large' displayText='Email'></span>
+										</div>
+										<hr>
+										<div class="comment-box">
+											<h3>Leave a comment</h3>
+				
+											<form action="" method="post">
+												<div class="row">
+													<div class="form-group clearfix">
+														<div class="col-md-6">
+															<label>Your name *</label>
+															<input type="text" value="" maxlength="100" class="form-control" name="name" id="name">
+														</div>
+														<div class="col-md-6">
+															<label>Your email address *</label>
+															<input type="email" value="" maxlength="100" class="form-control" name="email" id="email">
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="form-group clearfix">
+														<div class="col-md-12">
+															<label>Comment *</label>
+															<textarea maxlength="5000" rows="10" class="form-control" name="comment" id="comment"></textarea>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12">
+														<input type="submit" value="Post Comment" class="btn btn-primary pull-right" data-loading-text="Loading...">
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-						<hr class="lg">								
+						</div>											
+						
 					</div>
 					<!--End Blog Post Section-->
 				
