@@ -33,13 +33,13 @@
 							</ol>
 							<div class="carousel-inner">
 								<div class="item active">
-									<img class="img-responsive" src="img/portfolio/portfolio-1-wide.jpg" alt="Off The Clivv">
+									<img class="img-responsive" src="img/portfolio/portfolio-6-wide.jpg" alt="On The Water">
+								</div>
+								<div class="item">
+									<img class="img-responsive" src="img/portfolio/portfolio-4-wide.jpg" alt="The Valley" />
 								</div>
 								<div class="item">
 									<img class="img-responsive" src="img/portfolio/portfolio-2-wide.jpg" alt="The Pines" />
-								</div>
-								<div class="item">
-									<img class="img-responsive" src="img/portfolio/portfolio-3-wide.jpg" alt="By The Peir" />
 								</div>
 							</div>
 								

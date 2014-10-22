@@ -24,7 +24,7 @@
 											<i class="fa fa-circle fa-stack-2x"></i>
 											<i class="fa fa-twitter fa-stack-1x"></i>
 										</span>
-										@CompanyName RT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna. Phasellus nec erat odio. 
+										<a href="#">@CompanyName</a> RT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna. Phasellus nec erat odio. 
 										<time>December 19,2014</time>
 									</li>
 									<li>
@@ -32,7 +32,7 @@
 											<i class="fa fa-circle fa-stack-2x"></i>
 											<i class="fa fa-twitter fa-stack-1x"></i>
 										</span>
-										@CompanyName RT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna.
+										<a href="#">@CompanyName</a> RT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna.
 										<time>December 19,2014</time>
 									</li>
 								</ul>

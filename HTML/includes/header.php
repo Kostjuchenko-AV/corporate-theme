@@ -115,11 +115,14 @@
 											Blog <strong class="caret"></strong>
 										</a>	
 										<ul class="dropdown-menu animated fadeIn">
-											<li><a href="#">Dropdown Link</a></li>
+											<li><a href="blog-full-width.php">Full Width Blog</a></li>
+											<li><a href="blog-large-image.php">Large Image Blog</a></li>
+											<li><a href="blog-small-image.php">Small Image Blog</a></li>
+											<li><a href="blog-single-item.php">Single Blog Post</a></li>
 										</ul>	
 									</li>
 									<li>
-										<a href="#">Contact</a>	
+										<a href="page-contact.php">Contact</a>	
 									</li>
 								</ul>
 								<!--Search Form

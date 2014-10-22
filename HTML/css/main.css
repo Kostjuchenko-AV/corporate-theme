@@ -109,6 +109,10 @@ img.pull-left.padded {
 img.pull-right.padded {
   margin: 0 0 15px 20px;
 }
+/* Horizontal Rule */
+hr.lg {
+  margin: 30px 0;
+}
 /* Videos */
 .responsive-video {
   position: relative;
@@ -167,8 +171,24 @@ ul.nav-list > li a i {
 .btn.btn-lg {
   padding: 20px 48px;
 }
+.btn.btn-sm {
+  font-size: 12px;
+  padding: 8px 20px;
+}
 .btn b {
   font-weight: 600;
+}
+/* Pagination */
+.pagination > li > a,
+.pagination > li > span {
+  color: #255a8a;
+}
+.pagination > .active > a {
+  background-color: #255a8a;
+  border-color: #255a8a;
+}
+.pagination > .active > a:hover {
+  cursor: pointer;
 }
 /* Aside */
 aside h3,
@@ -315,6 +335,7 @@ aside hr {
   position: absolute;
   margin-left: -20px;
 }
+/* Carosel */
 .carousel .carousel-control {
   display: block;
   background-image: none;
@@ -343,6 +364,22 @@ aside hr {
 }
 .carousel:hover .carousel-control i {
   opacity: 1;
+}
+/* Meta */
+.meta {
+  color: #cacaca;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+.meta i,
+.meta a {
+  color: #cacaca;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+          transition: all 0.1s ease-in-out 0s;
+}
+.meta a:hover {
+  color: #255a8a;
 }
 /* Scroll To Top */
 .scroll-to-top {
@@ -990,21 +1027,6 @@ header .navbar-wrapper .navbar-brand img {
 .portfolio-single .details i {
   color: #255a8a;
 }
-.portfolio-single .meta {
-  color: #cacaca;
-  font-size: 12px;
-  margin-top: -10px;
-  margin-bottom: 15px;
-}
-.portfolio-single .meta i,
-.portfolio-single .meta a {
-  color: #cacaca;
-  -webkit-transition: all 0.1s ease-in-out 0s;
-          transition: all 0.1s ease-in-out 0s;
-}
-.portfolio-single .meta a:hover {
-  color: #255a8a;
-}
 .portfolio-single .related h4 {
   color: #4a4a4a;
   font-weight: bold;
@@ -1016,6 +1038,67 @@ header .navbar-wrapper .navbar-brand img {
   display: block;
   font-size: 14px;
   margin-bottom: 20px;
+}
+/*  BLOG STYLING
+-------------------------------------------------- */
+.blog .post-image {
+  margin-bottom: 26px;
+}
+.blog .post-date {
+  text-align: center;
+  width: 50px;
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+.blog .post-date .day {
+  background: #f2f3f4;
+  border-radius: 4px 4px 0 0;
+  color: #255a8a;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px;
+}
+.blog .post-date .month {
+  background: #255a8a;
+  border-radius: 0 0 4px 4px;
+  color: white;
+  display: block;
+  font-size: 12px;
+  padding: 0 10px 2px;
+}
+.blog .post-content.wide {
+  margin-left: 65px;
+}
+.blog .post-content h2 {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.blog .post-content p {
+  margin-bottom: 20px;
+}
+.blog aside .twitter li {
+  margin-bottom: 15px;
+  line-height: 18px;
+  position: relative;
+  padding-left: 26px;
+  padding-right: 10px;
+}
+.blog aside .twitter li i {
+  color: #255a8a;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+.blog aside .twitter li time {
+  color: #cacaca;
+  display: block;
+  font-size: 10px;
+  font-style: italic;
+  margin-top: 5px;
 }
 /*  FEATURE PAGES STYLING
 -------------------------------------------------- */

@@ -29,11 +29,11 @@
 						<aside class="sidebar">
 							<h4>Side Menu</h4>
 							<ul class="nav nav-list">
-								<li><a href="#"><i class="fa fa-caret-right"></i> Design</a></li>
-								<li><a href="#"><i class="fa fa-caret-right"></i> Photos</a></li>
-								<li><a href="#"><i class="fa fa-caret-right"></i> Videos</a></li>
-								<li><a href="#"><i class="fa fa-caret-right"></i> Lifestyle</a></li>
+								<li><a href="#"><i class="fa fa-caret-right"></i> Business</a></li>
 								<li><a href="#"><i class="fa fa-caret-right"></i> Technology</a></li>
+								<li><a href="#"><i class="fa fa-caret-right"></i> Photography</a></li>
+								<li><a href="#"><i class="fa fa-caret-right"></i> Lifestyle</a></li>
+								<li><a href="#"><i class="fa fa-caret-right"></i> Planning</a></li>
 							</ul>
 							<hr>
 							<h4>Youtube Video</h4>
@@ -42,7 +42,7 @@
 							</div>
 							<hr>
 							<h4>Text Box</h4>
-							<p>Nulla nunc dui, tristique in semper vel, congue sed ligula. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero. Nulla nunc dui, tristique in semper vel. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero.</p>
+							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						</aside>
 					</div>
 					<!--End Left Sidebar-->
