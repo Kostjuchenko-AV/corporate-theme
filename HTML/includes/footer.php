@@ -77,6 +77,36 @@
 		
 		<!--Scroll To Top -->
 		<a class="scroll-to-top hidden-xs" href="#"><i class="fa fa-chevron-up"></i></a>
+		
+		<!--Begin Style Switcher -->
+		<div id="style-switcher" class="hidden-xs">
+			
+			<h4>Style Switcher<a href="#" class="style-toggle"><i class="fa fa-wrench"></i></a></h4>
+			<div class="switcher-wrapper">
+				
+				<p>Colors</p>				
+				<ul class="style-colors list-inline">
+					<li><a href="#" rel="css/blue.css"><i class="fa fa-square blue"></i></a></li>
+					<li><a href="#" rel="css/light-blue.css"><i class="fa fa-square light-blue"></i></a></li>
+					<li><a href="#" rel="css/red.css"><i class="fa fa-square red"></i></a></li>
+					<li><a href="#" rel="css/green.css"><i class="fa fa-square green"></i></a></li>
+					<li><a href="#" rel="css/gold.css"><i class="fa fa-square gold"></i></a></li>
+				</ul>
+				
+				<p>Navbar Type</p>
+				<ul class="options navbar-color list-inline">
+					<li><a href="#" data-background-color="light" class="active">Light</a></li>
+					<li><a href="#" data-background-color="dark">Dark</a></li>
+				</ul>
+				
+				<p>Footer Type</p>
+				<ul class="options footer-color list-inline">
+					<li><a href="#" data-background-color="light">Light</a></li>
+					<li><a href="#" data-background-color="dark" class="active">Dark</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--End Style Switcher -->
 	
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -87,6 +117,7 @@
 		<script src="bower_components/stellar.js/jquery.stellar.min.js"></script>
 		<script src="bower_components/jquery-prettyPhoto/js/jquery.prettyPhoto.js"></script>
 		<script src="bower_components/mixitup2/build/jquery.mixitup.min.js"></script>
+		<script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
 		<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 		<script src="bower_components/gmaps/gmaps.js"></script>
 		<script src="js/main.js"></script>

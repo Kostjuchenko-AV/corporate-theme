@@ -33,7 +33,6 @@ $( document ).ready(function() {
 						
 	// Initialize PrettyPhoto for gallery
 	$("a[rel^='prettyPhoto']").prettyPhoto({
-		theme: 'facebook',
 		slideshow:5000, 
 		autoplay_slideshow:false,
 		show_title: false,
@@ -43,8 +42,8 @@ $( document ).ready(function() {
 	});
 	
 	// Expand Portfolio Button
-	$('.toggle-portfolio').click(function(event) {
-		event.preventDefault();
+	$('.toggle-portfolio').click(function(e) {
+		e.preventDefault();
 		$("a[rel^='prettyPhoto']:first").click();
 	});
 	
@@ -73,33 +72,32 @@ $( document ).ready(function() {
         return false;
     });
     
+    // Theme Style Switcher	
+    $('a.style-toggle').on('click', function(e){
+		e.preventDefault();
+		$('#style-switcher').toggleClass('open');  
+    });
+    
+	if($.cookie("css")) {
+		$('link.switch-style').attr("href",$.cookie("css"));
+	}
+	
+	$("#style-switcher li a").click(function(e) { 
+		e.preventDefault();
+		$("link.switch-style").attr("href",$(this).attr('rel'));
+		$.cookie("css",$(this).attr('rel'), {expires: 1, path: '/'});
+	});
+	
+	$('#style-switcher .options li a').on('click', function(e){
+		e.preventDefault();
+		$(this).parent().siblings().find('a').removeClass('active');
+		$(this).addClass('active');  
+    });
+    
     // Intialize Mix It Up			
 	$('#portfolio-container').mixItUp();
 	$('.portfolio .controls a').on('click', function(e){
 		e.preventDefault();
-	});
-
-	// Intialize GMaps
-    var map = new GMaps({
-        el: '#map',
-        lat: 33.7863164,
-        lng: -84.3837829,
-        zoomControl : true,
-        zoomControlOpt: {
-            style : 'SMALL',
-            position: 'TOP_LEFT'
-        },
-        panControl : false,
-        streetViewControl : false,
-        mapTypeControl: false,
-        overviewMapControl: false,
-        scrollwheel: false
-    });
-    
-    map.addMarker({
-	  lat: 33.7863164,
-      lng: -84.3837829,
-	  title: 'Our Office'
 	});
 
 });

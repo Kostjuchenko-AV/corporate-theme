@@ -72,7 +72,7 @@
 							
 							<p><strong>Services:</strong></p>
 	
-							<ul class="list list-skills icons list-unstyled list-inline">
+							<ul class="list list-services icons list-unstyled list-inline">
 								<li><i class="fa fa-check-circle"></i> Marketing</li>
 								<li><i class="fa fa-check-circle"></i> Administration</li>
 								<li><i class="fa fa-check-circle"></i> Data Management</li>

@@ -43,7 +43,7 @@
 					</div>
 					
 					<div class="item">
-						<img src="img/slides/main-slider-3.jpg" alt="main-slider-3" />
+						<img src="img/slides/main-slider-2.jpg" alt="main-slider-3" />
 						<div class="container">
 							<div class="row">
 								<div class="carousel-caption col-sm-6">
