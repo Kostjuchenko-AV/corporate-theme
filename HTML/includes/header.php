@@ -130,13 +130,6 @@
 										<a href="page-contact.php">Contact</a>	
 									</li>
 								</ul>
-								<!--Search Form
-								<form class="navbar-form navbar-left" role="search">
-									<div class="form-group">
-										<input type="text" class="form-control" />
-									</div> <button type="submit" class="btn btn-default">Submit</button>
-								</form>
-								-->
 							</div>
 						</nav>
 			    	</div>
