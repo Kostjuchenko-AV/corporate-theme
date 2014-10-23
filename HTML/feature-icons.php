@@ -34,7 +34,7 @@
 						<div class="col-md-12">
 							<div class="fontawesome-icon-list">
 								<div id="new">
-									<h2 class="page-header">40 New Icons in 4.2</h2>
+									<h3 class="page-header">40 New Icons in 4.2</h3>
 									<div class="row fontawesome-icon-list">
 										<div class="col-md-3 col-sm-4">
 											<i class="fa fa-angellist"></i> fa-angellist
@@ -168,7 +168,7 @@
 									</div>
 								</div>
 								<section id="web-application">
-								<h2 class="page-header">Web Application Icons</h2>
+								<h3 class="page-header">Web Application Icons</h3>
 								<div class="row fontawesome-icon-list">
 									<div class="col-md-3 col-sm-4">
 										<i class="fa fa-adjust"></i> fa-adjust
@@ -1133,7 +1133,7 @@
 								</div>
 								</section>
 								<section id="file-type">
-								<h2 class="page-header">File Type Icons</h2>
+								<h3 class="page-header">File Type Icons</h3>
 								<div class="row fontawesome-icon-list">
 									<div class="col-md-3 col-sm-4">
 										<i class="fa fa-file"></i> fa-file
@@ -1192,7 +1192,7 @@
 								</div>
 								</section>
 								<section id="spinner">
-								<h2 class="page-header">Spinner Icons</h2>
+								<h3 class="page-header">Spinner Icons</h3>
 								<div class="alert alert-success">
 										<i class="fa fa-info-circle fa-lg"></i>
 										These icons work great with the <code>fa-spin</code> class.
@@ -1216,7 +1216,7 @@
 								</div>
 								</section>
 								<section id="form-control">
-								<h2 class="page-header">Form Control Icons</h2>
+								<h3 class="page-header">Form Control Icons</h3>
 								<div class="row fontawesome-icon-list">
 									<div class="col-md-3 col-sm-4">
 										<i class="fa fa-check-square"></i> fa-check-square
@@ -1254,7 +1254,7 @@
 								</div>
 								</section>
 								<section id="payment">
-								<h2 class="page-header">Payment Icons</h2>
+								<h3 class="page-header">Payment Icons</h3>
 								<div class="row fontawesome-icon-list">
 									<div class="col-md-3 col-sm-4">
 										<i class="fa fa-cc-amex"></i> fa-cc-amex
@@ -1286,7 +1286,7 @@
 								</div>
 								</section>
 								<section id="chart">
-								<h2 class="page-header">Chart Icons</h2>
+								<h3 class="page-header">Chart Icons</h3>
 								<div class="row fontawesome-icon-list">
 									<div class="col-md-3 col-sm-4">
 										<i class="fa fa-area-chart"></i> fa-area-chart
@@ -1306,7 +1306,7 @@
 								</div>
 								</section>
 								<section id="currency">
-								<h2 class="page-header">Currency Icons</h2>
+								<h3 class="page-header">Currency Icons</h3>
 								<div class="row fontawesome-icon-list">
 									<div class="col-md-3 col-sm-4">
 										<i class="fa fa-bitcoin"></i> fa-bitcoin <span class="text-muted">(alias)</span>
@@ -1383,7 +1383,7 @@
 								</div>
 								</section>
 								<section id="text-editor">
-								<h2 class="page-header">Text Editor Icons</h2>
+								<h3 class="page-header">Text Editor Icons</h3>
 								<div class="row fontawesome-icon-list">
 									<div class="col-md-3 col-sm-4">
 										<i class="fa fa-align-center"></i> fa-align-center
@@ -1535,7 +1535,7 @@
 								</div>
 								</section>
 								<section id="directional">
-								<h2 class="page-header">Directional Icons</h2>
+								<h3 class="page-header">Directional Icons</h3>
 								<div class="row fontawesome-icon-list">
 									<div class="col-md-3 col-sm-4">
 										<i class="fa fa-angle-double-down"></i> fa-angle-double-down
@@ -1696,7 +1696,7 @@
 								</div>
 								</section>
 								<section id="video-player">
-								<h2 class="page-header">Video Player Icons</h2>
+								<h3 class="page-header">Video Player Icons</h3>
 								<div class="row fontawesome-icon-list">
 									<div class="col-md-3 col-sm-4">
 										<i class="fa fa-arrows-alt"></i> fa-arrows-alt
@@ -1749,7 +1749,7 @@
 								</div>
 								</section>
 								<section id="brand">
-								<h2 class="page-header">Brand Icons</h2>
+								<h3 class="page-header">Brand Icons</h3>
 								<div class="alert alert-success">
 									<ul class="margin-bottom-none padding-left-lg">
 										<li>All brand icons are trademarks of their respective owners.</li>
@@ -2063,7 +2063,7 @@
 								</div>
 								</section>
 								<section id="medical">
-								<h2 class="page-header">Medical Icons</h2>
+								<h3 class="page-header">Medical Icons</h3>
 								<div class="row fontawesome-icon-list">
 									<div class="col-md-3 col-sm-4">
 										<i class="fa fa-ambulance"></i> fa-ambulance

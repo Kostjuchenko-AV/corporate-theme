@@ -94,14 +94,26 @@ h2.title {
 	}
 }
 
-h3.title {
-	color: @gray-dark;
-	margin-bottom: 36px;
-	/* text-transform: uppercase; */
-	
-	span {
-		font-weight: 300;
+h3 {
+	&.title {
+		color: @gray-dark;
+		margin-bottom: 36px;
+		/* text-transform: uppercase; */
+		
+		span {
+			font-weight: 300;
+		}
 	}
+	
+	&.page-header {
+		color: @gray;
+		margin-top: 20px;
+		padding-bottom: 15px;
+		
+		span {
+			font-weight: 300;
+		}
+	}		
 }
 
 h4.title {
@@ -721,6 +733,7 @@ header {
 	min-height: 50px;
 	padding: 20px 0;
 	position: relative;
+	z-index: 3;
 	
 	.breadcrumb {
 		background: none;
@@ -740,7 +753,7 @@ header {
 		padding: 0 0 16px;
 	}
 	
-	+ .carousel, + .well, + .featured.with-bg {
+	+ .carousel, + .well, + .featured.with-bg, +#map {
 		margin-top: -36px;
 	}
 }
@@ -1370,6 +1383,27 @@ header {
 		}
 	}	
 }
+
+/*  CONTACT PAGE STYLING
+-------------------------------------------------- */
+
+#map{
+	display: block;
+	width: 100%;
+	height: 350px;
+	margin: 0 auto 20px;
+}
+	
+.contact {	
+			
+	label {
+		font-weight: 400;
+	}
+	
+	.details {
+		padding-top: 36px;
+	}
+}	
 
 
 /*  FEATURE PAGES STYLING

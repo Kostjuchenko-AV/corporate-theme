@@ -25,7 +25,7 @@
 				<div class="gallery">
 					<div class="row">
 						<div class="col-md-12">
-							<h2 class="page-header"><strong>Four</strong> Columns</h2>
+							<h3 class="page-header">Four <span>Columns</span></h23>
 						</div>
 					</div>
 					<div class="row">
@@ -57,7 +57,7 @@
 					
 					<div class="row">
 						<div class="col-md-12">
-							<h2 class="page-header"><strong>Three</strong> Columns</h2>
+							<h3 class="page-header">Three <span>Columns</span></h3>
 						</div>
 					</div>					
 					<div class="row">
@@ -83,7 +83,7 @@
 					
 					<div class="row">
 						<div class="col-md-12">
-							<h2 class="page-header"><strong>Two</strong> Columns</h2>
+							<h3 class="page-header">Two <span>Columns</span></h3>
 						</div>
 					</div>					
 					<div class="row">

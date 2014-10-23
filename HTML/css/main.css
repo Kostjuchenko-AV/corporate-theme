@@ -61,6 +61,14 @@ h3.title {
 h3.title span {
   font-weight: 300;
 }
+h3.page-header {
+  color: #4a4a4a;
+  margin-top: 20px;
+  padding-bottom: 15px;
+}
+h3.page-header span {
+  font-weight: 300;
+}
 h4.title {
   margin-top: 20px;
   margin-bottom: 26px;
@@ -581,6 +589,7 @@ header .navbar-wrapper .navbar-brand img {
   min-height: 50px;
   padding: 20px 0;
   position: relative;
+  z-index: 3;
 }
 .title-bar .breadcrumb {
   background: none;
@@ -600,7 +609,8 @@ header .navbar-wrapper .navbar-brand img {
 }
 .title-bar + .carousel,
 .title-bar + .well,
-.title-bar + .featured.with-bg {
+.title-bar + .featured.with-bg,
+.title-bar + #map {
   margin-top: -36px;
 }
 /* MAIN CAROUSEL STYLING
@@ -1105,6 +1115,20 @@ header .navbar-wrapper .navbar-brand img {
   font-size: 10px;
   font-style: italic;
   margin-top: 5px;
+}
+/*  CONTACT PAGE STYLING
+-------------------------------------------------- */
+#map {
+  display: block;
+  width: 100%;
+  height: 350px;
+  margin: 0 auto 20px;
+}
+.contact label {
+  font-weight: 400;
+}
+.contact .details {
+  padding-top: 36px;
 }
 /*  FEATURE PAGES STYLING
 -------------------------------------------------- */

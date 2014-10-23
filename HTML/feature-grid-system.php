@@ -28,7 +28,11 @@
 						<p class="lead">
 							Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. <a href="http://getbootstrap.com/css/#grid" target="_blank">Learn More</a>
 						</p>
-						<h2 class="page-header">Default grid system</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">		
+						<h3 class="page-header">Default <span>grid system</span></h3>
 					</div>
 				</div>
 				
