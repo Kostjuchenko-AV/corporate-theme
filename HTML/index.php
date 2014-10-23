@@ -5,7 +5,7 @@
 				<ol class="carousel-indicators">
 					<li data-target="#main-carousel" data-slide-to="0" class="active"></li>
 					<li data-target="#main-carousel" data-slide-to="1" class=""></li>
-<!-- 					<li data-target="#main-carousel" data-slide-to="2" class=""></li> -->
+					<li data-target="#main-carousel" data-slide-to="2" class=""></li>
 				</ol>
 				<div class="carousel-inner">
 					<div class="item active">
@@ -26,13 +26,30 @@
 					</div>
 					
 					<div class="item">
+						<img src="img/slides/main-slider-2.jpg" alt="main-slider-2" />
+						<div class="container">
+							<div class="row">
+								<div class="carousel-caption col-sm-6">
+									<h1 class="title animated bounceInRight"><span>Built With LESS</span> Easy To Customize..</h1>
+									<p class="animated bounceInRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna. Phasellus nec erat odio. </p>
+									<p><a class="btn btn-lg btn-default animated bounceInRight" href="#" role="button"><b>Read</b> More</a></p>
+								</div>
+								<div class="carousel-image col-sm-6">
+									<img class="img-1 img-responsive animated bounceInUp hidden-xs" src="img/slides/main-slider-1-ipad.png" alt="main-slider-1-ipad" />
+									<img class="img-2 img-responsive animated bounceInUp hidden-xs" src="img/slides/main-slider-1-iphone.png" alt="main-slider-1-iphone" />
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="item">
 						<img src="img/slides/main-slider-3.jpg" alt="main-slider-3" />
 						<div class="container">
 							<div class="row">
 								<div class="carousel-caption col-sm-6">
-									<h1 class="title animated bounceInRight"><span>Mobile First, Responsive</span> Business Solution..</h1>
+									<h1 class="title animated bounceInRight"><span>Receive Free Updates</span> After Purchase.</h1>
 									<p class="animated bounceInRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna. Phasellus nec erat odio. </p>
-									<p><a class="btn btn-lg btn-default animated bounceInRight" href="#" role="button"><b>Read</b> More</a></p>
+									<p><a class="btn btn-lg btn-default animated bounceInRight" href="#" role="button"><b>Buy</b> Now</a></p>
 								</div>
 								<div class="carousel-image col-sm-6">
 									<img class="img-1 img-responsive animated bounceInUp hidden-xs" src="img/slides/main-slider-1-ipad.png" alt="main-slider-1-ipad" />
@@ -56,7 +73,7 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna. Phasellus nec erat odio. Vestibulum eleifend. </p>
 						</div>
 						<div class="col-md-2">
-							<a class="btn btn-lg btn-primary" href="#" role="button"><b>Read</b> More</a>
+							<a class="btn btn-primary" href="#" role="button"><b>Read</b> More</a>
 						</div>
 					</div>
 				</div>	
