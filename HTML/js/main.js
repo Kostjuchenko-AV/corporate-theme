@@ -18,8 +18,7 @@ $( document ).ready(function() {
  	
  	// Parallax Background Effect
  	$.stellar({
-		horizontalScrolling: false,
-		verticalOffset: 40
+		horizontalScrolling: false
 	});
 	
 	

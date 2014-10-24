@@ -9,7 +9,7 @@
 				</ol>
 				<div class="carousel-inner">
 					<div class="item active">
-						<img src="img/slides/main-slider-1.jpg" alt="main-slider-1" />
+						<img src="img/slides/main-slider-1.jpg" alt="main-slider-1" class="img-responsive"/>
 						<div class="container">
 							<div class="row">
 								<div class="carousel-caption col-sm-6">
@@ -147,7 +147,7 @@
 			<!--End Mini Portfolio Section-->
 			
 			<!--Begin Testimonial Carousel-->
-			<div id="testimonial-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-stellar-background-ratio="1.25">
+			<div id="testimonial-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-stellar-background-ratio="1.25" data-stellar-vertical-offset="-100">
 				<ol class="carousel-indicators">
 					<li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
 					<li data-target="#testimonial-carousel" data-slide-to="1" class=""></li>

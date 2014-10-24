@@ -21,7 +21,7 @@
 			<!--End Title Bar-->
 			
 			<!--Begin Testimonial Carousel-->
-			<div id="testimonial-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-stellar-background-ratio="1.25">
+			<div id="testimonial-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-stellar-background-ratio="1.25" data-stellar-vertical-offset="100">
 				<ol class="carousel-indicators">
 					<li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
 					<li data-target="#testimonial-carousel" data-slide-to="1" class=""></li>

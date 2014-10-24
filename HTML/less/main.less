@@ -470,10 +470,9 @@ aside {
 		position: absolute;
 		top: 50%;
 		width: 40px;
-		z-index: 4;
+		z-index: 12;
 		
 		i {
-			border-radius: 0 4px 4px 0;
 			background: rgba(33,37,43,.8);
 			cursor: pointer;
 			color: rgba(250,250,250,.8);
@@ -487,6 +486,14 @@ aside {
 			opacity: 0;
 			width: 40px;
 			
+		}
+		
+		&.left i {
+			border-radius: 0 4px 4px 0;
+		}
+		
+		&.right i {
+			border-radius: 4px 0 0 4px;
 		}
 	}
 	
@@ -1024,8 +1031,13 @@ header {
 -------------------------------------------------- */
 #testimonial-carousel {
 	height: 500px;
-	background: url(../img/presentation.jpg) center top repeat-y fixed;	
-	background-size: cover;
+	background: url(../img/presentation.jpg) center top repeat-y fixed;	// IE Fallback
+	background: 
+		linear-gradient(
+	      rgba(37, 40, 41, 0.7), 
+	      rgba(37, 40, 41, 0.7)
+	    ), 
+		url(../img/presentation.jpg) center top repeat-y fixed;
 	padding: @section-padding;
 	text-align: center;
 	
@@ -1140,7 +1152,6 @@ header {
 		      rgba(37, 90, 138, 0.8)
 		    ), 
 			url(../img/rocky-stars.jpg) center top repeat-y fixed;	
-		background-size: cover;	
 		min-height: 265px;	
 		padding: @section-padding;
 	}
@@ -1923,6 +1934,7 @@ footer {
 	}		
 	
 	#testimonial-carousel {
+		background-size: cover;
 			
 		.item {
 
@@ -1932,7 +1944,7 @@ footer {
 			}
 		}
 	}
-	
+
 	.portfolio {
 		
 		&.four-columns {
@@ -1947,6 +1959,13 @@ footer {
 			}
 		}
 	}
+	
+	.featured {
+	
+		&.with-bg {
+			background-size: cover !important;	
+		}
+	}	
 	
 	footer {		
 	
