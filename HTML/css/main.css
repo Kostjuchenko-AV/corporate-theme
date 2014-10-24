@@ -463,9 +463,9 @@ header #top .follow a:hover {
   color: #6fa7d9;
 }
 header .navbar-wrapper {
-  background-color: white;
   color: #4a4a4a;
   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+  background-color: white;
   height: 110px;
   position: relative;
   -webkit-transform: translate3d(0, 0, 0);
@@ -475,6 +475,7 @@ header .navbar-wrapper {
           transition: background 0.1s ease-in-out 0s;
   -webkit-transition: height 0.5s ease-in-out;
           transition: height 0.5s ease-in-out;
+  /*Dark Navbar Styling */
 }
 header .navbar-wrapper > .container {
   padding-right: 0;
@@ -533,7 +534,6 @@ header .navbar-wrapper .navbar-nav > li > a {
   font-size: 16px;
   padding: 13px 18px;
   line-height: 25px;
-  /* text-transform: uppercase; */
   -webkit-transition: padding 0.5s ease-in-out;
           transition: padding 0.5s ease-in-out;
 }
@@ -584,6 +584,31 @@ header .navbar-wrapper .navbar-brand img {
   max-height: 44px;
   -webkit-transition: max-height 0.5s ease-in-out;
           transition: max-height 0.5s ease-in-out;
+}
+header .navbar-wrapper .navbar-brand .white-logo {
+  display: none;
+}
+header .navbar-wrapper.dark {
+  background-color: #404041;
+}
+header .navbar-wrapper.dark .navbar {
+  background-color: #404041;
+}
+header .navbar-wrapper.dark .navbar-brand .gray-logo {
+  display: none;
+}
+header .navbar-wrapper.dark .navbar-brand .white-logo {
+  display: block;
+}
+header .navbar-wrapper.dark .navbar-nav > li > a {
+  color: white;
+}
+header .navbar-wrapper.dark .navbar-nav .open .dropdown-menu > li > a {
+  color: white;
+}
+header .navbar-wrapper.dark .navbar-nav > .open > a {
+  color: white;
+  background-color: #404041 !important;
 }
 /* TITLE BAR STYLING
 -------------------------------------------------- */
@@ -1249,6 +1274,9 @@ header .navbar-wrapper .navbar-brand img {
 #style-switcher .switcher-wrapper .style-colors li > a .gold {
   color: #8a6d3b;
 }
+#style-switcher .switcher-wrapper .options {
+  margin-bottom: 15px;
+}
 #style-switcher .switcher-wrapper .options li {
   padding-right: 0;
 }
@@ -1274,6 +1302,7 @@ footer .footer-top {
   background-color: #404041;
   color: white;
   padding: 36px 0;
+  /*Light Footer Styling */
 }
 footer .footer-top h4 {
   color: white;
@@ -1364,6 +1393,33 @@ footer .footer-top .newsletter-block small {
   font-style: italic;
   margin-top: 10px;
 }
+footer .footer-top.light {
+  background-color: white;
+  color: #4a4a4a;
+}
+footer .footer-top.light h4 {
+  color: #4a4a4a;
+}
+footer .footer-top.light .contact-block li span {
+  color: #8a8a8a;
+}
+footer .footer-top.light .contact-block li a {
+  color: #4a4a4a;
+}
+footer .footer-top.light .twitter-block li a,
+footer .footer-top.light .twitter-block li time {
+  color: #8a8a8a;
+}
+footer .footer-top.light .twitter-block li .fa-twitter {
+  color: white;
+}
+footer .footer-top.light .newsletter-block input {
+  background-color: #d6d6d6;
+  color: #4a4a4a;
+}
+footer .footer-top.light .newsletter-block small {
+  color: #8a8a8a;
+}
 footer .footer-bottom {
   background-color: #4a4a4a;
   color: white;
@@ -1393,6 +1449,9 @@ footer .footer-bottom .follow a {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 768px) {
+  header .navbar-wrapper {
+    /*Dark Navbar Styling */
+  }
   header .navbar-wrapper .navbar-default {
     background-color: transparent;
   }
@@ -1438,6 +1497,10 @@ footer .footer-bottom .follow a {
   header .navbar-wrapper.stuck {
     position: fixed;
     top: 0;
+  }
+  header .navbar-wrapper.dark .navbar-nav > li > a {
+    border-bottom: 5px solid #404041;
+    color: white;
   }
   header.shrink-header .navbar-wrapper {
     height: 72px;

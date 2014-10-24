@@ -2,22 +2,26 @@ $( document ).ready(function() {
 	
 	// Stick Header Top Top
 	$('.navbar-wrapper').waypoint('sticky');
+	
 
 	// Shrink Header
 	$('header').waypoint(function(direction) {
 		$(this).toggleClass('shrink-header', direction === 'down');
 	}, { offset: -55 });
+	
 		
 	// Initialize Main Carousel
 	$('.carousel').carousel({
 		interval: 15000
 	});
+	
  	
  	// Parallax Background Effect
  	$.stellar({
 		horizontalScrolling: false,
 		verticalOffset: 40
 	});
+	
 	
 	// Toggle Animation
 	$('.toggle label').on('click', function(){
@@ -29,7 +33,8 @@ $( document ).ready(function() {
 	      $(this).parent().removeClass('active');
 	    }
 	    $(answer).slideToggle(300);
-	  });
+	});
+	  
 						
 	// Initialize PrettyPhoto for gallery
 	$("a[rel^='prettyPhoto']").prettyPhoto({
@@ -41,11 +46,13 @@ $( document ).ready(function() {
 		overlay_gallery: false 
 	});
 	
+	
 	// Expand Portfolio Button
 	$('.toggle-portfolio').click(function(e) {
 		e.preventDefault();
 		$("a[rel^='prettyPhoto']:first").click();
 	});
+	
 	
 	// Animate Progress Bars
 	$('.line-graph').waypoint(function() {
@@ -55,10 +62,12 @@ $( document ).ready(function() {
 		});
 	}, { offset: 400 });
 	
+	
 	// Animation Page
 	$(".animated.repeat").on('click', function() {
 		$(this).addClass("clicked");
 	});
+	
 	
 	// Scroll To Top
 	$('footer').waypoint(function() {
@@ -72,6 +81,7 @@ $( document ).ready(function() {
         return false;
     });
     
+    
     // Theme Style Switcher	
     $('a.style-toggle').on('click', function(e){
 		e.preventDefault();
@@ -79,20 +89,37 @@ $( document ).ready(function() {
     });
     
 	if($.cookie("css")) {
-		$('link.switch-style').attr("href",$.cookie("css"));
+		$('link.switch-style').attr('href',$.cookie("css"));
 	}
 	
 	$("#style-switcher li a").click(function(e) { 
 		e.preventDefault();
-		$("link.switch-style").attr("href",$(this).attr('rel'));
-		$.cookie("css",$(this).attr('rel'), {expires: 1, path: '/'});
+		$('link.switch-style').attr('href',$(this).attr('rel'));
+		$.cookie('css',$(this).attr('rel'), {expires: 1, path: '/'});
 	});
 	
 	$('#style-switcher .options li a').on('click', function(e){
 		e.preventDefault();
 		$(this).parent().siblings().find('a').removeClass('active');
 		$(this).addClass('active');  
-    });
+		
+		var bgStyle = $(this).data('background-color');
+		
+		if (bgStyle === 'navbar-dark') {
+			$('.navbar-wrapper').addClass('dark');
+		} 
+		else if (bgStyle === 'navbar-light') {
+			$('.navbar-wrapper').removeClass('dark');	
+		}
+		else if (bgStyle === 'footer-light') {
+			$('.footer-top').addClass('light');
+		} 
+		else {
+			$('.footer-top').removeClass('light');	
+		}			
+			
+
+    });    
     
     // Intialize Mix It Up			
 	$('#portfolio-container').mixItUp();

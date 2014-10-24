@@ -94,15 +94,15 @@
 				</ul>
 				
 				<p>Navbar Type</p>
-				<ul class="options navbar-color list-inline">
-					<li><a href="#" data-background-color="light" class="active">Light</a></li>
-					<li><a href="#" data-background-color="dark">Dark</a></li>
+				<ul class="options list-inline">
+					<li><a href="#" data-background-color="navbar-light" class="active">Light</a></li>
+					<li><a href="#" data-background-color="navbar-dark">Dark</a></li>
 				</ul>
 				
 				<p>Footer Type</p>
-				<ul class="options footer-color list-inline">
-					<li><a href="#" data-background-color="light">Light</a></li>
-					<li><a href="#" data-background-color="dark" class="active">Dark</a></li>
+				<ul class="options list-inline">
+					<li><a href="#" data-background-color="footer-light">Light</a></li>
+					<li><a href="#" data-background-color="footer-dark" class="active">Dark</a></li>
 				</ul>
 			</div>
 		</div>

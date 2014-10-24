@@ -599,9 +599,10 @@ header {
 	}
 	
 	.navbar-wrapper {
-		background-color: white;
+		
 		color: @gray;
 		box-shadow: 0 1px 15px rgba(0,0,0,.1);
+		background-color: white;
 		height: 110px;
 		position: relative;
 		transform: translate3d(0,0,0);
@@ -673,7 +674,6 @@ header {
 				font-size: @font-size-medium;
 				padding: 13px 18px;
 				line-height: 25px;
-				/* text-transform: uppercase; */
 				transition: padding .5s ease-in-out;
 			}
 			
@@ -725,8 +725,47 @@ header {
 				max-height: 44px;
 				transition: max-height .5s ease-in-out;
 			}
+			
+			.white-logo {
+				display: none;
+			}
 		}
 		
+		/*Dark Navbar Styling */
+		
+		&.dark {
+			background-color: @gray-dark;
+			
+			.navbar {
+				background-color: @gray-dark;	
+			}
+			
+			.navbar-brand {
+				.gray-logo {
+					display: none;
+				}	
+				
+				.white-logo {
+					display: block;
+				}
+			}
+			
+			.navbar-nav {
+					
+				> li > a {
+					color: white;
+				}	
+								
+				.open .dropdown-menu > li > a {
+					color: white;
+				}
+				
+				> .open > a {
+					color: white;
+					background-color: @gray-dark !important;
+				}
+			}
+		}
 	}	
 }
 
@@ -1549,6 +1588,7 @@ header {
 		}	
 		
 		.options {
+			margin-bottom: 15px;
 		
 			li {
 				padding-right: 0;
@@ -1699,6 +1739,49 @@ footer {
 			}
 		}
 		
+		/*Light Footer Styling */
+		
+		&.light {
+			background-color: white;
+			color: @gray;
+			
+			h4 {
+				color: @gray;
+			}
+			
+			.contact-block li {
+				span {
+					color: @gray-medium;
+				}
+				
+				a {
+					color: @gray;
+				}
+			}
+			
+			.twitter-block li { 
+				a, time {
+					color: @gray-medium;
+				}
+				
+				.fa-twitter {
+					color: white;
+				}	
+			}
+			 
+			.newsletter-block {
+				
+				input {
+					background-color: lighten(@gray-medium, 30%);
+					color: @gray;
+				}
+				
+				small {
+					color: @gray-medium;
+				}	
+			}	
+		}
+
 	}
 	
 	.footer-bottom {
@@ -1802,6 +1885,18 @@ footer {
 				position: fixed;
 				top: 0;
 			}
+			
+			/*Dark Navbar Styling */
+			&.dark {
+			
+				.navbar-nav {
+					
+					> li > a {
+						border-bottom: 5px solid @gray-dark;
+						color: white;
+					}	
+				}				
+			}
 									
 		}	
 		
@@ -1828,7 +1923,7 @@ footer {
 				}	
 			}
 			
-		}
+		}		
 	}		
 	
 	#testimonial-carousel {

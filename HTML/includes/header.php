@@ -67,7 +67,8 @@
 								 </button> 
 								 <!--Begin Logo -->
 								 <a class="navbar-brand" href="/">
-								 	<img src="img/logo.png" title="Amity" alt="Amity" />
+								 	<img src="img/logo.png" class="gray-logo" title="Amity" alt="Amity" />
+								 	<img src="img/logo-white.png" class="white-logo" title="Amity" alt="Amity" />
 								 </a>
 								 <!--End Logo -->
 							</div>
