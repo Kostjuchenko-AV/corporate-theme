@@ -397,6 +397,13 @@ aside hr {
 /* Pretty Box */
 .pp_pic_holder .currentTextHolder {
   margin-top: -2px;
+  color: white;
+}
+.pp_pic_holder.light_square .pp_left,
+.pp_pic_holder.light_square .pp_middle,
+.pp_pic_holder.light_square .pp_right,
+.pp_pic_holder.light_square .pp_content {
+  background-color: transparent;
 }
 /* Scroll To Top */
 .scroll-to-top {
