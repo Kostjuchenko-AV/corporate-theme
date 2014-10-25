@@ -673,6 +673,10 @@ header .navbar-wrapper.dark .navbar-nav > .open > a {
   font-size: 16px;
   margin-bottom: 36px;
 }
+#main-carousel .carousel-caption .btn {
+  -webkit-animation-delay: .19s;
+          animation-delay: .19s;
+}
 #main-carousel .carousel-image {
   position: absolute;
   right: 15px;
@@ -682,23 +686,50 @@ header .navbar-wrapper.dark .navbar-nav > .open > a {
   padding-bottom: 20px;
   z-index: 10;
 }
-#main-carousel .carousel-image .img-1 {
+#main-carousel .carousel-image img {
   position: absolute;
+}
+#main-carousel .carousel-image .img-1 {
   right: 80px;
   bottom: 65px;
   z-index: 11;
   width: 75%;
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
 }
 #main-carousel .carousel-image .img-2 {
-  position: absolute;
   right: 40px;
   bottom: 0px;
   z-index: 12;
   width: 25%;
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
+}
+#main-carousel .carousel-image .img-3 {
+  right: 100px;
+  bottom: 65px;
+  z-index: 11;
+  width: 70%;
   -webkit-animation-delay: .5s;
           animation-delay: .5s;
+}
+#main-carousel .carousel-image .img-4 {
+  right: 0px;
+  bottom: 40px;
+  z-index: 12;
+  width: 50%;
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
+}
+#main-carousel .carousel-image .responsive-video {
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
+}
+#main-carousel .carousel-image .responsive-video iframe {
+  top: -40px;
+  right: 0;
+  left: auto;
+  width: 90%;
 }
 #main-carousel .item {
   height: 500px;

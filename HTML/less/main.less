@@ -841,6 +841,10 @@ header {
 			font-size: @font-size-medium;
 			margin-bottom: 36px;
 		}
+		
+		.btn {
+			animation-delay: .19s;
+		}
 	}
 	
 	.carousel-image {
@@ -852,23 +856,52 @@ header {
 		padding-bottom: 20px;
 		z-index: 10;
 		
-		.img-1 {
+		img {	
 			position: absolute;
+		}	
+		
+		.img-1 {
 			right: 80px;
 			bottom: 65px;
 			z-index: 11;
 			width: 75%;
-			animation-delay: .2s;
+			animation-delay: .5s;
 		}
 		
 		.img-2 {
-			position: absolute;
 			right: 40px;
 			bottom: 0px;
 			z-index: 12;
 			width: 25%;
+			animation-delay: .7s;
+		}
+		
+		.img-3 {
+			right: 100px;
+			bottom: 65px;
+			z-index: 11;
+			width: 70%;
 			animation-delay: .5s;
 		}
+		
+		.img-4 {
+			right: 0px;
+			bottom: 40px;
+			z-index: 12;
+			width: 50%;
+			animation-delay: .7s;
+		}
+		
+		.responsive-video {
+			animation-delay: .7s;
+			
+			iframe {
+				top: -40px;
+				right: 0;
+				left: auto;
+				width: 90%;
+			}	
+		}	
 	}
 	
 	.item {

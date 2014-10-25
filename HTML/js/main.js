@@ -87,14 +87,9 @@ $( document ).ready(function() {
 		$('#style-switcher').toggleClass('open');  
     });
     
-	if($.cookie("css")) {
-		$('link.switch-style').attr('href',$.cookie("css"));
-	}
-	
 	$("#style-switcher li a").click(function(e) { 
 		e.preventDefault();
 		$('link.switch-style').attr('href',$(this).attr('rel'));
-		$.cookie('css',$(this).attr('rel'), {expires: 1, path: '/'});
 	});
 	
 	$('#style-switcher .options li a').on('click', function(e){

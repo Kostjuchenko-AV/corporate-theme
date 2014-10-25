@@ -36,9 +36,9 @@
 								<li><a href="#"><i class="fa fa-caret-right"></i> Planning</a></li>
 							</ul>
 							<hr>
-							<h4>Youtube Video</h4>
+							<h4>Responsive Video</h4>
 							<div class="responsive-video">
-								<iframe width="560" height="315" src="//www.youtube.com/embed/hbaTnin7GFE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+								<iframe src="//player.vimeo.com/video/87701971" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 							</div>
 							<hr>
 							<h4>Text Box</h4>
