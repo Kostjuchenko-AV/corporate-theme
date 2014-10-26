@@ -1,3 +1,10 @@
+/*   
+ * Template: Amity - Responsive Bootstrap Template
+ * Version: 1.0
+ * Author: Nathaniel Deal LLC
+ * Website: http://nathanieldeal.com
+*/
+
 $( document ).ready(function() {
 	
 	// Stick Header Top Top

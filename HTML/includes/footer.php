@@ -117,7 +117,6 @@
 		<script src="bower_components/stellar.js/jquery.stellar.min.js"></script>
 		<script src="bower_components/jquery-prettyPhoto/js/jquery.prettyPhoto.js"></script>
 		<script src="bower_components/mixitup2/build/jquery.mixitup.min.js"></script>
-		<script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
 		<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 		<script src="bower_components/gmaps/gmaps.js"></script>
 		<script src="js/main.js"></script>
