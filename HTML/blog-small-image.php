@@ -1,3 +1,4 @@
+<?php ob_start(); ?>
 		<?php include('includes/header.php'); ?>
 			
 			<!--Begin Title Bar-->
@@ -178,8 +179,6 @@
 				</div>		
 			</div>
 			
-
-			
-			
 		<?php include('includes/footer.php'); ?>
+		<?php // echo '1'; file_put_contents('html/blog-small-image.html', ob_get_contents()); ?>
 			

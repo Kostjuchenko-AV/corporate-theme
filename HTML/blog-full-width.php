@@ -1,3 +1,4 @@
+<?php ob_start(); ?>
 		<?php include('includes/header.php'); ?>
 			
 			<!--Begin Title Bar-->
@@ -143,4 +144,5 @@
 			<!--End Blog Full Section-->
 			
 		<?php include('includes/footer.php'); ?>
+		<?php // echo '1'; file_put_contents('html/blog-full-width.html', ob_get_contents()); ?>
 			

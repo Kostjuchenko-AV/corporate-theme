@@ -1,3 +1,4 @@
+<?php ob_start(); ?>
 		<?php include('includes/header.php'); ?>
 		
 			<!--Begin Main Carousel-->
@@ -310,4 +311,4 @@ potenti. Duis at faucibus ligula.
 			<!--End Featured Section-->
 			
 		<?php include('includes/footer.php'); ?>
-			
+		<?php // echo '1'; file_put_contents('html/index.html', ob_get_contents()); ?>			

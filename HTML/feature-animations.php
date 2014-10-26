@@ -1,3 +1,4 @@
+<?php ob_start(); ?>
 		<?php include('includes/header.php'); ?>
 			
 			<!--Begin Title Bar-->
@@ -114,4 +115,5 @@
 			<!--End Animations Section-->	
 			
 		<?php include('includes/footer.php'); ?>
+		<?php // echo '1'; file_put_contents('html/feature-animations.html', ob_get_contents()); ?>
 			

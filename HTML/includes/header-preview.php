@@ -6,16 +6,17 @@
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
 			<meta name="author" content="Nathaniel Deal LLC">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<meta name="description" content="Preview Of Amity - Responsive Website Template For WrapBootstrap">
+			<meta name="description" content="Preview of Amity - Responsive Website Template For WrapBootstrap">
 			<title>Amity - Responsive Bootstrap Template For WrapBootstrap</title>
 			
 			<!-- CSS -->
-			<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-			<link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-			<link href="bower_components/animate.css/animate.min.css" rel="stylesheet">
-			<link href="bower_components/jquery-prettyPhoto/css/prettyPhoto.css" rel="stylesheet">
-			<link href="css/main.css" rel="stylesheet">
-			<link href="css/default.css" class="switch-style" rel="stylesheet">
+			<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+			<link href="css/font-awesome/font-awesome.min.css" rel="stylesheet">
+			<link href="css/animate.css/animate.min.css" rel="stylesheet">
+			<link href="css/jquery-prettyPhoto/css/prettyPhoto.css" rel="stylesheet">
+			<link href="css/main.min.css" rel="stylesheet">
+			<!-- Custom Template Color --> 
+			<link href="css/colors/default.css" class="switch-style" rel="stylesheet">
 			
 			<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 			<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -83,14 +84,14 @@
 												Pages <strong class="caret"></strong>
 											</a>
 											<ul class="dropdown-menu animated fadeIn">
-												<li><a href="page-about.php">About Page</a></li>
-												<li><a href="page-login.php">Login/Register Page</a></li>
-												<li><a href="page-faq.php">FAQ Page</a></li>
-												<li><a href="page-gallery.php">Gallery Page</a></li>
-												<li><a href="page-full-width.php">Full Width Page</a></li>
-												<li><a href="page-left-sidebar.php">Left Sidebar Page</a></li>
-												<li><a href="page-right-sidebar.php">Right Sidebar Page</a></li>											
-												<li><a href="page-404.php">404 Error Page</a></li>
+												<li><a href="page-about.html">About Page</a></li>
+												<li><a href="page-login.html">Login/Register Page</a></li>
+												<li><a href="page-faq.html">FAQ Page</a></li>
+												<li><a href="page-gallery.html">Gallery Page</a></li>
+												<li><a href="page-full-width.html">Full Width Page</a></li>
+												<li><a href="page-left-sidebar.html">Left Sidebar Page</a></li>
+												<li><a href="page-right-sidebar.html">Right Sidebar Page</a></li>											
+												<li><a href="page-404.html">404 Error Page</a></li>
 											</ul>	
 										</li>
 										<li class="dropdown">
@@ -98,11 +99,11 @@
 											 	Features <strong class="caret"></strong>
 											</a>
 											<ul class="dropdown-menu animated fadeIn">
-												<li><a href="feature-typography.php">Typography</a></li>
-												<li><a href="feature-pricing-tables.php">Pricing Tables</a></li>
-												<li><a href="feature-animations.php">Animations</a></li>
-												<li><a href="feature-icons.php">Icons</a></li>
-												<li><a href="feature-grid-system.php">Grid System</a></li>
+												<li><a href="feature-typography.html">Typography</a></li>
+												<li><a href="feature-pricing-tables.html">Pricing Tables</a></li>
+												<li><a href="feature-animations.html">Animations</a></li>
+												<li><a href="feature-icons.html">Icons</a></li>
+												<li><a href="feature-grid-system.html">Grid System</a></li>
 											</ul>
 										</li>
 										<li class="dropdown">
@@ -110,11 +111,11 @@
 												Portfolio <strong class="caret"></strong>
 											</a>
 											<ul class="dropdown-menu animated fadeIn">
-												<li><a href="portfolio-four-columns.php">Four Columns</a></li>
-												<li><a href="portfolio-three-columns.php">Three Columns</a></li>
-												<li><a href="portfolio-two-columns.php">Two Columns</a></li>
-												<li><a href="portfolio-single.php">Single Project</a></li>
-												<li><a href="portfolio-single-full.php">Single Project Full</a></li>
+												<li><a href="portfolio-four-columns.html">Four Columns</a></li>
+												<li><a href="portfolio-three-columns.html">Three Columns</a></li>
+												<li><a href="portfolio-two-columns.html">Two Columns</a></li>
+												<li><a href="portfolio-single.html">Single Project</a></li>
+												<li><a href="portfolio-single-full.html">Single Project Full</a></li>
 											</ul>	
 										</li>
 										<li class="dropdown">
@@ -122,14 +123,14 @@
 												Blog <strong class="caret"></strong>
 											</a>	
 											<ul class="dropdown-menu animated fadeIn">
-												<li><a href="blog-full-width.php">Full Width Blog</a></li>
-												<li><a href="blog-large-image.php">Large Image Blog</a></li>
-												<li><a href="blog-small-image.php">Small Image Blog</a></li>
-												<li><a href="blog-single-item.php">Single Blog Post</a></li>
+												<li><a href="blog-full-width.html">Full Width Blog</a></li>
+												<li><a href="blog-large-image.html">Large Image Blog</a></li>
+												<li><a href="blog-small-image.html">Small Image Blog</a></li>
+												<li><a href="blog-single-item.html">Single Blog Post</a></li>
 											</ul>	
 										</li>
 										<li>
-											<a href="page-contact.php">Contact</a>	
+											<a href="page-contact.html">Contact</a>	
 										</li>
 									</ul>
 								</div>

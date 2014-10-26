@@ -1,3 +1,4 @@
+<?php ob_start(); ?>
 		<?php include('includes/header.php'); ?>
 			
 			<!--Begin Title Bar-->
@@ -94,4 +95,5 @@
 			<!--End Contact Section-->	
 			
 		<?php include('includes/footer.php'); ?>
+		<?php // echo '1'; file_put_contents('html/page-contact.html', ob_get_contents()); ?>
 			
