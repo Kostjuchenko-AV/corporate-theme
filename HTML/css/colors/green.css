@@ -1,5 +1,3 @@
-/* LESS VARIABLES
--------------------------------------------------- */
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Headers */
@@ -80,8 +78,8 @@ header .navbar-wrapper .navbar-nav > li:hover > a {
 /*  FEATURED STYLING
 -------------------------------------------------- */
 .featured.with-bg {
-  background: -webkit-linear-gradient(rgba(37, 138, 85, 0.8), rgba(37, 138, 85, 0.8)), url(../img/rocky-stars.jpg) center top repeat-y fixed;
-  background: linear-gradient(rgba(37, 138, 85, 0.8), rgba(37, 138, 85, 0.8)), url(../img/rocky-stars.jpg) center top repeat-y fixed;
+  background: -webkit-linear-gradient(rgba(37, 138, 85, 0.8), rgba(37, 138, 85, 0.8)), url(../../img/rocky-stars.jpg) center top repeat-y fixed;
+  background: linear-gradient(rgba(37, 138, 85, 0.8), rgba(37, 138, 85, 0.8)), url(../../img/rocky-stars.jpg) center top repeat-y fixed;
 }
 /*  PRICING TABLE STYLING
 -------------------------------------------------- */

@@ -93,13 +93,13 @@
 					</div>
 					<div class="col-sm-4">
 						<span><i class="fa fa-mobile fa-4x icon-1"></i><i class="fa fa-mobile fa-4x icon-2"></i></span>
-						<h3>Mobile First</h2>
+						<h3>Mobile First</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna. Phasellus nec erat odio.</p>
 						<a class="btn btn-lg btn-default" href="#" role="button">Read More</a>
 					</div>
 					<div class="col-sm-4">
 						<span><i class="fa fa-edit fa-4x"></i></span>
-						<h3>Customizable</h2>
+						<h3>Customizable</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis laoreet urna. Phasellus nec erat odio.</p>
 					    <a class="btn btn-lg btn-default" href="#" role="button">Read More</a>
 					</div>
@@ -120,7 +120,7 @@
 					</div>
 					<div class="row">
 						<div class="col-sm-4">
-							<a href="img/gallery/by-the-peir.jpg" class="img-overlay"“ rel="prettyPhoto[folio_gal]">
+							<a href="img/gallery/by-the-peir.jpg" class="img-overlay" rel="prettyPhoto[folio_gal]">
 								<img class="img-responsive" src="img/gallery/by-the-peir.jpg" alt="By The Peir" />
 								<i class="fa fa-plus-circle"></i>
 							</a>	
