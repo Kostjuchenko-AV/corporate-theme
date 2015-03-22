@@ -81,7 +81,7 @@
 						</div>
 					</div>
 				</div>
-				<a class="left carousel-control" href="#testimonial-carousel" role="button" data-slide="prev"><i class="fa fa-angle-right"></i></a>
+				<a class="left carousel-control" href="#testimonial-carousel" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
 				<a class="right carousel-control" href="#testimonial-carousel" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
 			</div>
 			<!--End Testimonial Carousel-->	
