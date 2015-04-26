@@ -81,7 +81,7 @@
 		<!--Begin Style Switcher -->
 		<div id="style-switcher" class="hidden-xs">
 			
-			<h4>Style Switcher<a href="#" class="style-toggle"><i class="fa fa-wrench"></i></a></h4>
+			<h4>Style Switcher<a href="#" class="style-toggle"><i class="fa fa-wrench animated tada"></i></a></h4>
 			<div class="switcher-wrapper">
 				
 				<p>Colors</p>				

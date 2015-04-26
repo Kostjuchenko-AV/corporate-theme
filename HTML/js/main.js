@@ -31,14 +31,14 @@ $( document ).ready(function() {
 	
 	// Toggle Animation
 	$('.toggle label').on('click', function(){
-	    var answer = $(this).next('.answer');
-	    
-	    if(!$(answer).is(":visible")) {
-	      $(this).parent().addClass('active');
-	    } else {
-	      $(this).parent().removeClass('active');
-	    }
-	    $(answer).slideToggle(300);
+    var answer = $(this).next('.answer');
+    
+    if(!$(answer).is(":visible")) {
+      $(this).parent().addClass('active');
+    } else {
+      $(this).parent().removeClass('active');
+    }
+    $(answer).slideToggle(300);
 	});
 	  
 						
@@ -88,15 +88,15 @@ $( document ).ready(function() {
     });
     
     
-    // Theme Style Switcher	
-    $('a.style-toggle').on('click', function(e){
+  // Theme Style Switcher	
+  $('a.style-toggle').on('click', function(e){
 		e.preventDefault();
 		$('#style-switcher').toggleClass('open');  
-    });
+  });
     
 	$("#style-switcher li a").click(function(e) { 
-		e.preventDefault();
 		$('link.switch-style').attr('href',$(this).attr('rel'));
+		e.preventDefault();
 	});
 	
 	$('#style-switcher .options li a').on('click', function(e){
@@ -122,8 +122,9 @@ $( document ).ready(function() {
 
     });    
     
-    // Intialize Mix It Up			
+  // Intialize Mix It Up			
 	$('#portfolio-container').mixItUp();
+	
 	$('.portfolio .controls a').on('click', function(e){
 		e.preventDefault();
 	});

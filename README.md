@@ -75,5 +75,8 @@ Amity is a cleanly designed Bootstrap 3 template that has been optimized for use
 * [Staff 4](https://www.flickr.com/photos/rawartists/15385859766/in/photostream/)
 
 # Change Log
+**Version 1.1 – Apr 27, 2015**
+	•	Add new animations
+	•	Add new animations
 **Version 1.0 – Mar 20, 2015**
 	•	Initial release
