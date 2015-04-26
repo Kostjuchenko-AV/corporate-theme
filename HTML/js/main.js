@@ -90,8 +90,8 @@ $( document ).ready(function() {
     
   // Theme Style Switcher	
   $('a.style-toggle').on('click', function(e){
-		e.preventDefault();
 		$('#style-switcher').toggleClass('open');  
+		e.preventDefault();
   });
     
 	$("#style-switcher li a").click(function(e) { 
