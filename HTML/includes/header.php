@@ -15,8 +15,6 @@
 			<link href="bower_components/animate.css/animate.min.css" rel="stylesheet">
 			<link href="bower_components/jquery-prettyPhoto/css/prettyPhoto.css" rel="stylesheet">
 			<?php include('includes/dev/css.php'); ?>
-			<link href="css/main.css" rel="stylesheet">
-			
 			<link href="css/colors/default.css" class="switch-style" rel="stylesheet">
 			
 			<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

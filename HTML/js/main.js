@@ -8,14 +8,16 @@
 $( document ).ready(function() {
 	
 	// Stick Header Top Top
-	$('.navbar-wrapper').waypoint('sticky');
-	
-
+	var sticky = new Waypoint.Sticky({ //jshint ignore:line 
+	  element: $('.navbar-wrapper')[0]
+	}); 
+		
 	// Shrink Header
 	$('header').waypoint(function(direction) {
-		$(this).toggleClass('shrink-header', direction === 'down');
-	}, { offset: -55 });
-	
+		$(this.element).toggleClass('shrink-header', direction === 'down');
+	}, { 
+		offset: -55
+	});		
 		
 	// Initialize Main Carousel
 	$('.carousel').carousel({
@@ -66,7 +68,9 @@ $( document ).ready(function() {
 			var setWidth = $(this).attr('aria-valuenow');
 			$(this).width(setWidth + '%');
 		});
-	}, { offset: 400 });
+	}, { 
+		offset: 400 
+	});
 	
 	
 	// Animation Page
@@ -78,14 +82,16 @@ $( document ).ready(function() {
 	// Scroll To Top
 	$('footer').waypoint(function() {
 		$('.scroll-to-top').toggleClass('visible');
-	}, { offset: 500 });
+	}, { 
+		offset: 500
+	});
 	
 	$('.scroll-to-top').on('click', function () {
-        $("html, body").animate({
-            scrollTop: 0
-        }, 500);
-        return false;
-    });
+    $("html, body").animate({
+        scrollTop: 0
+    }, 500);
+    return false;
+  });
     
     
   // Theme Style Switcher	

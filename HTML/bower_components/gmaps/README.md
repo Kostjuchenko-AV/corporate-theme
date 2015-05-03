@@ -6,6 +6,40 @@ GMaps.js allows you to use the potential of Google Maps in a simple way. No more
 Visit the examples in [hpneo.github.com/gmaps](http://hpneo.github.com/gmaps/)
 Go to the API Documentation [hpneo.github.io/gmaps/documentation.html](http://hpneo.github.io/gmaps/documentation.html)
 
+Quick Start
+-----
+
+1. Add a reference to Google Maps API
+2. Add gmaps.js in your HTML
+3. Enjoy!
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script src="gmaps.js"></script>
+  <style type="text/css">
+    #map {
+      width: 400px;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <script>
+    var map = new GMaps({
+      el: '#map',
+      lat: -12.043333,
+      lng: -77.028333
+    });
+  </script>
+</body>
+</html>
+```
+
 Build
 ------
 
@@ -20,6 +54,16 @@ grunt
 
 Changelog
 ---------
+
+0.4.17
+-----------------------
+* Remove the http so the library (Google Maps call) will also work under SSL without warnings
+* Update route drawing methods to allow 'icons' option for drawPolyline
+* Remove dependency on 'grunt-cli' having to be installed globally
+
+0.4.16
+-----------------------
+* Fix removeMarkers
 
 0.4.15
 -----------------------

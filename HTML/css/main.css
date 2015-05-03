@@ -90,6 +90,10 @@ a:hover {
   color: #255a8a;
   text-decoration: none;
 }
+ul,
+ol {
+  margin-bottom: 20px;
+}
 .drop-cap:first-letter {
   float: left;
   font-size: 70px;
@@ -415,7 +419,7 @@ aside hr {
   opacity: 0;
   padding: 13px 10px 35px;
   position: fixed;
-  bottom: 0px;
+  bottom: 15px;
   right: 10px;
   text-align: center;
   text-decoration: none;
@@ -1317,6 +1321,21 @@ header .navbar-wrapper.dark .navbar-nav > .open > a {
 #style-switcher .switcher-wrapper .style-colors li > a .gold {
   color: #8a6d3b;
 }
+#style-switcher .switcher-wrapper .style-colors li > a .mint {
+  color: #18ba9b;
+}
+#style-switcher .switcher-wrapper .style-colors li > a .orange {
+  color: #e67e22;
+}
+#style-switcher .switcher-wrapper .style-colors li > a .purple {
+  color: #9b6bd0;
+}
+#style-switcher .switcher-wrapper .style-colors li > a .silver {
+  color: #95a5a7;
+}
+#style-switcher .switcher-wrapper .style-colors li > a .yellow {
+  color: #f2be35;
+}
 #style-switcher .switcher-wrapper .options {
   margin-bottom: 15px;
 }
@@ -1611,4 +1630,3 @@ footer .footer-bottom .follow a {
     margin-right: 0;
   }
 }
-/*# sourceMappingURL=main.css.map */

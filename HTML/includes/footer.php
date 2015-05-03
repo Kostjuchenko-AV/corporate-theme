@@ -91,6 +91,11 @@
 					<li><a href="#" rel="css/colors/red.css"><i class="fa fa-square red"></i></a></li>
 					<li><a href="#" rel="css/colors/green.css"><i class="fa fa-square green"></i></a></li>
 					<li><a href="#" rel="css/colors/gold.css"><i class="fa fa-square gold"></i></a></li>
+					<li><a href="#" rel="css/colors/mint.css"><i class="fa fa-square mint"></i></a></li>
+					<li><a href="#" rel="css/colors/orange.css"><i class="fa fa-square orange"></i></a></li>
+					<li><a href="#" rel="css/colors/purple.css"><i class="fa fa-square purple"></i></a></li>
+					<li><a href="#" rel="css/colors/silver.css"><i class="fa fa-square silver"></i></a></li>
+					<li><a href="#" rel="css/colors/yellow.css"><i class="fa fa-square yellow"></i></a></li>
 				</ul>
 				
 				<p>Navbar Type</p>

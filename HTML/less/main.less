@@ -141,6 +141,10 @@ a:hover {
 	text-decoration: none;
 }
 
+ul,ol {
+	margin-bottom: 20px;
+}
+
 .drop-cap {
 
 	&:first-letter {
@@ -546,7 +550,7 @@ aside {
 	opacity: 0;
 	padding: 13px 10px 35px;
 	position: fixed;
-	bottom: 0px;
+	bottom: 15px;
 	right: 10px;
 	text-align: center;
 	text-decoration: none;
@@ -1189,8 +1193,8 @@ header {
 		background: url(../img/rocky-stars.jpg) center top repeat-y fixed; // IE Fallback
 		background: 
 			linear-gradient(
-		      rgba(37, 90, 138, 0.8), 
-		      rgba(37, 90, 138, 0.8)
+		      fade(@brand-primary, 80%), 
+		      fade(@brand-primary, 80%)
 		    ), 
 			url(../img/rocky-stars.jpg) center top repeat-y fixed;	
 		min-height: 265px;	
@@ -1633,6 +1637,26 @@ header {
 			li > a .gold {
 				color: #8a6d3b;
 			}
+			
+			li > a .mint {
+				color: #18ba9b;
+			}
+			
+			li > a .orange {
+				color: #e67e22;
+			}
+			
+			li > a .purple {
+				color: #9b6bd0;
+			}
+			
+			li > a .silver {
+				color: #95a5a7;
+			}			
+			
+			li > a .yellow {
+				color: #f2be35;
+			}			
 		}	
 		
 		.options {
