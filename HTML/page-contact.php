@@ -95,5 +95,5 @@
 			<!--End Contact Section-->	
 			
 		<?php include('includes/footer.php'); ?>
-		<?php // echo '1'; file_put_contents('html/page-contact.html', ob_get_contents()); ?>
+		<?php echo ''; file_put_contents('html/page-contact.html', ob_get_contents()); ?>
 			

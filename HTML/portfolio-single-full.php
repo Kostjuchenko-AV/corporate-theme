@@ -135,5 +135,5 @@
 			<!--End Portfolio Single Full Section-->
 			
 		<?php include('includes/footer.php'); ?>
-		<?php // echo '1'; file_put_contents('html/portfolio-single-full.html', ob_get_contents()); ?>
+		<?php echo ''; file_put_contents('html/portfolio-single-full.html', ob_get_contents()); ?>
 			

@@ -113,7 +113,7 @@
 		</div>
 		<!--End Style Switcher -->
 		
-		<?php include('includes/dev/js.php'); ?>
+		<?php include('includes/prev/js.php'); ?>
 			
 	</body>
 </html>

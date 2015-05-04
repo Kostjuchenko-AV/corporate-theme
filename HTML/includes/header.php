@@ -10,7 +10,7 @@
 			<title>Amity - Responsive Bootstrap Template For WrapBootstrap</title>
 			
 			<!-- CSS -->
-			<?php include('includes/dev/css.php'); ?>
+			<?php include('includes/prev/css.php'); ?>
 			
 			<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 			<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,7 +25,7 @@
 			<script type="text/javascript">stLight.options({publisher: "ur-12729c0a-324f-2471-33d8-97008cd499ce", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 		</head>
 		<body>
-			<?php include('includes/dev/analytics-tracking.php'); ?>
+			<?php include('includes/prev/analytics-tracking.php'); ?>
 			
 			<!--Begin Wrapper-->
 			<div id="wrapper">

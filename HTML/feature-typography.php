@@ -402,5 +402,5 @@
 			<!--End Typography Section-->	
 			
 		<?php include('includes/footer.php'); ?>
-		<?php // echo '1'; file_put_contents('html/feature-typography.html', ob_get_contents()); ?>
+		<?php echo ''; file_put_contents('html/feature-typography.html', ob_get_contents()); ?>
 			
