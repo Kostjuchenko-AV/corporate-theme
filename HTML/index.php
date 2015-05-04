@@ -311,4 +311,4 @@ potenti. Duis at faucibus ligula.
 			<!--End Featured Section-->
 			
 		<?php include('includes/footer.php'); ?>
-		<?php echo ''; file_put_contents('html/index.html', ob_get_contents()); ?>			
+		<?php // echo ''; file_put_contents('html/index.html', ob_get_contents()); ?>			

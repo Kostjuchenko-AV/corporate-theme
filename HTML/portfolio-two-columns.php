@@ -50,56 +50,56 @@
 				<div class="row">
 					<ul class="col-sm-12 list-inline" id="portfolio-container">
 						<li class="mix travel lifestyle">
-							<a href="portfolio-single.php" class="img-overlay">
+							<a href="portfolio-single.html" class="img-overlay">
 								<img class="img-responsive" src="img/gallery/by-the-peir.jpg" alt="By The Peir" />
 							</a>
 							<h4>By The Pier</h4>
 							<span class="tag"><i class="fa fa-tag"> Travel, Lifestyle</i></span>
 						</li>
 						<li class="mix beautiful lifestyle">
-							<a href="portfolio-single.php" class="img-overlay">
+							<a href="portfolio-single.html" class="img-overlay">
 								<img class="img-responsive" src="img/gallery/beyond-the-trees.jpg" alt="Beyond The Trees" />
 							</a>	
 							<h4>Beyond The Trees</h4>
 							<span class="tag"><i class="fa fa-tag"> Beautiful, Lifestyle</i></span>
 						</li>
 						<li class="mix travel nature">
-							<a href="portfolio-single.php" class="img-overlay">
+							<a href="portfolio-single.html" class="img-overlay">
 								<img class="img-responsive" src="img/gallery/the-pines.jpg" alt="The Pines" />
 							</a>	
 							<h4>In The Foothills</h4>
 							<span class="tag"><i class="fa fa-tag"> Travel, Nature</i></span>
 						</li>
 						<li class="mix travel beautiful">
-							<a href="portfolio-single.php" class="img-overlay">
+							<a href="portfolio-single.html" class="img-overlay">
 								<img class="img-responsive" src="img/gallery/hidden-trail.jpg" alt="The Pines" />
 							</a>	
 							<h4>Hidden Trails</h4>
 							<span class="tag"><i class="fa fa-tag"> Travel, Beautiful</i></span>
 						</li>
 						<li class="mix beautiful nature">
-							<a href="portfolio-single.php" class="img-overlay">
+							<a href="portfolio-single.html" class="img-overlay">
 								<img class="img-responsive" src="img/gallery/on-cliffs.jpg" alt="By The Peir" />
 							</a>
 							<h4>On The Cliffs</h4>
 							<span class="tag"><i class="fa fa-tag"> Beautiful, Nature</i></span>
 						</li>
 						<li class="mix beautiful nature">
-							<a href="portfolio-single.php" class="img-overlay">
+							<a href="portfolio-single.html" class="img-overlay">
 								<img class="img-responsive" src="img/gallery/tree-on-lake.jpg" alt="Beyond The Trees" />
 							</a>	
 							<h4>Trees On Lake</h4>
 							<span class="tag"><i class="fa fa-tag"> Beautiful, Nature</i></span>
 						</li>
 						<li class="mix travel lifestyle">
-							<a href="portfolio-single.php" class="img-overlay">
+							<a href="portfolio-single.html" class="img-overlay">
 								<img class="img-responsive" src="img/gallery/on-the-beach.jpg" alt="The Pines" />
 							</a>	
 							<h4>On The Beach</h4>
 							<span class="tag"><i class="fa fa-tag"> Travel, Lifestyle</i></span>
 						</li>
 						<li class="mix beautiful lifestyle">
-							<a href="portfolio-single.php" class="img-overlay">
+							<a href="portfolio-single.html" class="img-overlay">
 								<img class="img-responsive" src="img/gallery/on-the-lake.jpg" alt="The Pines" />
 							</a>	
 							<h4>On The Lake</h4>
@@ -115,5 +115,5 @@
 			<!--End Portfolio Section-->
 			
 		<?php include('includes/footer.php'); ?>
-		<?php echo ''; file_put_contents('html/portfolio-two-columns.html', ob_get_contents()); ?>
+		<?php // echo ''; file_put_contents('html/portfolio-two-columns.html', ob_get_contents()); ?>
 			

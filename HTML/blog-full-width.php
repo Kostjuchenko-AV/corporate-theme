@@ -52,7 +52,7 @@
 									</li>
 								</ul>
 								
-								<a class="btn btn-primary pull-right btn-sm" href="blog-single-item.php">Read More</a>
+								<a class="btn btn-primary pull-right btn-sm" href="blog-single-item.html">Read More</a>
 							</div>	
 						</div>
 					</div>
@@ -86,7 +86,7 @@
 									</li>
 								</ul>
 								
-								<a class="btn btn-primary pull-right btn-sm" href="blog-single-item.php">Read More</a>
+								<a class="btn btn-primary pull-right btn-sm" href="blog-single-item.html">Read More</a>
 							</div>	
 						</div>
 					</div>
@@ -120,7 +120,7 @@
 									</li>
 								</ul>
 								
-								<a class="btn btn-primary pull-right btn-sm" href="blog-single-item.php">Read More</a>
+								<a class="btn btn-primary pull-right btn-sm" href="blog-single-item.html">Read More</a>
 							</div>	
 						</div>
 					</div>
@@ -144,5 +144,5 @@
 			<!--End Blog Full Section-->
 			
 		<?php include('includes/footer.php'); ?>
-		<?php echo ''; file_put_contents('html/blog-full-width.html', ob_get_contents()); ?>
+		<?php // echo ''; file_put_contents('html/blog-full-width.html', ob_get_contents()); ?>
 			

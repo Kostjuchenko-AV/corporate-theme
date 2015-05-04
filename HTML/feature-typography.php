@@ -175,7 +175,7 @@
 							<li><i class="fa fa-angle-double-right"></i> Phasellus in risus quis lectus iaculis vulputate id quis nisl.</li>
 							<li><i class="fa fa-arrow-right"></i> Fusce sit amet orci quis arcu vestibulum vestibulum sed ut felis. </li>
 							<li><i class="fa fa-caret-right "></i> Phasellus in risus quis lectus iaculis vulputate id quis nisl.</li>
-							<li class="text-right"><a href="icons.php">View all icons</a></li>
+							<li class="text-right"><a href="feature-icons.html">View all icons</a></li>
 						</ul>
 
 						<h4>Inline List</h4>
@@ -402,5 +402,5 @@
 			<!--End Typography Section-->	
 			
 		<?php include('includes/footer.php'); ?>
-		<?php echo ''; file_put_contents('html/feature-typography.html', ob_get_contents()); ?>
+		<?php // echo ''; file_put_contents('html/feature-typography.html', ob_get_contents()); ?>
 			

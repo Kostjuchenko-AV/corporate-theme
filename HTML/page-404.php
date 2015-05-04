@@ -47,5 +47,5 @@
 			
 		<?php include('includes/footer.php'); ?>
 		
-		<?php echo ''; file_put_contents('html/page-404.html', ob_get_contents()); ?>
+		<?php // echo ''; file_put_contents('html/page-404.html', ob_get_contents()); ?>
 			

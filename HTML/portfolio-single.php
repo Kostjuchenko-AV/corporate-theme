@@ -94,14 +94,14 @@
 				
 				<div class="row related">
 					<div class="col-md-3 col-sm-6">
-						<a href="portfolio-single.php" class="img-overlay">
+						<a href="portfolio-single.html" class="img-overlay">
 							<img class="img-responsive" src="img/gallery/beyond-the-trees.jpg" alt="Beyond The Trees" />
 						</a>	
 						<h4>Beyond The Trees</h4>
 						<span class="tag"><i class="fa fa-tag"> Beautiful, Lifestyle</i></span>
 					</div>
 					<div class="col-md-3 col-sm-6">
-						<a href="portfolio-single.php" class="img-overlay">
+						<a href="portfolio-single.html" class="img-overlay">
 							<img class="img-responsive" src="img/gallery/the-pines.jpg" alt="The Pines" />
 						</a>	
 						<h4>In The Foothills</h4>
@@ -109,14 +109,14 @@
 
 					</div>
 					<div class="col-md-3 col-sm-6">
-						<a href="portfolio-single.php" class="img-overlay">
+						<a href="portfolio-single.html" class="img-overlay">
 							<img class="img-responsive" src="img/gallery/hidden-trail.jpg" alt="The Pines" />
 						</a>	
 						<h4>Hidden Trails</h4>
 						<span class="tag"><i class="fa fa-tag"> Travel, Beautiful</i></span>
 					</div>
 					<div class="col-md-3 col-sm-6">
-						<a href="portfolio-single.php" class="img-overlay">
+						<a href="portfolio-single.html" class="img-overlay">
 							<img class="img-responsive" src="img/gallery/on-cliffs.jpg" alt="By The Peir" />
 						</a>
 						<h4>On The Cliffs</h4>
@@ -129,5 +129,5 @@
 			<!--End Portfolio Single Section-->
 			
 		<?php include('includes/footer.php'); ?>
-		<?php echo ''; file_put_contents('html/portfolio-single.html', ob_get_contents()); ?>
+		<?php // echo ''; file_put_contents('html/portfolio-single.html', ob_get_contents()); ?>
 			

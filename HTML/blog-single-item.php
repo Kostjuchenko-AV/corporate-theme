@@ -153,5 +153,5 @@
 			
 			
 		<?php include('includes/footer.php'); ?>
-		<?php echo ''; file_put_contents('html/blog-single-item.html', ob_get_contents()); ?>
+		<?php // echo ''; file_put_contents('html/blog-single-item.html', ob_get_contents()); ?>
 			

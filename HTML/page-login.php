@@ -122,5 +122,5 @@
 			<!--End Login Section-->	
 			
 		<?php include('includes/footer.php'); ?>
-		<?php echo ''; file_put_contents('html/page-login.html', ob_get_contents()); ?>
+		<?php // echo ''; file_put_contents('html/page-login.html', ob_get_contents()); ?>
 			
