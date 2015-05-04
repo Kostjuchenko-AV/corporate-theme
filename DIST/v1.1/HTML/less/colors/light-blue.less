@@ -1,5 +1,4 @@
-/* LESS VARIABLES
--------------------------------------------------- */
+// LESS VARIABLES
 @brand-primary: #428bca;
 @brand-primary-light: lighten(@brand-primary,30%);
 
@@ -164,8 +163,8 @@ header {
 	&.with-bg {
 		background: 
 			linear-gradient(
-		      rgba(37, 90, 138, 0.8), 
-		      rgba(37, 90, 138, 0.8)
+		      fade(@brand-primary, 80%), 
+		      fade(@brand-primary, 80%)
 		    ), 
 			url(../../img/rocky-stars.jpg) center top repeat-y fixed;	
 	}

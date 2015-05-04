@@ -1564,6 +1564,9 @@ footer .footer-bottom .follow a {
     border-bottom: 5px solid #404041;
     color: white;
   }
+  header .navbar-wrapper.dark .navbar-nav > li > a:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
   header.shrink-header .navbar-wrapper {
     height: 72px;
   }
