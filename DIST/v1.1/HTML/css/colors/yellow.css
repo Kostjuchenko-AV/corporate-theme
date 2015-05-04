@@ -4,133 +4,133 @@
 h3,
 h4,
 h5 {
-  color: #3c763d;
+  color: #f2be35;
 }
 /* Typography */
 a {
-  color: #3c763d;
+  color: #f2be35;
   text-decoration: none;
 }
 a:hover {
-  color: #3c763d;
+  color: #f2be35;
   text-decoration: none;
 }
 .drop-cap:first-letter {
-  color: #3c763d;
+  color: #f2be35;
 }
 .drop-cap.alt:first-letter {
-  background: #3c763d;
+  background: #f2be35;
 }
 /* Buttons */
 .btn.btn-primary {
-  background-color: #3c763d;
+  background-color: #f2be35;
 }
 /* Pagination */
 .pagination > li > a,
 .pagination > li > span {
-  color: #3c763d;
+  color: #f2be35;
 }
 .pagination > .active > a {
-  background-color: #3c763d;
-  border-color: #3c763d;
+  background-color: #f2be35;
+  border-color: #f2be35;
 }
 /* Toggle */
 .toggle.active > label {
-  background-color: #3c763d;
-  border-color: #3c763d;
+  background-color: #f2be35;
+  border-color: #f2be35;
 }
 /* Login Box */
 .form-box {
-  border-top-color: #3c763d;
+  border-top-color: #f2be35;
 }
 /* Meta */
 .meta a:hover {
-  color: #3c763d;
+  color: #f2be35;
 }
 /* HEADER STYLES
 -------------------------------------------------- */
 header #top .contact a:hover {
-  color: #88c389;
+  color: #fbecc5;
 }
 header #top .follow a:hover {
-  color: #88c389;
+  color: #fbecc5;
 }
 header .navbar-wrapper .navbar-nav > li.active > a,
 header .navbar-wrapper .navbar-nav > li:hover > a {
-  color: #3c763d;
+  color: #f2be35;
 }
 .marketing span {
-  color: #3c763d;
+  color: #f2be35;
 }
 .marketing a {
-  color: #3c763d;
+  color: #f2be35;
 }
 /* GALLERY STYLING
 -------------------------------------------------- */
 .gallery .img-overlay {
-  background-color: #3c763d;
+  background-color: #f2be35;
 }
 /* SERVICES STYLING
 -------------------------------------------------- */
 .line-graph .graph-item .progress-bar {
-  background-color: #3c763d;
+  background-color: #f2be35;
 }
 /*  FEATURED STYLING
 -------------------------------------------------- */
 .featured.with-bg {
-  background: -webkit-linear-gradient(rgba(60, 118, 61, 0.8), rgba(60, 118, 61, 0.8)), url(../../img/rocky-stars.jpg) center top repeat-y fixed;
-  background: linear-gradient(rgba(60, 118, 61, 0.8), rgba(60, 118, 61, 0.8)), url(../../img/rocky-stars.jpg) center top repeat-y fixed;
+  background: -webkit-linear-gradient(rgba(242, 190, 53, 0.8), rgba(242, 190, 53, 0.8)), url(../../img/rocky-stars.jpg) center top repeat-y fixed;
+  background: linear-gradient(rgba(242, 190, 53, 0.8), rgba(242, 190, 53, 0.8)), url(../../img/rocky-stars.jpg) center top repeat-y fixed;
 }
 /*  PRICING TABLE STYLING
 -------------------------------------------------- */
 .pricing-table .feature-ribbon {
-  background-color: #3c763d;
+  background-color: #f2be35;
 }
 /*  PORTFOLIO STYLING
 -------------------------------------------------- */
 .portfolio .controls .btn:active,
 .portfolio .controls .btn.active {
-  background-color: #3c763d;
+  background-color: #f2be35;
 }
 .portfolio-single .details .list-services i {
-  color: #3c763d;
+  color: #f2be35;
 }
 /*  BLOG STYLING
 -------------------------------------------------- */
 .blog .post-date .day {
-  color: #3c763d;
+  color: #f2be35;
 }
 .blog .post-date .month {
-  background: #3c763d;
+  background: #f2be35;
 }
 .blog aside .twitter li i {
-  color: #3c763d;
+  color: #f2be35;
 }
 /*  FOOTER STYLING
 -------------------------------------------------- */
 footer .footer-top .contact-block li a:hover {
-  color: #88c389;
+  color: #fbecc5;
 }
 footer .footer-top .twitter-block li .fa-circle {
-  color: #3c763d;
+  color: #f2be35;
 }
 footer .footer-top .newsletter-block button:hover {
-  color: #3c763d;
+  color: #f2be35;
 }
 footer .footer-bottom a:hover {
-  color: #88c389;
+  color: #fbecc5;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 768px) {
   header .navbar-wrapper .navbar-nav > li.active > a {
-    border-bottom-color: #3c763d;
+    border-bottom-color: #f2be35;
   }
   header .navbar-wrapper .navbar-nav .dropdown-menu {
-    border-top-color: #3c763d;
+    border-top-color: #f2be35;
   }
   header .navbar-wrapper .navbar-nav .dropdown-menu > li > a:hover,
   header .navbar-wrapper .navbar-nav .dropdown-menu > li > a:focus {
-    color: #3c763d;
+    color: #f2be35;
   }
 }

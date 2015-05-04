@@ -1,4 +1,19 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+/* LESS VARIABLES
+-------------------------------------------------- */
+/* LESS MIXINS */
+.portfolio-item h4 {
+  color: #4a4a4a;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.portfolio-item .tag {
+  color: #cacaca;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
 /* GLOBAL STYLES
 -------------------------------------------------- */
 body {
@@ -74,6 +89,10 @@ a {
 a:hover {
   color: #255a8a;
   text-decoration: none;
+}
+ul,
+ol {
+  margin-bottom: 20px;
 }
 .drop-cap:first-letter {
   float: left;
@@ -400,7 +419,7 @@ aside hr {
   opacity: 0;
   padding: 13px 10px 35px;
   position: fixed;
-  bottom: 0px;
+  bottom: 15px;
   right: 10px;
   text-align: center;
   text-decoration: none;
@@ -1301,6 +1320,21 @@ header .navbar-wrapper.dark .navbar-nav > .open > a {
 }
 #style-switcher .switcher-wrapper .style-colors li > a .gold {
   color: #8a6d3b;
+}
+#style-switcher .switcher-wrapper .style-colors li > a .mint {
+  color: #18ba9b;
+}
+#style-switcher .switcher-wrapper .style-colors li > a .orange {
+  color: #e67e22;
+}
+#style-switcher .switcher-wrapper .style-colors li > a .purple {
+  color: #9b6bd0;
+}
+#style-switcher .switcher-wrapper .style-colors li > a .silver {
+  color: #95a5a7;
+}
+#style-switcher .switcher-wrapper .style-colors li > a .yellow {
+  color: #f2be35;
 }
 #style-switcher .switcher-wrapper .options {
   margin-bottom: 15px;
